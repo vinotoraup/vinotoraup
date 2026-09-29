@@ -1,0 +1,63 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: var(--font-abc-areal-super-family);
+  --color-blue: var(--blue);
+  --color-black: var(--black);
+  --color-light-gray: var(--light-gray);
+  --color-muted: var(--muted);
+  --color-blue-gray: #C0C8DE;
+  --color-blue-gray-dark: #2E5E7C;
+  --color-beige: #EEDCD0;
+}
+
+:root {
+  --blue: #003544;
+  --black: #000;
+  --light-gray: #eeeeee;
+  --blue-gray: #C0C8DE;
+  --blue-gray-dark: #2E5E7C;
+  --beige: #EEDCD0;
+}
+
+@utility container {
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 13px;
+}
+
+@media (min-width: 80rem) {
+  .container {
+    max-width: 1290px;
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-light-gray text-blue font-normal;
+  }
+  html {
+    @apply font-sans;
+  }
+
+  a {
+    display: block;
+  }
+
+  span {
+    display: inline-block;
+  }
+
+  svg {
+    max-width: 100%;
+    height: auto;
+  }
+
+  button {
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,125 @@
+'use client';
+
+import { useTranslations } from 'next-intl';
+import { Link, usePathname } from '@/i18n/navigation';
+import { footerMenu, legalMenu } from '@/data/menu';
+import Description from '@/components/Description';
+import { contactFormHref, contactFormId } from '@/data/contact';
+import { Button } from '@/components/ui/button';
+import ArrowRightSmall from '@/components/Icons/ArrowRightSmall';
+import Image from 'next/image';
+
+export default function Footer() {
+  const tMenu = useTranslations('Menu');
+  const tFooter = useTranslations('Footer');
+  const tLegal = useTranslations('Legal');
+  const pathname = usePathname();
+
+  return (
+    <footer className="pt-21.25 pb-6 relative z-1">
+      <video
+        className="absolute top-0 left-0 size-full object-cover -z-1"
+        src="/video/footer-video.mp4"
+        autoPlay
+        muted
+        loop
+        playsInline
+      />
+
+      <div className="container">
+        <div className="grid lg:grid-cols-[328px_397px_auto] justify-between mb-15 gap-6">
+          <div>
+            <Link
+              href="/"
+              aria-label={tMenu('home')}
+              className="text-blue text-2xl leading-none font-bold tracking-[-1px] mb-5"
+            >
+              Vinotoraup
+            </Link>
+
+            <Description size="2xl" className="tracking-[-1px]">
+              {tFooter('description')}
+            </Description>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-x-4 gap-y-4 lg:gap-y-21.25">
+            {footerMenu.map((item) => (
+              <div key={item.id} className="p-4 border-l border-blue">
+                <Link
+                  href={item.href}
+                  className="text-xl/[110%] font-bold tracking-[-1px] mb-1"
+                >
+                  {tMenu(item.id)}
+                </Link>
+                <Description className="tracking-[-1px] leading-[110%]">
+                  {tMenu(`descriptions.${item.id}`)}
+                </Description>
+              </div>
+            ))}
+          </div>
+
+          <div className="flex flex-col justify-between items-end gap-10">
+            <Button
+              nativeButton={false}
+              className="tracking-[-1px] h-11.25 gap-1 max-md:w-full"
+              variant="secondary"
+              render={
+                <Link
+                  href={contactFormHref}
+                  onClick={() => {
+                    if (pathname === '/contact') {
+                      document.getElementById(contactFormId)?.scrollIntoView();
+                    }
+                  }}
+                />
+              }
+            >
+              Let’s Talk
+              <ArrowRightSmall />
+            </Button>
+
+            <button
+              type="button"
+              aria-label="Scroll to top"
+              className="px-2.5 py-2 border border-blue rounded-2xl"
+              onClick={() => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }}
+            >
+              <Image src="/icons/arrow-up.svg" width={32} height={38} alt="" />
+            </button>
+          </div>
+        </div>
+
+        <Link
+          href="/"
+          aria-label={tMenu('home')}
+          className="text-blue text-[70px] lg:text-[200px] xl:text-[255px] leading-none tracking-[0.5px] mb-3.5 text-center"
+        >
+          Vinotoraup
+        </Link>
+
+        <div className="pt-6 flex flex-wrap items-center justify-between gap-y-8 gap-x-4 max-md:justify-center">
+          <Description
+            className="max-w-31.5 tracking-[-1px]"
+            variant="blue-gray-dark"
+          >
+            {tFooter('copyright', { year: new Date().getFullYear() })}
+          </Description>
+          <ul className="flex flex-wrap gap-x-29.5 gap-y-2">
+            {legalMenu.map((item) => (
+              <li key={item.id}>
+                <Link
+                  href={item.href}
+                  className="text-base leading-none text-blue-gray-dark tracking-[-1px]"
+                >
+                  {tLegal(item.id)}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </footer>
+  );
+}
