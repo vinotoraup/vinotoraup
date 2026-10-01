@@ -65,7 +65,7 @@ export default async function RootLayout({ children }: LayoutProps<'/'>) {
       <body className="min-h-full flex flex-col">
         <NextIntlClientProvider>
           <Header />
-          {children}
+          <main className="rounded-[0_0_20px_20px]">{children}</main>
           <Footer />
         </NextIntlClientProvider>
       </body>

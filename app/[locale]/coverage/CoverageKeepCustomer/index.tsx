@@ -25,7 +25,7 @@ export default async function CoverageKeepCustomer() {
             />
           </div>
           <div>
-            <Title className="tracking-[-1.455px] [&_span]:not-italic mb-10">
+            <Title className="tracking-[-1.455px] mb-10">
               <span>{t('titleOne')}</span> {t('titleTwo')}
             </Title>
 

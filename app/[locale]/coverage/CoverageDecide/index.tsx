@@ -52,7 +52,7 @@ export default async function CoverageDecide() {
             />
           </div>
           <div>
-            <Title className="tracking-[-1.455px] [&_span]:not-italic mb-10 max-w-136.5">
+            <Title className="tracking-[-1.455px] mb-10 max-w-136.5">
               <span>{t('titleOne')}</span> {t('titleTwo')}
             </Title>
 

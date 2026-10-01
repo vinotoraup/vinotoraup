@@ -169,5 +169,81 @@
     "titleTwo": "You Move First?",
     "description": "Tell us which customer conversations arrive most often and where your team needs more capacity.",
     "link": "Talk Through Your Needs"
+  },
+  "UseCasesPage": {
+    "title": "The Reason for the Call",
+    "titleHighlight": "Changes the Work",
+    "description": "A borrower asking about a payment needs a different response from a customer checking an application. Vinotoraup covers the conversations that come up across financial services, following the process set by each business.",
+    "link": "Tell Us About Your Customers"
+  },
+  "UseCasesInfo": {
+    "fintech": {
+      "title": "FinTech",
+      "description": "Digital products can generate questions at any point in the customer journey.",
+      "itemOne": "Account and product questions",
+      "itemTwo": "Verification requests",
+      "itemThree": "Application follow-ups",
+      "itemFour": "Complaints requiring a response",
+      "descriptionAfter": "Vinotoraup handles the agreed communication and passes decisions outside its scope to your team."
+    },
+    "lending": {
+      "title": "Lending",
+      "description": "Borrowers may need help before an application is complete and long after a loan is issued.",
+      "itemOne": "Application questions and missing information",
+      "itemTwo": "Payment reminders",
+      "itemThree": "Account-related inquiries",
+      "itemFour": "Collection follow-ups under your procedures",
+      "descriptionAfter": "The work can cover one stage or several, depending on what your team needs."
+    },
+    "insurance": {
+      "title": "Insurance",
+      "description": "Customer contact continues beyond the first policy question.",
+      "itemOne": "Routine inquiries",
+      "itemTwo": "Requests for information",
+      "itemThree": "Follow-ups on open cases",
+      "itemFour": "Complaints and escalations",
+      "descriptionAfter": "Vinotoraup follows your instructions on what can be answered and what needs specialist review."
+    },
+    "action": "Read more"
+  },
+  "UseCasesOtherServices": {
+    "sectionTop": "Other Financial Services",
+    "description": "Existing teams often need extra capacity for recurring contact. We can take on defined customer care, application, payment, or complaint-related tasks alongside your internal operation.",
+    "link": "View All Coverage Areas"
+  },
+  "UseCasesMatchCoverage": {
+    "sectionTop": "Match Coverage to the Moment",
+    "itemOne": {
+      "title": "They have a question",
+      "subTitle": "Possible support",
+      "description": "Answer or route an incoming inquiry"
+    },
+    "itemTwo": {
+      "title": "They need to act",
+      "subTitle": "Possible support",
+      "description": "Request information or explain the next step"
+    },
+    "itemThree": {
+      "title": "They are waiting",
+      "subTitle": "Possible support",
+      "description": "Provide an agreed update or follow-up"
+    },
+    "itemFour": {
+      "title": "Their case needs review",
+      "subTitle": "Possible support",
+      "description": "Escalate it to the responsible internal team"
+    }
+  },
+  "UseCasesYourBusiness": {
+    "titleOne": "Your Business Sets",
+    "titleTwo": "the Boundaries",
+    "description": "You decide which conversations Vinotoraup handles, which decisions stay in-house, and when a case moves between teams. The handoff is defined before customer contact begins.",
+    "link": "See How the Handoff Works"
+  },
+  "UseCasesWhereDoes": {
+    "titleOne": "Where Does Your Team",
+    "titleTwo": "Need Coverage?",
+    "description": "Tell us what customers contact you about and which conversations take the most time. We’ll help define a scope that fits your operation.",
+    "link": "Discuss Your Use Case"
   }
 }

@@ -30,7 +30,7 @@ export default async function CoverageChangeScope() {
         </div>
         <div className="bg-blue-gray rounded-2xl py-6 px-4 lg:px-6 lg:min-h-98.5 flex flex-col justify-between gap-4">
           <Title
-            className="tracking-[-1.455px] leading-[110%] [&_span]:not-italic [&_span]:text-light-gray"
+            className="tracking-[-1.455px] leading-[110%] [&_span]:text-light-gray"
             variant="blue-gray-dark"
           >
             <span>{t('titleOne')}</span> {t('titleTwo')}

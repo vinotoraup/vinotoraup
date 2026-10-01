@@ -3,11 +3,11 @@ import { cva, type VariantProps } from 'class-variance-authority';
 import { cn } from 'cn';
 
 const titleVariants = cva(
-  'font-normal [&_span]:italic [&_span]:text-blue-gray [&_span]:inline',
+  'font-normal [&_span]:text-blue-gray [&_span]:inline',
   {
     variants: {
       size: {
-        h1: 'text-[58px] lg:text-8xl leading-none tracking-[-2px]',
+        h1: 'text-[58px] lg:text-8xl leading-none tracking-[-2px] [&_span]:italic',
         h2: 'text-[40px] lg:text-[76px] leading-none lg:leading-[110%]',
         h3: 'text-[28px]/[110%]',
       },

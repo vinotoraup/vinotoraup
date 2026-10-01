@@ -10,16 +10,16 @@ export default async function CoverageWhatWould() {
   const t = await getTranslations('CoverageWhatWould');
 
   return (
-    <section className="lg:mb-12.5">
+    <section className="px-3.25 md:px-6">
       <div className="bg-blue-gray rounded-2xl px-4 py-6 lg:py-4 flex flex-col justify-center items-center lg:min-h-92">
         <Title
-          className="tracking-[-1.455px] [&_span]:not-italic [&_span]:text-light-gray mb-4"
+          className="tracking-[-1.455px] [&_span]:text-light-gray mb-4"
           variant="blue-gray-dark"
         >
           <span>{t('titleOne')}</span> {t('titleTwo')}
         </Title>
 
-        <Description size="2xl" className="tracking-[-0.5px] mb-8">
+        <Description className="tracking-[-0.5px] mb-8">
           {t('description')}
         </Description>
 

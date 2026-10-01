@@ -16,9 +16,10 @@ export default function Footer() {
   const pathname = usePathname();
 
   return (
-    <footer className="pt-21.25 pb-6 relative z-1">
+    <footer className="pt-33.75 pb-6 relative z-1">
+      <span className="h-12.5 absolute top-0 left-0 w-full -z-1 bg-light-gray rounded-[0_0_40px_40px] md:rounded-[0_0_500px_500px]"></span>
       <video
-        className="absolute top-0 left-0 size-full object-cover -z-1"
+        className="absolute top-0 left-0 size-full object-cover -z-2"
         src="/video/footer-video.mp4"
         autoPlay
         muted
