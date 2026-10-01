@@ -2,23 +2,27 @@ import type { ComponentPropsWithoutRef, ElementType } from 'react';
 import { cva, type VariantProps } from 'class-variance-authority';
 import { cn } from 'cn';
 
-const titleVariants = cva('font-normal', {
-  variants: {
-    size: {
-      h1: 'text-[58px] lg:text-8xl leading-none tracking-[-2px]',
-      h2: 'text-[40px] lg:text-[76px] leading-none lg:leading-[110%]',
-      h3: 'text-[28px]/[110%]',
+const titleVariants = cva(
+  'font-normal [&_span]:italic [&_span]:text-blue-gray [&_span]:inline',
+  {
+    variants: {
+      size: {
+        h1: 'text-[58px] lg:text-8xl leading-none tracking-[-2px]',
+        h2: 'text-[40px] lg:text-[76px] leading-none lg:leading-[110%]',
+        h3: 'text-[28px]/[110%]',
+      },
+      variant: {
+        black: 'text-blue',
+        'blue-gray-dark/50': 'text-blue-gray-dark/50',
+        'blue-gray-dark': 'text-blue-gray-dark',
+      },
     },
-    variant: {
-      black: 'text-blue',
-      'blue-gray-dark/50': 'text-blue-gray-dark/50',
+    defaultVariants: {
+      size: 'h2',
+      variant: 'black',
     },
-  },
-  defaultVariants: {
-    size: 'h2',
-    variant: 'black',
-  },
-});
+  }
+);
 
 type TitleSize = NonNullable<VariantProps<typeof titleVariants>['size']>;
 

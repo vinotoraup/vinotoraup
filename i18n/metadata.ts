@@ -1,13 +1,7 @@
 import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 
-export type MetaPage =
-  | 'home'
-  | 'services'
-  | 'solutions'
-  | 'process'
-  | 'company'
-  | 'contact';
+export type MetaPage = 'home';
 
 export async function getPageMetadata(page: MetaPage): Promise<Metadata> {
   const t = await getTranslations(`Meta.${page}`);

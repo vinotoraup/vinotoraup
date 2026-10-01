@@ -4,7 +4,6 @@ import Description from '@/components/Description';
 import SectionTop from '@/components/SectionTop';
 import { Button } from '@/components/ui/button';
 import { Link } from '@/i18n/navigation';
-import { contactFormHref } from '@/data/contact';
 
 const itemKeys = [
   'finTech',
@@ -19,7 +18,7 @@ export default async function HomeSupport() {
   return (
     <div className="mb-20 lg:mb-25">
       <div className="container">
-        <SectionTop />
+        <SectionTop text="Support for Financial Businesses" />
 
         <div className="space-y-1">
           {itemKeys.map((key) => (

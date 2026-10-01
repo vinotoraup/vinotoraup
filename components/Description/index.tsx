@@ -7,7 +7,9 @@ const descriptionVariants = cva('font-normal', {
     size: {
       default: 'text-base leading-[120%]',
       xs: 'text-xs',
-      '2xl': 'text-base md:text-2xl/[110%]',
+      '2xl': 'text-base md:text-2xl leading-[120%]',
+      '46': 'text-[46px]/[120%] leading-none',
+      '54': 'text-[32px] lg:text-[54px] leading-none',
     },
     variant: {
       default: 'text-blue',
