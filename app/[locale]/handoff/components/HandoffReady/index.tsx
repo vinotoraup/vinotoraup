@@ -3,8 +3,8 @@ import Title from '@/components/Title';
 import Description from '@/components/Description';
 import { Button } from '@/components/ui/button';
 import { Link } from '@/i18n/navigation';
-import ArrowRight from '@/components/Icons/ArrowRight';
 import { contactFormHref } from '@/data/contact';
+import ArrowRightSmall from '@/components/Icons/ArrowRightSmall';
 
 export default async function HandoffReady() {
   const t = await getTranslations('HandoffReady');
@@ -30,7 +30,7 @@ export default async function HandoffReady() {
             className="max-md:w-full"
           >
             {t('link')}
-            <ArrowRight color="currentColor" />
+            <ArrowRightSmall color="currentColor" />
           </Button>
         </div>
       </div>

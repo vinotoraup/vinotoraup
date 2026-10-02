@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { Separator } from '@/components/ui/separator';
 import { Button } from '@/components/ui/button';
 import { Link } from '@/i18n/navigation';
-import ArrowRight from '@/components/Icons/ArrowRight';
+import ArrowRightSmall from '@/components/Icons/ArrowRightSmall';
 
 export default async function UseCasesYourBusiness() {
   const t = await getTranslations('UseCasesYourBusiness');
@@ -50,7 +50,7 @@ export default async function UseCasesYourBusiness() {
               className="max-md:w-full"
             >
               {t('link')}
-              <ArrowRight color="currentColor" />
+              <ArrowRightSmall color="currentColor" />
             </Button>
           </div>
         </div>

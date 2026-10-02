@@ -6,15 +6,15 @@ import { Link } from '@/i18n/navigation';
 import { contactFormHref } from '@/data/contact';
 import ArrowRightSmall from '@/components/Icons/ArrowRightSmall';
 
-export default async function UseCasesWhereDoes() {
-  const t = await getTranslations('UseCasesWhereDoes');
+export default async function PeopleTellUs() {
+  const t = await getTranslations('PeopleTellUs');
 
   return (
     <section>
       <div className="container">
-        <div className="bg-blue-gray rounded-2xl px-4 py-6 lg:py-4 flex flex-col justify-center items-center lg:min-h-92">
+        <div className="bg-blue-gray rounded-2xl px-4 py-6 flex flex-col justify-center items-center lg:min-h-92">
           <Title
-            className="tracking-[-1.455px] [&_span]:text-light-gray mb-4 max-w-196.25 text-center"
+            className="tracking-[-1.455px] [&_span]:text-light-gray mb-4 text-center lg:leading-none"
             variant="blue-gray-dark"
           >
             <span>{t('titleOne')}</span> {t('titleTwo')}

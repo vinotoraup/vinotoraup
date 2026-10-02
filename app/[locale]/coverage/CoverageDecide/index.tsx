@@ -5,8 +5,8 @@ import Image from 'next/image';
 import { cn } from 'cn';
 import { Button } from '@/components/ui/button';
 import { Link } from '@/i18n/navigation';
-import ArrowRight from '@/components/Icons/ArrowRight';
 import SectionTop from '@/components/SectionTop';
+import ArrowRightSmall from '@/components/Icons/ArrowRightSmall';
 
 const items = [
   {
@@ -83,7 +83,7 @@ export default async function CoverageDecide() {
                 className="max-md:w-full"
               >
                 {t('link')}
-                <ArrowRight color="currentColor" />
+                <ArrowRightSmall color="currentColor" />
               </Button>
             </div>
           </div>

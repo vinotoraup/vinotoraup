@@ -4,8 +4,8 @@ import Description from '@/components/Description';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Link } from '@/i18n/navigation';
-import ArrowRight from '@/components/Icons/ArrowRight';
 import { Separator } from '@/components/ui/separator';
+import ArrowRightSmall from '@/components/Icons/ArrowRightSmall';
 
 export default async function CoverageKeepCustomer() {
   const t = await getTranslations('CoverageKeepCustomer');
@@ -43,7 +43,7 @@ export default async function CoverageKeepCustomer() {
                 className="max-md:w-full"
               >
                 {t('link')}
-                <ArrowRight color="currentColor" />
+                <ArrowRightSmall color="currentColor" />
               </Button>
             </div>
           </div>

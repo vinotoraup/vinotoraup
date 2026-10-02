@@ -45,6 +45,7 @@
     "descriptionTwo": "You decide what we handle, what stays in-house, and when a case comes back to your team."
   },
   "HomeLessPressure": {
+    "sectionTop": "Support for Financial Businesses",
     "finTech": {
       "title": "FinTech",
       "subTitle": "Typical customer contact:",
@@ -309,5 +310,80 @@
       "description": "Vinotoraup takes on the agreed calls and follow-ups. Requests outside the defined scope go to the person or team responsible for them."
     },
     "link": "Explore Coverage"
+  },
+  "PeoplePage": {
+    "title": "The People Behind the",
+    "titleHighlight": "Customer Conversations",
+    "description": "Vinotoraup provides call center outsourcing for financial businesses. Our role is to handle agreed customer contact with a clear understanding of what we can resolve and when your team needs to step in.",
+    "link": "Get to Know Our Approach"
+  },
+  "PeopleWeWork": {
+    "titleOne": "We Work from",
+    "titleTwo": "Your Process",
+    "description": "Customers should receive answers that fit your business. Before handling contact, we agree on the instructions, information, and next steps the team will use."
+  },
+  "PeopleClearRole": {
+    "sectionTop": "A Clear Role in Your Operation",
+    "itemOne": {
+      "title": "Agreed customer inquiries",
+      "subTitle": "Your team retains",
+      "description": "Decisions outside the agreed scope"
+    },
+    "itemTwo": {
+      "title": "Routine calls and follow-ups",
+      "subTitle": "Your team retains",
+      "description": "Specialist reviews"
+    },
+    "itemThree": {
+      "title": "Responses under your instructions",
+      "subTitle": "Your team retains",
+      "description": "Ownership of internal policies and requirements"
+    },
+    "itemFour": {
+      "title": "Escalation to the right team",
+      "subTitle": "Your team retains",
+      "description": "Final handling of escalated cases"
+    },
+    "description": "The division is set for each service you choose to outsource."
+  },
+  "PeopleInfo": {
+    "stepOne": {
+      "label": "[01]",
+      "title": "Listen",
+      "description": "Understand why the customer is getting in touch."
+    },
+    "stepTwo": {
+      "label": "[02]",
+      "title": "Respond",
+      "description": "Follow the agreed process and explain the next step clearly."
+    },
+    "stepThree": {
+      "label": "[03]",
+      "title": "Follow Through",
+      "description": "Complete the task or pass the case to the team responsible for it."
+    }
+  },
+  "PeopleBuiltFor": {
+    "itemOne": {
+      "title": "Built for Financial Customer Contact",
+      "description": "Vinotoraup supports FinTech, lending, insurance, and other financial businesses. The conversations differ, but each setup starts with the same question: what does your team need us to handle?",
+      "link": "Explore Use Cases"
+    },
+    "itemTwo": {
+      "title": "Work Together as Needs Change",
+      "description": "A new type of request may start reaching your team, or an existing process may change. The scope and instructions can be reviewed so the external team continues to work from your current requirements.",
+      "link": "See the Handoff"
+    },
+    "itemThree": {
+      "title": "Tell Us About Your Team",
+      "description": "Let us know which customer conversations your people handle today and where they need support. We’ll discuss what Vinotoraup could take on.",
+      "link": "Let’s Talk"
+    }
+  },
+  "PeopleTellUs": {
+    "titleOne": "Tell Us About",
+    "titleTwo": "Your Team",
+    "description": "Let us know which customer conversations your people handle today and where they need support. We’ll discuss what Vinotoraup could take on.",
+    "link": "Let’s Talk"
   }
 }

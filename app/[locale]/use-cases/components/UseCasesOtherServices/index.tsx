@@ -3,8 +3,8 @@ import Description from '@/components/Description';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Link } from '@/i18n/navigation';
-import ArrowRight from '@/components/Icons/ArrowRight';
 import SectionTop from '@/components/SectionTop';
+import ArrowRightSmall from '@/components/Icons/ArrowRightSmall';
 
 export default async function UseCasesOtherServices() {
   const t = await getTranslations('UseCasesOtherServices');
@@ -31,7 +31,7 @@ export default async function UseCasesOtherServices() {
               className="max-md:w-full"
             >
               {t('link')}
-              <ArrowRight color="currentColor" />
+              <ArrowRightSmall color="currentColor" />
             </Button>
           </div>
         </div>

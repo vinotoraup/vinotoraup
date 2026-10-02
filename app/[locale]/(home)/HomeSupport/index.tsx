@@ -18,13 +18,13 @@ export default async function HomeSupport() {
   return (
     <div className="mb-20 lg:mb-25">
       <div className="container">
-        <SectionTop text="Support for Financial Businesses" />
+        <SectionTop text={t('sectionTop')} />
 
-        <div className="space-y-1">
+        <div className="space-y-1 mb-10">
           {itemKeys.map((key) => (
             <div
               key={key}
-              className="px-4 md:px-2 py-4 bg-blue-gray rounded-2xl min-h-30 mb-10"
+              className="px-4 md:px-2 py-4 bg-blue-gray rounded-2xl min-h-30"
             >
               <div className="grid lg:grid-cols-[1fr_1fr] gap-4 items-center">
                 <Title
