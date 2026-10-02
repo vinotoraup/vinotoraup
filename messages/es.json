@@ -36,7 +36,32 @@
     "titleHighlight": "Next Step",
     "descriptionOne": "Your team has enough on its plate.",
     "descriptionTwo": "Vinotoraup takes customer calls and follow-ups off it.",
-    "button": "Hablemos de tus necesidades"
+    "button": "Hablemos de tus necesidades",
+    "sectionTop": "What We Can Cover",
+    "itemOne": {
+      "title": "Application Support",
+      "description": "Applications, missing information, and next steps."
+    },
+    "itemTwo": {
+      "title": "Customer Care",
+      "description": "Everyday questions and account-related requests."
+    },
+    "itemThree": {
+      "title": "Collections Support",
+      "description": "Agreed payment reminders and follow-ups."
+    },
+    "itemFour": {
+      "title": "Fraud Support",
+      "description": "Customer communication around suspicious activity and verification."
+    },
+    "itemFive": {
+      "title": "Compliance Support",
+      "description": "Customer-facing tasks under your procedures."
+    },
+    "itemSix": {
+      "title": "Complaint Handling",
+      "description": "Responses, follow-ups, and escalations."
+    }
   },
   "HomeTakeRecurring": {
     "titleOne": "Take Recurring Contact Off",

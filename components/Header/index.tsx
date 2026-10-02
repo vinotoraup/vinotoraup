@@ -122,12 +122,12 @@ export default function Header() {
             ref={menuRef}
             id="header-menu"
             className={cn(
-              'lg:max-xl:order-3 lg:max-xl:mx-auto max-lg:absolute max-lg:top-21 max-lg:z-2 max-lg:bg-white max-lg:right-4 max-lg:rounded-3xl max-lg:p-4 max-lg:w-55 flex gap-11.25 bg-light-gray/80 rounded-2xl py-2 pl-4 pr-2',
+              'lg:max-xl:order-3 lg:max-xl:mx-auto max-lg:fixed max-lg:inset-x-0 max-lg:top-21 max-lg:bottom-0 max-lg:z-2 max-lg:bg-light-gray max-lg:w-55 flex gap-10 lg:gap-11.25 bg-light-gray/80 lg:rounded-2xl lg:py-2 lg:pl-4 lg:pr-2 max-lg:flex-col max-lg:w-full max-lg:px-3.25 max-lg:pt-8',
               !open && 'max-lg:hidden'
             )}
           >
             <NavigationMenu className="flex-none">
-              <NavigationMenuList className="gap-x-11.25 gap-y-4 max-lg:flex-col max-lg:items-start">
+              <NavigationMenuList className="gap-x-11.25 gap-y-10 lg:gap-y-4 max-lg:flex-col max-lg:items-start">
                 {menu.map((item) => (
                   <NavigationMenuItem key={item.id}>
                     <NavigationMenuLink
@@ -169,17 +169,17 @@ export default function Header() {
             <button
               ref={buttonRef}
               type="button"
-              className="w-10 h-10 rounded-full flex items-center justify-center bg-blue/15 backdrop-blur-xl"
+              className="w-12.5 h-14.5 rounded-2xl flex items-center justify-center bg-blue"
               aria-label={open ? 'Close' : 'Menu'}
               aria-expanded={open}
               aria-controls="header-menu"
               onClick={() => setOpen((value) => !value)}
             >
               <Image
-                src={open ? '/close.svg' : '/icon.svg'}
+                src={open ? '/icons/close.svg' : '/icons/list.svg'}
                 alt=""
-                width={open ? 15 : 16}
-                height={open ? 13 : 16}
+                width={open ? 24 : 18}
+                height={open ? 24 : 14}
               />
             </button>
           </div>

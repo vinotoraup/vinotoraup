@@ -16,7 +16,7 @@ export default function Footer() {
   const pathname = usePathname();
 
   return (
-    <footer className="pt-33.75 pb-6 relative z-1">
+    <footer className="pt-18.5 lg:pt-33.75 pb-6 relative z-1">
       <span className="h-12.5 absolute top-0 left-0 w-full -z-1 bg-light-gray rounded-[0_0_40px_40px] md:rounded-[0_0_500px_500px]"></span>
       <video
         className="absolute top-0 left-0 size-full object-cover -z-2"
@@ -28,7 +28,7 @@ export default function Footer() {
       />
 
       <div className="container">
-        <div className="grid lg:grid-cols-[328px_397px_auto] justify-between mb-15 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-[328px_397px_auto] justify-between mb-6 lg:mb-15 gap-6">
           <div>
             <Link
               href="/"
@@ -100,14 +100,14 @@ export default function Footer() {
           Vinotoraup
         </Link>
 
-        <div className="pt-6 flex flex-wrap items-center justify-between gap-y-8 gap-x-4 max-md:justify-center">
+        <div className="pt-6 flex flex-wrap items-center justify-between gap-y-10 gap-x-4 max-md:justify-center max-lg:flex-col">
           <Description
-            className="max-w-31.5 tracking-[-1px]"
+            className="lg:max-w-31.5 tracking-[-1px] max-lg:order-2"
             variant="blue-gray-dark"
           >
             {tFooter('copyright', { year: new Date().getFullYear() })}
           </Description>
-          <ul className="flex flex-wrap gap-x-29.5 gap-y-2">
+          <ul className="grid gap-x-10 lg:gap-x-29.5 grid-cols-2 md:grid-cols-4 gap-y-10 max-lg:order-1 justify-center">
             {legalMenu.map((item) => (
               <li key={item.id}>
                 <Link
