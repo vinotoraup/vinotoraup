@@ -75,7 +75,7 @@ export default function Footer() {
                 />
               }
             >
-              Let’s Talk
+              {tFooter('contact')}
               <ArrowRightSmall />
             </Button>
 

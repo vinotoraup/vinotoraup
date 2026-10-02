@@ -255,7 +255,238 @@ export const termsConditions: PolicySection[] = [
   },
 ];
 
-export const termsConditionsEs: PolicySection[] = termsConditions;
+export const termsConditionsEs: PolicySection[] = [
+  {
+    id: 'what-vinotoraup-does',
+    title: 'Qué hace Vinotoraup',
+    paragraphs: [
+      'Vinotoraup ofrece servicios externalizados de centro de llamadas y apoyo en la atención al cliente, principalmente para empresas financieras. Según el alcance acordado, estos servicios pueden incluir atención al cliente, asistencia con solicitudes, recordatorios de pago y comunicaciones relacionadas con cobros, contacto con clientes sobre posibles fraudes, apoyo en tareas relacionadas con el cumplimiento normativo, gestión de reclamaciones, llamadas salientes y otras comunicaciones recurrentes con clientes.',
+      'Vinotoraup trabaja conforme a los procesos definidos por sus clientes. Salvo que un acuerdo escrito establezca expresamente lo contrario, Vinotoraup no ofrece productos bancarios, de crédito, seguros, inversiones, servicios de pago ni otros productos financieros regulados a los clientes de las empresas que contratan sus servicios.',
+    ],
+  },
+  {
+    id: 'who-the-services-are-for',
+    title: 'A quién van dirigidos los servicios',
+    paragraphs: [
+      'Los servicios están destinados principalmente a empresas y organizaciones. Si contactas con Vinotoraup o celebras un acuerdo en nombre de una de ellas, confirmas que tienes autorización para hacerlo.',
+    ],
+  },
+  {
+    id: 'using-the-website',
+    title: 'Uso del sitio web',
+    paragraphs: [
+      'Puedes utilizar el sitio web para conocer Vinotoraup, consultar los tipos de trabajo que realiza y contactar con el equipo sobre una posible contratación. Debes utilizarlo de forma lícita y sin interferir en su funcionamiento ni en los derechos de otras personas.',
+    ],
+    listIntro: 'En particular, no debes:',
+    list: [
+      'Enviar contenido fraudulento, engañoso, abusivo o ilícito.',
+      'Intentar acceder sin autorización a sistemas, cuentas o información.',
+      'Introducir programas maliciosos o realizar ataques que afecten a la seguridad o disponibilidad del sitio web.',
+      'Recopilar contenido o datos del sitio web mediante métodos automatizados no autorizados.',
+      'Hacerte pasar por otra persona o empresa.',
+      'Vulnerar los derechos de propiedad intelectual, privacidad o confidencialidad de terceros.',
+    ],
+    afterList: [
+      'Vinotoraup podrá limitar el acceso cuando sea razonablemente necesario para proteger el sitio web, sus operaciones o a otros usuarios.',
+    ],
+  },
+  {
+    id: 'inquiries-through-lets-talk',
+    title: 'Consultas a través de Contacto',
+    paragraphs: [
+      'La página Contacto te permite enviar una consulta indicando tu nombre, el nombre de tu empresa, tu correo electrónico de trabajo, un número de teléfono opcional y un mensaje en el que describas el apoyo que necesitas.',
+      'Enviar una consulta no crea un contrato de prestación de servicios ni garantiza que Vinotoraup asuma el trabajo. El equipo podrá solicitar más información, hablar contigo sobre tus necesidades y evaluar si puede prestar los servicios solicitados. Debes proporcionar información exacta y contar con autorización para compartirla.',
+    ],
+  },
+  {
+    id: 'quotes-and-proposals',
+    title: 'Presupuestos y propuestas',
+    paragraphs: [
+      'Un presupuesto o una propuesta pueden describir el alcance previsto, las condiciones en las que se basa la oferta, el precio y, en su caso, su plazo de validez. Las conversaciones y las estimaciones preliminares no constituyen un compromiso de prestación de servicios hasta que las partes completen el proceso de aceptación o contratación correspondiente.',
+      'El precio de un servicio puede depender del trabajo necesario, el volumen previsto de contactos, el horario de atención, el personal asignado, los idiomas, la formación, los sistemas, los procesos de trabajo y otros requisitos acordados.',
+    ],
+  },
+  {
+    id: 'the-agreement-for-your-services',
+    title: 'El acuerdo de prestación de servicios',
+    paragraphs: [
+      'El trabajo que Vinotoraup realiza para un cliente debe recogerse en un acuerdo escrito, una propuesta, un formulario de pedido, una descripción de los servicios u otro documento similar aceptado por ambas partes. Ese documento puede establecer:',
+    ],
+    list: [
+      'Las consultas de clientes y las tareas incluidas en el servicio.',
+      'Las responsabilidades de cada equipo y los momentos en que se transfieren los casos.',
+      'Las instrucciones, los procedimientos, el horario de atención, la capacidad y el personal asignado.',
+      'Las tarifas, la facturación, las condiciones de pago y los impuestos aplicables.',
+      'Los niveles de servicio o indicadores de rendimiento acordados.',
+      'Los requisitos de confidencialidad, protección de datos y seguridad.',
+      'La duración de la relación contractual y la forma en que puede modificarse o finalizarse.',
+    ],
+    afterList: [
+      'Si un documento acordado contradice estos Términos en lo relativo a la prestación de los servicios contratados, prevalecerá ese documento para la contratación correspondiente.',
+    ],
+  },
+  {
+    id: 'what-clients-need-to-provide',
+    title: 'Qué deben proporcionar los clientes',
+    paragraphs: [
+      'Los clientes deben facilitar las instrucciones, la información, los materiales, los accesos, las aprobaciones y la colaboración razonablemente necesarios para realizar el trabajo acordado. Son responsables de los productos y procesos para los que solicitan el apoyo de Vinotoraup, así como de garantizar que sus instrucciones cumplen las leyes y los requisitos aplicables a su actividad.',
+      'Vinotoraup podrá basarse en la información proporcionada por un cliente, salvo que tenga motivos razonables para cuestionar su exactitud, la autorización para proporcionarla o su licitud.',
+    ],
+  },
+  {
+    id: 'support-for-financial-businesses',
+    title: 'Apoyo a empresas financieras',
+    paragraphs: [
+      'Las referencias del sitio web a cobros, fraude, verificación, cumplimiento normativo, solicitudes y reclamaciones describen tareas de comunicación con clientes y apoyo operativo. No constituyen asesoramiento jurídico, financiero, regulatorio, de inversión, crediticio, de seguros ni en materia de cumplimiento normativo.',
+      'Las decisiones, aprobaciones, políticas y actividades reguladas siguen siendo responsabilidad del cliente, salvo en la medida en que un acuerdo escrito establezca expresamente y de forma lícita otra cosa.',
+    ],
+  },
+  {
+    id: 'lawful-instructions',
+    title: 'Instrucciones lícitas',
+    paragraphs: [
+      'Ambas partes deben cumplir sus obligaciones legales y contractuales aplicables. Vinotoraup podrá rechazar una instrucción que considere razonablemente ilícita, fraudulenta, engañosa, abusiva, contraria al alcance acordado o susceptible de generar riesgos legales o de seguridad inaceptables.',
+      'Vinotoraup podrá solicitar aclaraciones, información justificativa o cambios en un proceso propuesto antes de realizar el trabajo afectado.',
+    ],
+  },
+  {
+    id: 'confidential-information',
+    title: 'Información confidencial',
+    paragraphs: [
+      'Las conversaciones sobre los servicios y las relaciones contractuales pueden implicar el intercambio de información empresarial, técnica, operativa o de clientes de carácter confidencial. Cada parte solo debe divulgar la información recibida de la otra cuando esté autorizada, sea necesario para cumplir las obligaciones acordadas o lo exija la ley.',
+      'Un acuerdo de prestación de servicios, un acuerdo de confidencialidad u otro documento escrito pueden establecer obligaciones de confidencialidad más detalladas para una contratación concreta.',
+    ],
+  },
+  {
+    id: 'personal-data',
+    title: 'Datos personales',
+    paragraphs: [
+      [
+        'El ',
+        { href: '/privacy-notice', label: 'Aviso de privacidad' },
+        ' de Vinotoraup explica cómo se tratan los datos personales enviados directamente a través de su sitio web. Cuando Vinotoraup trata datos de clientes finales por cuenta de una empresa que contrata sus servicios, las funciones de las partes, las instrucciones, las obligaciones de seguridad y otros requisitos pueden establecerse en un acuerdo de tratamiento de datos separado o en otro contrato aplicable. Cuando la normativa de protección de datos exija un contrato con el encargado del tratamiento, dicho contrato deberá incluir las cláusulas requeridas.',
+      ],
+      'Los clientes son responsables de facilitar la información sobre privacidad que corresponda y de contar con una base jurídica adecuada para el tratamiento de los datos personales que encarguen a Vinotoraup.',
+    ],
+  },
+  {
+    id: 'website-content-and-intellectual-property',
+    title: 'Contenido del sitio web y propiedad intelectual',
+    paragraphs: [
+      'Los textos, elementos de marca, logotipos, gráficos, diseño y demás contenidos del sitio web pertenecen a Vinotoraup o se utilizan con autorización, salvo que se indique lo contrario. Puedes consultar estos materiales para fines empresariales internos habituales relacionados con la evaluación de los servicios.',
+      'No puedes reproducir, distribuir, volver a publicar, vender, licenciar ni explotar comercialmente partes sustanciales del sitio web sin autorización. Los derechos sobre los materiales creados o utilizados durante la prestación de servicios a un cliente se determinarán en el acuerdo escrito correspondiente.',
+    ],
+  },
+  {
+    id: 'external-websites-and-services',
+    title: 'Sitios web y servicios externos',
+    paragraphs: [
+      'El sitio web puede incluir enlaces a recursos gestionados por terceros. Vinotoraup no controla esos recursos y no se responsabiliza de su contenido, disponibilidad, seguridad ni políticas. Al utilizarlos, pueden aplicarse sus propias condiciones.',
+    ],
+  },
+  {
+    id: 'website-availability',
+    title: 'Disponibilidad del sitio web',
+    paragraphs: [
+      'Vinotoraup puede actualizar el contenido del sitio web o interrumpir temporalmente el acceso por tareas de mantenimiento, problemas técnicos o motivos de seguridad. No garantiza que el sitio web esté siempre disponible o libre de errores.',
+      'Las descripciones publicadas en el sitio web ofrecen información general. La disponibilidad y el alcance concreto de cada servicio dependen de los requisitos acordados para cada contratación.',
+    ],
+  },
+  {
+    id: 'engagements-and-outcomes',
+    title: 'Contrataciones y resultados',
+    paragraphs: [
+      'Vinotoraup podrá decidir si acepta una propuesta de contratación. La información del sitio web no garantiza que un servicio sea adecuado para todas las empresas.',
+      'Los tiempos de respuesta, niveles de servicio, objetivos operativos y otros compromisos medibles solo serán aplicables si figuran expresamente en el acuerdo correspondiente. La contratación de los servicios de Vinotoraup no garantiza por sí sola resultados concretos en ventas, cobros, finanzas, retención de clientes, cumplimiento normativo ni otros ámbitos empresariales.',
+    ],
+  },
+  {
+    id: 'fees-and-payment',
+    title: 'Tarifas y pagos',
+    paragraphs: [
+      'Las tarifas se establecen en el presupuesto, la propuesta, el acuerdo de prestación de servicios, el formulario de pedido u otro documento comercial aceptado que corresponda. Ese documento también puede especificar el calendario de pagos, la moneda, el proceso de facturación, los impuestos y las consecuencias de los pagos atrasados.',
+      'La información publicada en el sitio web no constituye una oferta de precio vinculante, salvo que se indique expresamente lo contrario.',
+    ],
+  },
+  {
+    id: 'ending-a-service-and-requesting-a-refund',
+    title: 'Finalización de un servicio y solicitud de reembolso',
+    paragraphs: [
+      [
+        'El acuerdo de prestación de servicios aplicable establece cómo puede un cliente cancelar o finalizar una contratación. Los créditos, reembolsos u otros ajustes de pago se gestionan conforme a ese acuerdo y a la ',
+        { href: '/refund-policy', label: 'Política de reembolsos' },
+        ', cuando esta sea aplicable.',
+      ],
+      'La preparación, la incorporación del cliente, la formación, la capacidad reservada y el trabajo ya realizado pueden influir en el importe que, en su caso, pueda reembolsarse. La decisión de dejar de utilizar un servicio no da automáticamente derecho a un reembolso.',
+    ],
+  },
+  {
+    id: 'suspension-and-termination',
+    title: 'Suspensión y terminación',
+    paragraphs: [
+      'Un servicio podrá suspenderse o finalizarse por los motivos y mediante el procedimiento establecidos en el acuerdo correspondiente. Entre esos motivos pueden figurar un incumplimiento grave, la falta de pago, un uso ilícito, problemas de seguridad o un uso indebido del servicio.',
+      'La finalización de una contratación no elimina las tarifas, los derechos, las responsabilidades ni otras obligaciones surgidas antes de su finalización. Las disposiciones previstas para seguir aplicándose después conservarán su vigencia.',
+    ],
+  },
+  {
+    id: 'liability',
+    title: 'Responsabilidad',
+    paragraphs: [
+      'En la medida permitida por la legislación aplicable, Vinotoraup no será responsable de pérdidas indirectas, incidentales, especiales, punitivas o consecuentes relacionadas con el uso del sitio web o de los servicios, incluidas las pérdidas de beneficios, ingresos, oportunidades, reputación comercial o ahorros previstos.',
+      'Un acuerdo de prestación de servicios puede establecer límites de responsabilidad adicionales, importes máximos, exclusiones, obligaciones de indemnización o una distribución de riesgos para una contratación concreta. Nada de lo dispuesto en estos Términos excluye o limita la responsabilidad cuando la legislación aplicable no lo permite.',
+    ],
+  },
+  {
+    id: 'claims-arising-from-client-instructions',
+    title: 'Reclamaciones derivadas de las instrucciones del cliente',
+    paragraphs: [
+      'En la medida permitida por la ley y el acuerdo aplicable, un cliente podrá ser responsable de las pérdidas, reclamaciones, responsabilidades o costes razonables derivados de instrucciones ilícitas, materiales que no estaba autorizado a proporcionar, vulneraciones de derechos de terceros, uso indebido de los servicios o un incumplimiento grave de sus obligaciones.',
+      'Las condiciones de indemnización más específicas, si las hubiera, se establecerán en el acuerdo de prestación de servicios correspondiente.',
+    ],
+  },
+  {
+    id: 'events-outside-reasonable-control',
+    title: 'Circunstancias fuera de un control razonable',
+    paragraphs: [
+      'Vinotoraup no será responsable de retrasos o incumplimientos causados por acontecimientos fuera de su control razonable, sin perjuicio de las condiciones distintas que pueda establecer el acuerdo de prestación de servicios aplicable. Estos acontecimientos pueden incluir fallos importantes de las telecomunicaciones, interrupciones de infraestructuras, desastres naturales, actuaciones gubernamentales, disturbios civiles o conflictos armados.',
+    ],
+  },
+  {
+    id: 'updates-to-these-terms',
+    title: 'Actualización de estos Términos',
+    paragraphs: [
+      'Vinotoraup podrá modificar estos Términos cuando cambien el sitio web, los servicios, las prácticas operativas o los requisitos aplicables. La versión actualizada se publicará en el sitio web.',
+      'Los cambios en los servicios contratados por un cliente existente seguirán sujetos a las condiciones de su acuerdo correspondiente.',
+    ],
+  },
+  {
+    id: 'governing-law-and-disputes',
+    title: 'Ley aplicable y controversias',
+    paragraphs: [
+      'Toda controversia relacionada con estos Términos o con el uso del sitio web de Vinotoraup se resolverá conforme a la ley y la jurisdicción aplicables a dicha controversia.',
+      'Si un acuerdo de prestación de servicios separado establece la ley aplicable o un procedimiento de resolución de controversias, esas disposiciones se aplicarán a la contratación correspondiente.',
+    ],
+  },
+  {
+    id: 'if-part-of-these-terms-cannot-be-enforced',
+    title: 'Si alguna disposición no puede aplicarse',
+    paragraphs: [
+      'Si una disposición se considera inválida o inaplicable, se limitará o interpretará según sea necesario conforme a la legislación aplicable. Las demás disposiciones seguirán vigentes.',
+    ],
+  },
+  {
+    id: 'contact',
+    title: 'Contacto',
+    paragraphs: [
+      [
+        'Si tienes preguntas sobre estos Términos o los servicios de Vinotoraup, utiliza el ',
+        { href: contactFormHref, label: 'formulario de contacto' },
+        ' de la página Contacto del sitio web de Vinotoraup.',
+      ],
+    ],
+  },
+];
+
 
 export function getTermsConditions(locale: string): PolicySection[] {
   return locale === 'es' ? termsConditionsEs : termsConditions;

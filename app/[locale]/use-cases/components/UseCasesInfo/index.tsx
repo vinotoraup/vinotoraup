@@ -12,7 +12,7 @@ import { Separator } from '@/components/ui/separator';
 const items = [
   {
     key: 'fintech',
-    image: 'icons/icon-unknown-one.svg',
+    image: '/icons/icon-unknown-one.svg',
     className: 'bg-blue-gray',
     textClassName: undefined,
     caretColor: undefined,
@@ -21,7 +21,7 @@ const items = [
   },
   {
     key: 'lending',
-    image: 'icons/icon-unknown-two.svg',
+    image: '/icons/icon-unknown-two.svg',
     className: 'bg-blue',
     textClassName: 'text-white',
     caretColor: 'text-light-gray',
@@ -30,7 +30,7 @@ const items = [
   },
   {
     key: 'insurance',
-    image: 'icons/icon-unknown-three.svg',
+    image: '/icons/icon-unknown-three.svg',
     className: 'bg-beige',
     textClassName: undefined,
     caretColor: undefined,

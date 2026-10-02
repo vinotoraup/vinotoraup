@@ -7,19 +7,19 @@ import Description from '@/components/Description';
 const items = [
   {
     key: 'start-with-requests',
-    image: 'icons/icon-unknown-one.svg',
+    image: '/icons/icon-unknown-one.svg',
     className: 'bg-blue-gray',
     textClassName: undefined,
   },
   {
     key: 'keep-follow-ups-moving',
-    image: 'icons/icon-unknown-two.svg',
+    image: '/icons/icon-unknown-two.svg',
     className: 'bg-blue',
     textClassName: 'text-white',
   },
   {
     key: 'cover-more-than-calls',
-    image: 'icons/icon-unknown-three.svg',
+    image: '/icons/icon-unknown-three.svg',
     className: 'bg-beige',
     textClassName: undefined,
   },

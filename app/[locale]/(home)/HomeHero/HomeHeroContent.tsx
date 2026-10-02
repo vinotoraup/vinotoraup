@@ -22,6 +22,7 @@ type HomeHeroContentProps = {
   descriptionOne: string;
   descriptionTwo: string;
   button: string;
+  servicesButton: string;
   sectionTop: string;
   items: HomeHeroItem[];
 };
@@ -32,35 +33,63 @@ export default function HomeHeroContent({
   descriptionOne,
   descriptionTwo,
   button,
+  servicesButton,
   sectionTop,
   items,
 }: HomeHeroContentProps) {
+  const rootRef = useRef<HTMLDivElement>(null);
   const [visibleCount, setVisibleCount] = useState(0);
+  const [atPageTop, setAtPageTop] = useState(true);
   const visibleCountRef = useRef(0);
+  const atPageTopRef = useRef(true);
   const stepLockRef = useRef(false);
   const total = items.length;
   const showCards = visibleCount > 0;
   const allVisible = visibleCount >= total;
+  const shouldLockScroll = atPageTop && !allVisible;
 
   useEffect(() => {
     visibleCountRef.current = visibleCount;
   }, [visibleCount]);
 
   useEffect(() => {
+    atPageTopRef.current = atPageTop;
+  }, [atPageTop]);
+
+  useEffect(() => {
+    function onScroll() {
+      setAtPageTop(window.scrollY <= 0);
+    }
+
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+    };
+  }, []);
+
+  useEffect(() => {
     const html = document.documentElement;
     const { body } = document;
-    const shouldLock = !allVisible;
 
-    html.style.overflow = shouldLock ? 'hidden' : '';
-    body.style.overflow = shouldLock ? 'hidden' : '';
+    html.style.overflow = shouldLockScroll ? 'hidden' : '';
+    body.style.overflow = shouldLockScroll ? 'hidden' : '';
 
     return () => {
       html.style.overflow = '';
       body.style.overflow = '';
     };
-  }, [allVisible]);
+  }, [shouldLockScroll]);
 
   useEffect(() => {
+    const root = rootRef.current;
+    const section = root?.closest('section') ?? root;
+
+    if (!section) {
+      return;
+    }
+
     function step(delta: 1 | -1) {
       if (stepLockRef.current) {
         return;
@@ -84,7 +113,10 @@ export default function HomeHeroContent({
     }
 
     function onWheel(event: WheelEvent) {
-      const atTop = window.scrollY <= 0;
+      if (!atPageTopRef.current) {
+        return;
+      }
+
       const count = visibleCountRef.current;
 
       if (event.deltaY > 0) {
@@ -96,21 +128,24 @@ export default function HomeHeroContent({
         return;
       }
 
-      if (event.deltaY < 0 && atTop && count > 0) {
+      if (event.deltaY < 0 && count > 0) {
         event.preventDefault();
         step(-1);
       }
     }
 
-    window.addEventListener('wheel', onWheel, { passive: false });
+    section.addEventListener('wheel', onWheel, { passive: false });
 
     return () => {
-      window.removeEventListener('wheel', onWheel);
+      section.removeEventListener('wheel', onWheel);
     };
   }, [total]);
 
   return (
-    <div className="p-16 max-lg:px-4 flex flex-col justify-between h-full">
+    <div
+      ref={rootRef}
+      className="p-16 max-lg:px-4 flex flex-col justify-between h-full"
+    >
       <div className="relative min-h-0 flex-1">
         <Title
           as="h1"
@@ -189,9 +224,11 @@ export default function HomeHeroContent({
         <Button
           className={cn('max-md:w-full', showCards && 'ml-auto')}
           size="48"
-          render={<Link href={contactFormHref} />}
+          render={
+            <Link href={showCards ? '/coverage' : contactFormHref} />
+          }
         >
-          {button}
+          {showCards ? servicesButton : button}
           <ArrowRight color="currentColor" />
         </Button>
       </div>

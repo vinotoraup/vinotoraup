@@ -1,488 +1,510 @@
 {
   "Menu": {
     "home": "Inicio",
-    "coverage": "Cobertura",
-    "use-cases": "Casos de uso",
-    "handoff": "Transferencia",
+    "coverage": "Servicios",
+    "use-cases": "Sectores",
+    "handoff": "Cómo trabajamos",
     "people": "Equipo",
     "descriptions": {
-      "coverage": "Customer operations we handle",
-      "handoff": "How work moves to our team",
-      "use-cases": "Support across financial sectors",
-      "people": "The team behind Vinotoraup"
+      "coverage": "Gestiones con clientes que atendemos",
+      "handoff": "Cómo transferimos las tareas a nuestro equipo",
+      "use-cases": "Atención al cliente en distintos sectores financieros",
+      "people": "Las personas detrás de Vinotoraup"
     }
   },
   "Header": {
-    "quote": "Solicitar presupuesto"
+    "quote": "Cuéntanos qué necesitas"
   },
   "Footer": {
-    "description": "Atención al cliente y soluciones BPO para empresas financieras.",
-    "copyright": "© {year} Call Center Inp. Todos los derechos reservados."
+    "description": "Atendemos las consultas de los clientes de empresas financieras.",
+    "contact": "Contacto",
+    "copyright": "© {year} Vinotoraup. Todos los derechos reservados."
   },
   "Legal": {
-    "terms-conditions": "Terms of Service",
-    "privacy-policy": "Privacy Notice",
-    "refund-policy": "Refund Policy",
-    "cookie-policy": "Cookie Notice"
+    "terms-conditions": "Términos del servicio",
+    "privacy-policy": "Aviso de privacidad",
+    "refund-policy": "Política de reembolsos",
+    "cookie-policy": "Aviso de cookies"
   },
   "Meta": {
     "home": {
-      "title": "Servicios de externalización de call center | Cinpc",
-      "description": "Externaliza la atención al cliente y las operaciones BPO financieras con Cinpc. Obtén soporte flexible de call center adaptado a los flujos de trabajo de tu empresa."
+      "title": "Externalización de atención al cliente financiero | Vinotoraup",
+      "description": "Vinotoraup atiende llamadas y hace seguimiento para empresas financieras. Decide qué consultas delegar y libera tiempo para tu equipo."
+    },
+    "coverage": {
+      "title": "Servicios de atención al cliente financiero | Vinotoraup",
+      "description": "Atención al cliente, solicitudes, cobros, posibles fraudes, cumplimiento normativo y reclamaciones. Elige qué gestiones delegar a Vinotoraup."
+    },
+    "use-cases": {
+      "title": "Atención al cliente para el sector financiero | Vinotoraup",
+      "description": "Descubre cómo Vinotoraup atiende consultas de clientes de empresas FinTech, de préstamos, de seguros y de otros servicios financieros."
+    },
+    "handoff": {
+      "title": "Cómo funciona la externalización de atención al cliente | Vinotoraup",
+      "description": "Descubre cómo Vinotoraup define las tareas, prepara las instrucciones, atiende las consultas acordadas y deriva casos a tu equipo."
+    },
+    "people": {
+      "title": "Sobre Vinotoraup | Equipo de atención al cliente financiero",
+      "description": "Conoce cómo el equipo de Vinotoraup responde a las consultas, sigue tus instrucciones y trabaja con empresas financieras."
+    },
+    "lets-talk": {
+      "title": "Contacta con Vinotoraup | Atención al cliente externalizada",
+      "description": "Cuéntanos con qué llamadas y tareas de seguimiento necesita ayuda tu empresa financiera. Envía tu solicitud para hablar del servicio."
     }
   },
   "HomeHero": {
-    "title": "Dale un destino a cada llamada",
-    "titleHighlight": "Next Step",
-    "descriptionOne": "Your team has enough on its plate.",
-    "descriptionTwo": "Vinotoraup takes customer calls and follow-ups off it.",
-    "button": "Hablemos de tus necesidades",
-    "sectionTop": "What We Can Cover",
+    "title": "Cada consulta de un cliente necesita una",
+    "titleHighlight": "respuesta",
+    "descriptionOne": "Tu equipo ya tiene bastante trabajo.",
+    "descriptionTwo": "Vinotoraup se encarga de las llamadas de los clientes y de hacer el seguimiento.",
+    "button": "Cuéntanos qué necesitas",
+    "sectionTop": "En qué podemos ayudarte",
+    "servicesButton": "Ver todos los servicios",
     "itemOne": {
-      "title": "Application Support",
-      "description": "Applications, missing information, and next steps."
+      "title": "Asistencia con solicitudes",
+      "description": "Consultas sobre solicitudes, información pendiente y próximos pasos."
     },
     "itemTwo": {
-      "title": "Customer Care",
-      "description": "Everyday questions and account-related requests."
+      "title": "Atención al cliente",
+      "description": "Consultas habituales y solicitudes relacionadas con las cuentas."
     },
     "itemThree": {
-      "title": "Collections Support",
-      "description": "Agreed payment reminders and follow-ups."
+      "title": "Gestión de cobros",
+      "description": "Recordatorios de pago y seguimiento según lo acordado."
     },
     "itemFour": {
-      "title": "Fraud Support",
-      "description": "Customer communication around suspicious activity and verification."
+      "title": "Atención ante posibles fraudes",
+      "description": "Comunicación con los clientes sobre actividades sospechosas y procesos de verificación."
     },
     "itemFive": {
-      "title": "Compliance Support",
-      "description": "Customer-facing tasks under your procedures."
+      "title": "Asistencia en cumplimiento normativo",
+      "description": "Gestiones con clientes conforme a tus procedimientos."
     },
     "itemSix": {
-      "title": "Complaint Handling",
-      "description": "Responses, follow-ups, and escalations."
+      "title": "Gestión de reclamaciones",
+      "description": "Respuestas, seguimiento y derivación de casos."
     }
   },
   "HomeTakeRecurring": {
-    "titleOne": "Take Recurring Contact Off",
-    "titleTwo": "Your Team’s Desk",
-    "descriptionOne": "When routine calls and follow-ups fill the day, Vinotoraup can take on the work you choose to outsource.",
-    "descriptionTwo": "You decide what we handle, what stays in-house, and when a case comes back to your team."
+    "titleOne": "Libera a tu equipo de las",
+    "titleTwo": "consultas recurrentes",
+    "descriptionOne": "Cuando las llamadas habituales y las tareas de seguimiento ocupan gran parte del día, Vinotoraup puede encargarse de las que decidas externalizar.",
+    "descriptionTwo": "Tú defines qué atendemos, qué gestiona tu equipo y cuándo debemos devolverle un caso."
   },
   "HomeLessPressure": {
-    "sectionTop": "Support for Financial Businesses",
+    "sectionTop": "Atención al cliente para empresas financieras",
     "finTech": {
       "title": "FinTech",
-      "subTitle": "Typical customer contact:",
-      "description": "Accounts, products, and verification"
-    },
-    "lending": {
-      "title": "Lending",
-      "subTitle": "Typical customer contact:",
-      "description": "Applications, borrower questions, and payments"
-    },
-    "insurance": {
-      "title": "Insurance",
-      "subTitle": "Typical customer contact:",
-      "description": "Customer requests, follow-ups, and complaints"
-    },
-    "financialServices": {
-      "title": "Financial services",
-      "subTitle": "Typical customer contact:",
-      "description": "Recurring support across existing operations"
-    },
-    "link": "Explore Use Cases"
-  },
-  "HomeHandoff": {
-    "fintech": {
-      "title": "FinTech",
-      "description": "Gestiona la comunicación con los clientes sobre productos y servicios financieros digitales.",
-      "link": "Ver cómo funciona el Handoff"
+      "subTitle": "Consultas habituales de los clientes:",
+      "description": "Cuentas, productos y verificación"
     },
     "lending": {
       "title": "Préstamos",
-      "description": "Mantén en marcha las consultas de los prestatarios, los seguimientos y el contacto habitual.",
-      "link": "Conoce Vinotoraup"
+      "subTitle": "Consultas habituales de los clientes:",
+      "description": "Solicitudes, consultas de los prestatarios y pagos"
     },
     "insurance": {
       "title": "Seguros",
-      "description": "Atiende a los clientes con sus consultas, solicitudes y comunicaciones continuas.",
-      "link": "Inicia la conversación"
+      "subTitle": "Consultas habituales de los clientes:",
+      "description": "Solicitudes de clientes, seguimiento y reclamaciones"
+    },
+    "financialServices": {
+      "title": "Servicios financieros",
+      "subTitle": "Consultas habituales de los clientes:",
+      "description": "Atención recurrente en las operaciones habituales"
+    },
+    "link": "Explorar sectores"
+  },
+  "HomeHandoff": {
+    "fintech": {
+      "title": "Una transferencia de tareas adaptada a tus reglas",
+      "description": "Antes de empezar, acordamos las tareas, los procesos de trabajo y cuándo debemos derivar un caso a tu equipo. Después podemos ajustar el alcance si cambian el volumen de consultas o tus prioridades.",
+      "link": "Descubre cómo trabajamos"
+    },
+    "lending": {
+      "title": "Personas detrás de cada respuesta",
+      "description": "Con Vinotoraup, tus clientes tienen a quién dirigirse y tu equipo sabe cómo delegar las tareas recurrentes. Cada conversación se atiende según el proceso acordado con tu empresa.",
+      "link": "Conoce a Vinotoraup"
+    },
+    "insurance": {
+      "title": "¿Qué consultas se acumulan en tu equipo?",
+      "description": "Cuéntanos qué llamadas y tareas de seguimiento le ocupan más tiempo. Te ayudaremos a identificar cuáles puede asumir Vinotoraup.",
+      "link": "Hablemos"
     }
   },
   "coveragePage": {
-    "title": "Coverage for the Calls",
-    "titleHighlight": "That Keep Coming",
-    "description": "A customer needs an update. Another has a payment question. A third cannot finish an application. Vinotoraup takes on the customer contact you choose to move outside your team.",
-    "link": "Plan Your Coverage"
+    "title": "Atención para las consultas",
+    "titleHighlight": "que no dejan de llegar",
+    "description": "Un cliente necesita saber cómo va su caso. Otro tiene una duda sobre un pago. Un tercero no puede completar una solicitud. Vinotoraup se encarga de las consultas que decidas delegar.",
+    "link": "Define qué necesitas"
   },
   "CoverageWhatHandle": {
-    "sectionTop": "What We Handle",
+    "sectionTop": "Qué gestiona nuestro equipo",
     "customerCare": {
-      "title": "Customer Care",
-      "description": "Everyday questions and account-related requests"
+      "title": "Atención al cliente",
+      "description": "Consultas habituales y solicitudes relacionadas con las cuentas"
     },
     "application": {
-      "title": "Application Support",
-      "description": "Missing information, status questions, and next steps"
+      "title": "Asistencia con solicitudes",
+      "description": "Información pendiente, consultas sobre el estado de las solicitudes y próximos pasos"
     },
     "collections": {
-      "title": "Collections Support",
-      "description": "Agreed payment reminders and follow-ups"
+      "title": "Gestión de cobros",
+      "description": "Recordatorios de pago y seguimiento según lo acordado"
     },
     "fraud": {
-      "title": "Fraud Support",
-      "description": "Suspicious activity and verification communication"
+      "title": "Atención ante posibles fraudes",
+      "description": "Comunicación sobre actividades sospechosas y procesos de verificación"
     },
     "compliance": {
-      "title": "Compliance Support",
-      "description": "Routine contact under your procedures"
+      "title": "Asistencia en cumplimiento normativo",
+      "description": "Comunicaciones habituales con los clientes conforme a tus procedimientos"
     },
     "complaint": {
-      "title": "Complaint Handling",
-      "description": "Responses, follow-ups, and escalation"
+      "title": "Gestión de reclamaciones",
+      "description": "Respuestas, seguimiento y derivación de casos"
     }
   },
   "CoverageStartRequest": {
     "start-with-requests": {
-      "title": "Start with Incoming Requests",
-      "description": "When customers reach out, they need to know someone has picked up the issue. Our team handles requests within the agreed scope and routes cases that need an internal decision to yours."
+      "title": "Empieza por las consultas entrantes",
+      "description": "Cuando un cliente se pone en contacto, necesita saber que alguien se está ocupando de su consulta. Nuestro equipo atiende las solicitudes dentro del alcance acordado y deriva al tuyo los casos que requieren una decisión interna."
     },
     "keep-follow-ups-moving": {
-      "title": "Keep Follow-Ups Moving",
-      "description": "Some conversations begin with your business. Vinotoraup can handle agreed reminders, information requests, and customer updates so open tasks have a next step."
+      "title": "Mantén al día las tareas de seguimiento",
+      "description": "Algunas conversaciones las inicia tu empresa. Vinotoraup puede encargarse de los recordatorios acordados, solicitar información y comunicar novedades a los clientes para que los casos abiertos sigan avanzando."
     },
     "cover-more-than-calls": {
-      "title": "Cover More Than Calls",
-      "description": "Customer contact can include calls and other agreed communication channels. We define the channels and the work involved before the service begins."
+      "title": "Más allá de las llamadas",
+      "description": "La atención al cliente puede incluir llamadas y otros canales de comunicación acordados. Definimos los canales y las tareas antes de comenzar el servicio."
     }
   },
   "CoverageDecide": {
-    "sectionTop": "Decide What Stays with You",
-    "titleOne": "You set the limits of",
-    "titleTwo": "our role:",
+    "sectionTop": "Decide qué gestiona tu equipo",
+    "titleOne": "Tú defines los límites de",
+    "titleTwo": "nuestra labor:",
     "requests-we-can-handle": {
-      "title": "Which",
-      "description": "requests we can handle"
+      "title": "Qué",
+      "description": "solicitudes podemos atender"
     },
     "a-case-must-be-escalated": {
-      "title": "When",
-      "description": "a case must be escalated"
+      "title": "Cuándo",
+      "description": "debemos derivar un caso"
     },
     "information-we-can-provide": {
-      "title": "What",
-      "description": "information we can provide"
+      "title": "Qué",
+      "description": "información podemos proporcionar"
     },
     "owns-the-next-step": {
-      "title": "Who",
-      "description": "owns the next step"
+      "title": "Quién",
+      "description": "se encarga del siguiente paso"
     },
-    "link": "Explore the Handoff"
+    "link": "Descubre cómo trabajamos"
   },
   "CoverageKeepCustomer": {
-    "titleOne": "Keep the",
-    "titleTwo": "Customer Journey Connected",
-    "description": "One customer may contact you about an application, then need a verification or a follow-up. Covering several functions together can reduce unnecessary transfers between separate support queues.",
-    "link": "See the Use Cases"
+    "titleOne": "Una atención continua",
+    "titleTwo": "para cada cliente",
+    "description": "Un cliente puede consultar primero por una solicitud y después necesitar una verificación o una llamada de seguimiento. Si un mismo equipo atiende varias de estas tareas, se evitan derivaciones innecesarias entre distintos equipos de atención.",
+    "link": "Ver los sectores"
   },
   "CoverageChangeScope": {
-    "titleOne": "Change the Scope",
-    "titleTwo": "When You Need To",
-    "description": "Begin with the work taking up the most time. If contact volumes or customer needs change, review which tasks Vinotoraup covers."
+    "titleOne": "Ajusta el alcance",
+    "titleTwo": "cuando lo necesites",
+    "description": "Empieza por las tareas que más tiempo le quitan a tu equipo. Si cambia el volumen de consultas o lo que necesitan tus clientes, puedes revisar qué gestiones atiende Vinotoraup."
   },
   "CoverageWhatWould": {
-    "titleOne": "What Would",
-    "titleTwo": "You Move First?",
-    "description": "Tell us which customer conversations arrive most often and where your team needs more capacity.",
-    "link": "Talk Through Your Needs"
+    "titleOne": "¿Qué delegarías",
+    "titleTwo": "primero?",
+    "description": "Cuéntanos qué consultas recibes con más frecuencia y en qué tareas tu equipo necesita apoyo.",
+    "link": "Cuéntanos qué necesitas"
   },
   "UseCasesPage": {
-    "title": "The Reason for the Call",
-    "titleHighlight": "Changes the Work",
-    "description": "A borrower asking about a payment needs a different response from a customer checking an application. Vinotoraup covers the conversations that come up across financial services, following the process set by each business.",
-    "link": "Tell Us About Your Customers"
+    "title": "Cada consulta requiere una",
+    "titleHighlight": "respuesta diferente",
+    "description": "Un prestatario que pregunta por un pago necesita una respuesta distinta de la de un cliente que quiere saber en qué estado está su solicitud. Vinotoraup atiende estas consultas en distintos sectores financieros y sigue los procedimientos de cada empresa.",
+    "link": "Cuéntanos sobre tus clientes"
   },
   "UseCasesInfo": {
     "fintech": {
       "title": "FinTech",
-      "description": "Digital products can generate questions at any point in the customer journey.",
-      "itemOne": "Account and product questions",
-      "itemTwo": "Verification requests",
-      "itemThree": "Application follow-ups",
-      "itemFour": "Complaints requiring a response",
-      "descriptionAfter": "Vinotoraup handles the agreed communication and passes decisions outside its scope to your team."
+      "description": "Los productos digitales pueden generar dudas en cualquier momento de la relación con el cliente.",
+      "itemOne": "Consultas sobre cuentas y productos",
+      "itemTwo": "Solicitudes de verificación",
+      "itemThree": "Seguimiento de solicitudes",
+      "itemFour": "Reclamaciones que requieren respuesta",
+      "descriptionAfter": "Vinotoraup se encarga de las comunicaciones acordadas y deriva a tu equipo las decisiones que quedan fuera de su ámbito de actuación."
     },
     "lending": {
-      "title": "Lending",
-      "description": "Borrowers may need help before an application is complete and long after a loan is issued.",
-      "itemOne": "Application questions and missing information",
-      "itemTwo": "Payment reminders",
-      "itemThree": "Account-related inquiries",
-      "itemFour": "Collection follow-ups under your procedures",
-      "descriptionAfter": "The work can cover one stage or several, depending on what your team needs."
+      "title": "Préstamos",
+      "description": "Los prestatarios pueden necesitar ayuda antes de completar una solicitud y mucho después de recibir el préstamo.",
+      "itemOne": "Dudas sobre solicitudes e información pendiente",
+      "itemTwo": "Recordatorios de pago",
+      "itemThree": "Consultas sobre cuentas",
+      "itemFour": "Seguimiento de cobros conforme a tus procedimientos",
+      "descriptionAfter": "Podemos ocuparnos de una etapa o de varias, según lo que necesite tu equipo."
     },
     "insurance": {
-      "title": "Insurance",
-      "description": "Customer contact continues beyond the first policy question.",
-      "itemOne": "Routine inquiries",
-      "itemTwo": "Requests for information",
-      "itemThree": "Follow-ups on open cases",
-      "itemFour": "Complaints and escalations",
-      "descriptionAfter": "Vinotoraup follows your instructions on what can be answered and what needs specialist review."
+      "title": "Seguros",
+      "description": "Las consultas de los clientes continúan después de las primeras preguntas sobre una póliza.",
+      "itemOne": "Consultas habituales",
+      "itemTwo": "Solicitudes de información",
+      "itemThree": "Seguimiento de casos abiertos",
+      "itemFour": "Reclamaciones y derivación de casos",
+      "descriptionAfter": "Vinotoraup sigue tus instrucciones sobre qué consultas puede responder y cuáles requieren la revisión de un especialista."
     },
     "action": "Read more"
   },
   "UseCasesOtherServices": {
-    "sectionTop": "Other Financial Services",
-    "description": "Existing teams often need extra capacity for recurring contact. We can take on defined customer care, application, payment, or complaint-related tasks alongside your internal operation.",
-    "link": "View All Coverage Areas"
+    "sectionTop": "Otros servicios financieros",
+    "description": "Los equipos internos suelen necesitar apoyo para atender las consultas recurrentes. Podemos asumir tareas concretas de atención al cliente y gestiones relacionadas con solicitudes, pagos o reclamaciones, en coordinación con tu equipo.",
+    "link": "Ver todos los servicios"
   },
   "UseCasesMatchCoverage": {
-    "sectionTop": "Match Coverage to the Moment",
+    "sectionTop": "La atención que cada situación requiere",
     "itemOne": {
-      "title": "They have a question",
-      "subTitle": "Possible support",
-      "description": "Answer or route an incoming inquiry"
+      "title": "Tiene una duda",
+      "subTitle": "Cómo podemos ayudar",
+      "description": "Responder a su consulta o derivarla"
     },
     "itemTwo": {
-      "title": "They need to act",
-      "subTitle": "Possible support",
-      "description": "Request information or explain the next step"
+      "title": "Debe hacer algo",
+      "subTitle": "Cómo podemos ayudar",
+      "description": "Solicitarle información o explicarle el siguiente paso"
     },
     "itemThree": {
-      "title": "They are waiting",
-      "subTitle": "Possible support",
-      "description": "Provide an agreed update or follow-up"
+      "title": "Está esperando una respuesta",
+      "subTitle": "Cómo podemos ayudar",
+      "description": "Darle una actualización o hacer el seguimiento acordado"
     },
     "itemFour": {
-      "title": "Their case needs review",
-      "subTitle": "Possible support",
-      "description": "Escalate it to the responsible internal team"
+      "title": "Su caso requiere revisión",
+      "subTitle": "Cómo podemos ayudar",
+      "description": "Derivarlo al equipo interno responsable"
     }
   },
   "UseCasesYourBusiness": {
-    "titleOne": "Your Business Sets",
-    "titleTwo": "the Boundaries",
-    "description": "You decide which conversations Vinotoraup handles, which decisions stay in-house, and when a case moves between teams. The handoff is defined before customer contact begins.",
-    "link": "See How the Handoff Works"
+    "titleOne": "Tu empresa define",
+    "titleTwo": "los límites",
+    "description": "Tú decides qué consultas atiende Vinotoraup, qué decisiones corresponden a tu equipo y cuándo debe pasarle un caso. Acordamos cómo se hará esa transferencia antes de empezar a atender a tus clientes.",
+    "link": "Descubre cómo trabajamos"
   },
   "UseCasesWhereDoes": {
-    "titleOne": "Where Does Your Team",
-    "titleTwo": "Need Coverage?",
-    "description": "Tell us what customers contact you about and which conversations take the most time. We’ll help define a scope that fits your operation.",
-    "link": "Discuss Your Use Case"
+    "titleOne": "¿En qué necesita apoyo",
+    "titleTwo": "tu equipo?",
+    "description": "Cuéntanos por qué motivos te contactan los clientes y qué consultas llevan más tiempo. Te ayudaremos a definir las tareas que podemos asumir según las necesidades de tu empresa.",
+    "link": "Hablemos de tu caso"
   },
   "HandoffPage": {
-    "title": "Make the Handoff Clear",
-    "titleHighlight": "Before the Calls Begin",
-    "description": "Vinotoraup takes on the customer contact you agree to transfer. We define the tasks, instructions, and escalation points together so both teams know what happens when a request comes in.",
-    "link": "Talk Through Your Handoff"
+    "title": "Definamos cómo colaborar",
+    "titleHighlight": "antes de atender la primera llamada",
+    "description": "Vinotoraup se encarga de las consultas de clientes que acuerdes delegar. Definimos contigo las tareas, las instrucciones y cuándo derivar cada caso para que ambos equipos sepan qué hacer cuando llega una solicitud.",
+    "link": "Hablemos de cómo trabajar juntos"
   },
   "HandoffKeepOpen": {
-    "sectionTop": "Keep Open Cases Moving",
-    "description": "A handoff also needs a clear next step. When a case requires internal review, both teams should know who takes it over and who contacts the customer afterward."
+    "sectionTop": "Mantén en marcha los casos abiertos",
+    "description": "Cada caso derivado necesita un siguiente paso claro. Si requiere una revisión interna, ambos equipos deben saber quién se hará cargo y quién se pondrá en contacto con el cliente después."
   },
   "HandoffReviewWhat": {
-    "titleOne": "Review What",
-    "titleTwo": "Needs to Change",
-    "description": "Customer questions, volumes, and priorities can shift. We can review the scope and update the instructions or escalation points when your operation changes."
+    "titleOne": "Revisa lo que",
+    "titleTwo": "haya que ajustar",
+    "description": "Las consultas de los clientes, su volumen y tus prioridades pueden cambiar. Si cambia tu operación, podemos revisar el alcance y actualizar las instrucciones o los criterios para derivar casos."
   },
   "HandoffReady": {
-    "titleOne": "Ready to Move",
-    "titleTwo": "Part of the Queue?",
-    "description": "You can start with one type of request. Tell us what you want covered, and we’ll work through the handoff with you.",
-    "link": "Start the Conversation"
+    "titleOne": "¿Quieres delegar",
+    "titleTwo": "parte de las consultas?",
+    "description": "Puedes empezar por un solo tipo de solicitud. Cuéntanos qué quieres que atendamos y definiremos contigo cómo transferir esa tarea.",
+    "link": "Hablemos"
   },
   "HandoffInfo": {
     "stepOne": {
       "label": "[01]",
-      "title": "Show Us the Work",
-      "description": "Tell us why customers get in touch, which requests take the most time, and where follow-ups slow down. We use that picture to identify the work Vinotoraup could cover."
+      "title": "Cuéntanos qué tareas quieres delegar",
+      "description": "Explícanos por qué se ponen en contacto los clientes, qué solicitudes llevan más tiempo y dónde se retrasa el seguimiento. Así identificamos las tareas de las que podría encargarse Vinotoraup."
     },
     "stepTwo": {
       "label": "[02]",
-      "title": "Draw the Boundaries",
-      "description": "Before launch, we agree on four practical points:"
+      "title": "Definamos los límites",
+      "description": "Antes de empezar, acordamos cuatro puntos:"
     },
     "listItemOne": {
-      "title": "Requests",
-      "subTitle": "Decide together",
-      "description": "Which conversations Vinotoraup handles"
+      "title": "Solicitudes",
+      "subTitle": "Qué acordamos",
+      "description": "Qué consultas atiende Vinotoraup"
     },
     "listItemTwo": {
-      "title": "Instructions",
-      "subTitle": "Decide together",
-      "description": "What our team can say and do"
+      "title": "Instrucciones",
+      "subTitle": "Qué acordamos",
+      "description": "Qué puede decir y hacer nuestro equipo"
     },
     "listItemThree": {
-      "title": "Escalations",
-      "subTitle": "Decide together",
-      "description": "When a case returns to your team"
+      "title": "Derivaciones",
+      "subTitle": "Qué acordamos",
+      "description": "Cuándo un caso vuelve a tu equipo"
     },
     "listItemFour": {
-      "title": "Follow-ups",
-      "subTitle": "Decide together",
-      "description": "Who owns the next customer contact"
+      "title": "Seguimiento",
+      "subTitle": "Qué acordamos",
+      "description": "Quién se encarga del próximo contacto con el cliente"
     },
     "stepThree": {
       "label": "[03]",
-      "title": "Prepare the Team",
-      "description": "We put the agreed workflows, customer information, and communication instructions in place. Your team reviews the scope before Vinotoraup begins handling those requests."
+      "title": "Preparamos al equipo",
+      "description": "Establecemos los procesos acordados, la información necesaria sobre los clientes y las instrucciones para comunicarnos con ellos. Tu equipo revisa el alcance antes de que Vinotoraup empiece a atender esas solicitudes."
     },
     "stepFour": {
       "label": "[04]",
-      "title": "Start Handling Contact",
-      "description": "Vinotoraup takes on the agreed calls and follow-ups. Requests outside the defined scope go to the person or team responsible for them."
+      "title": "Empezamos a atender a los clientes",
+      "description": "Vinotoraup se encarga de las llamadas y las tareas de seguimiento acordadas. Las solicitudes que quedan fuera del alcance definido se derivan a la persona o al equipo responsable."
     },
-    "link": "Explore Coverage"
+    "link": "Ver nuestros servicios"
   },
   "PeoplePage": {
-    "title": "The People Behind the",
-    "titleHighlight": "Customer Conversations",
-    "description": "Vinotoraup provides call center outsourcing for financial businesses. Our role is to handle agreed customer contact with a clear understanding of what we can resolve and when your team needs to step in.",
-    "link": "Get to Know Our Approach"
+    "title": "Las personas que atienden",
+    "titleHighlight": "a tus clientes",
+    "description": "Vinotoraup ofrece servicios de atención al cliente externalizada para empresas financieras. Nos encargamos de las consultas acordadas, con límites claros sobre lo que podemos resolver y cuándo debe intervenir tu equipo.",
+    "link": "Conoce cómo trabajamos"
   },
   "PeopleWeWork": {
-    "titleOne": "We Work from",
-    "titleTwo": "Your Process",
-    "description": "Customers should receive answers that fit your business. Before handling contact, we agree on the instructions, information, and next steps the team will use."
+    "titleOne": "Seguimos tus",
+    "titleTwo": "procedimientos",
+    "description": "Tus clientes deben recibir respuestas acordes con la forma de trabajar de tu empresa. Antes de atenderlos, acordamos qué instrucciones seguirá nuestro equipo, qué información utilizará y cuáles serán los siguientes pasos en cada caso."
   },
   "PeopleClearRole": {
-    "sectionTop": "A Clear Role in Your Operation",
+    "sectionTop": "Un papel claro dentro de tu operación",
     "itemOne": {
-      "title": "Agreed customer inquiries",
-      "subTitle": "Your team retains",
-      "description": "Decisions outside the agreed scope"
+      "title": "Las consultas de clientes acordadas",
+      "subTitle": "Tu equipo conserva",
+      "description": "Las decisiones fuera del alcance acordado"
     },
     "itemTwo": {
-      "title": "Routine calls and follow-ups",
-      "subTitle": "Your team retains",
-      "description": "Specialist reviews"
+      "title": "Las llamadas habituales y el seguimiento",
+      "subTitle": "Tu equipo conserva",
+      "description": "La revisión de casos por especialistas"
     },
     "itemThree": {
-      "title": "Responses under your instructions",
-      "subTitle": "Your team retains",
-      "description": "Ownership of internal policies and requirements"
+      "title": "Las respuestas conforme a tus instrucciones",
+      "subTitle": "Tu equipo conserva",
+      "description": "La responsabilidad sobre las políticas y los requisitos internos"
     },
     "itemFour": {
-      "title": "Escalation to the right team",
-      "subTitle": "Your team retains",
-      "description": "Final handling of escalated cases"
+      "title": "La derivación de casos al equipo correspondiente",
+      "subTitle": "Tu equipo conserva",
+      "description": "La resolución final de los casos derivados"
     },
     "description": "The division is set for each service you choose to outsource."
   },
   "PeopleInfo": {
-    "sectionTop": "Attention at Every Stage",
+    "sectionTop": "Atención en cada etapa",
     "stepOne": {
       "label": "[01]",
-      "title": "Listen",
-      "description": "Understand why the customer is getting in touch."
+      "title": "Escuchamos",
+      "description": "Entendemos el motivo por el que el cliente se pone en contacto."
     },
     "stepTwo": {
       "label": "[02]",
-      "title": "Respond",
-      "description": "Follow the agreed process and explain the next step clearly."
+      "title": "Respondemos",
+      "description": "Seguimos el proceso acordado y explicamos con claridad cuál es el siguiente paso."
     },
     "stepThree": {
       "label": "[03]",
-      "title": "Follow Through",
-      "description": "Complete the task or pass the case to the team responsible for it."
+      "title": "Hacemos seguimiento",
+      "description": "Completamos la tarea o derivamos el caso al equipo responsable."
     }
   },
   "PeopleBuiltFor": {
     "itemOne": {
-      "title": "Built for Financial Customer Contact",
-      "description": "Vinotoraup supports FinTech, lending, insurance, and other financial businesses. The conversations differ, but each setup starts with the same question: what does your team need us to handle?",
-      "link": "Explore Use Cases"
+      "title": "Atención a clientes del sector financiero",
+      "description": "Vinotoraup trabaja con empresas FinTech, de préstamos, de seguros y de otros servicios financieros. Las consultas son distintas en cada caso, por eso empezamos con una pregunta: ¿de qué necesita encargarse nuestro equipo?",
+      "link": "Explorar sectores"
     },
     "itemTwo": {
-      "title": "Work Together as Needs Change",
-      "description": "A new type of request may start reaching your team, or an existing process may change. The scope and instructions can be reviewed so the external team continues to work from your current requirements.",
-      "link": "See the Handoff"
+      "title": "Adaptamos el trabajo a tus necesidades",
+      "description": "Puede que tu equipo empiece a recibir un nuevo tipo de solicitud o que cambie uno de tus procesos. Podemos revisar las tareas asignadas y las instrucciones para que nuestro equipo siga trabajando según tus requisitos actuales.",
+      "link": "Descubre cómo trabajamos"
     },
     "itemThree": {
-      "title": "Tell Us About Your Team",
-      "description": "Let us know which customer conversations your people handle today and where they need support. We’ll discuss what Vinotoraup could take on.",
-      "link": "Let’s Talk"
+      "title": "Cuéntanos sobre tu equipo",
+      "description": "Dinos qué consultas de clientes atiende ahora tu equipo y en cuáles necesita apoyo. Hablaremos de las tareas que podría asumir Vinotoraup.",
+      "link": "Hablemos"
     }
   },
   "PeopleTellUs": {
-    "titleOne": "Tell Us About",
-    "titleTwo": "Your Team",
-    "description": "Let us know which customer conversations your people handle today and where they need support. We’ll discuss what Vinotoraup could take on.",
-    "link": "Let’s Talk"
+    "titleOne": "Cuéntanos sobre",
+    "titleTwo": "tu equipo",
+    "description": "Dinos qué consultas de clientes atiende ahora tu equipo y en cuáles necesita apoyo. Hablaremos de las tareas que podría asumir Vinotoraup.",
+    "link": "Hablemos"
   },
   "LetsTalkHero": {
-    "titleOne": "What’s Taking Up Your",
-    "titleTwo": "Team’s Time?",
-    "description": "Tell us which customer conversations you want help with. A short description is enough to start."
+    "titleOne": "¿Qué tareas le ocupan más tiempo",
+    "titleTwo": "a tu equipo?",
+    "description": "Cuéntanos en qué consultas de clientes necesitas ayuda. Basta con una breve descripción para empezar."
   },
   "LetsTalkSendUs": {
-    "sectionTop": "Send Us Your Request",
-    "nameLabel": "Your name*",
-    "namePlaceholder": "Enter your name",
-    "companyLabel": "Company name*",
-    "companyPlaceholder": "Enter your company name",
-    "emailLabel": "Business email*",
-    "emailPlaceholder": "Enter your email address",
-    "phoneLabel": "Phone number",
-    "phonePlaceholder": "Enter your phone number",
-    "messageLabel": "Your message*",
-    "messagePlaceholder": "Tell us what customer requests you need help with",
-    "consent": "I agree to the processing of my personal data as described in the <privacy>Privacy Notice</privacy>.*",
-    "consentError": "I agree to the processing of my personal data as described in the Privacy Notice.",
-    "submit": "Send My Request"
+    "sectionTop": "Envíanos tu solicitud",
+    "nameLabel": "Tu nombre*",
+    "namePlaceholder": "Escribe tu nombre",
+    "companyLabel": "Nombre de la empresa*",
+    "companyPlaceholder": "Escribe el nombre de tu empresa",
+    "emailLabel": "Correo electrónico de trabajo*",
+    "emailPlaceholder": "Escribe tu correo electrónico",
+    "phoneLabel": "Número de teléfono",
+    "phonePlaceholder": "Escribe tu número de teléfono",
+    "messageLabel": "Tu mensaje*",
+    "messagePlaceholder": "Cuéntanos con qué consultas de clientes necesitas ayuda",
+    "consent": "Acepto el tratamiento de mis datos personales según lo descrito en el <privacy>Aviso de privacidad</privacy>.*",
+    "consentError": "Acepto el tratamiento de mis datos personales según lo descrito en el Aviso de privacidad.",
+    "submit": "Enviar mi solicitud"
   },
   "LetsTalkWhatHappens": {
-    "sectionTop": "What Happens Next?",
+    "sectionTop": "¿Qué ocurre después?",
     "stepOne": {
       "label": "[01]",
-      "title": "We Read Your Request",
-      "description": "We look at the type of customer contact you want covered."
+      "title": "Leemos tu solicitud",
+      "description": "Revisamos qué tipo de consultas de clientes quieres delegar."
     },
     "stepTwo": {
       "label": "[02]",
-      "title": "We Discuss the Details",
-      "description": "We clarify the work involved, expected volume, and any instructions your team needs us to follow."
+      "title": "Hablamos de los detalles",
+      "description": "Aclaramos qué tareas habría que atender, el volumen previsto y las instrucciones que debe seguir nuestro equipo."
     },
     "stepThree": {
       "label": "[03]",
-      "title": "We Define the Handoff",
-      "description": "We outline what Vinotoraup can handle and when a case should return to your team."
+      "title": "Definimos cómo trabajar juntos",
+      "description": "Acordamos qué puede gestionar Vinotoraup y cuándo debe devolver un caso a tu equipo."
     }
   },
   "LetsTalkStillDeciding": {
-    "titleOne": "Still Deciding What to",
-    "titleTwo": "Hand Over?",
-    "description": "You can start with the calls and follow-ups that create the most pressure. The Coverage page shows the types of work Vinotoraup can take on.",
-    "link": "Explore Coverage"
+    "titleOne": "¿Aún no sabes",
+    "titleTwo": "qué tareas delegar?",
+    "description": "Puedes empezar por las llamadas y las tareas de seguimiento que más sobrecargan a tu equipo. En la página Servicios encontrarás los tipos de trabajo que puede asumir Vinotoraup.",
+    "link": "Ver nuestros servicios"
   },
   "TermsHero": {
-    "title": "Terms of Service",
+    "title": "Términos del servicio",
     "description": [
-      "These Terms of Service apply to the website at vinotoraup.com and to inquiries about the services presented there.",
-      "By using the website or sending an inquiry, you agree to the terms that apply to those activities. If you become a client, the services will also be subject to the written agreement made between your business and Vinotoraup."
+      "Estos Términos del servicio se aplican al sitio web vinotoraup.com y a las consultas sobre los servicios que se presentan en él.",
+      "Al utilizar el sitio web o enviar una consulta, aceptas las condiciones aplicables a esas actividades. Si pasas a ser cliente, los servicios también estarán sujetos al acuerdo escrito entre tu empresa y Vinotoraup."
     ]
   },
   "PrivacyHero": {
-    "title": "Privacy Notice",
-    "descriptionIntro": "This Privacy Notice explains how Vinotoraup collects and uses personal data when you visit <website>vinotoraup.com</website>, send an inquiry, or communicate with us about our services.",
+    "title": "Aviso de privacidad",
+    "descriptionIntro": "Este Aviso de privacidad explica cómo Vinotoraup recopila y utiliza datos personales cuando visitas <website>vinotoraup.com</website>, envías una consulta o te comunicas con nosotros sobre nuestros servicios.",
     "description": [
-      "The privacy rules that apply to you may depend on your location and how your information is processed."
+      "Las normas de privacidad que te sean aplicables pueden depender de tu ubicación y de cómo se traten tus datos."
     ]
   },
   "CookieHero": {
-    "title": "Cookie Notice",
-    "descriptionIntro": "This Cookie Notice explains how Vinotoraup may use cookies and similar technologies on <website>vinotoraup.com</website>.",
+    "title": "Aviso de cookies",
+    "descriptionIntro": "Este Aviso de cookies explica cómo Vinotoraup puede utilizar cookies y tecnologías similares en <website>vinotoraup.com</website>.",
     "description": [
-      "The technologies used on the website may support its operation, security, language settings, and other features. Their availability depends on the website’s configuration."
+      "Estas tecnologías pueden contribuir al funcionamiento y la seguridad del sitio web, guardar la configuración de idioma y permitir otras funciones. Su uso depende de cómo esté configurado el sitio web."
     ]
   },
   "RefundHero": {
-    "title": "Refund Policy",
+    "title": "Política de reembolsos",
     "description": [
-      "This Refund Policy explains how Vinotoraup reviews refund requests, billing errors, credits, and payments when services are changed or ended.",
-      "Vinotoraup provides call center outsourcing services to businesses. Each engagement may involve preparation, staffing, training, reserved capacity, and ongoing customer support. The treatment of a payment therefore depends on the work agreed, the work completed, and the terms of the relevant engagement."
+      "Esta Política de reembolsos explica cómo Vinotoraup revisa las solicitudes de reembolso, los errores de facturación, los créditos y los pagos cuando un servicio se modifica o finaliza.",
+      "Vinotoraup presta servicios de atención al cliente externalizada a empresas. Cada contratación puede implicar preparación, asignación de personal, formación, reserva de capacidad y atención continua a los clientes. Por ello, el tratamiento de un pago depende del trabajo acordado, del trabajo realizado y de las condiciones de la contratación correspondiente."
     ]
   }
 }

@@ -30,6 +30,7 @@ export default async function HomeHero() {
         descriptionOne={t('descriptionOne')}
         descriptionTwo={t('descriptionTwo')}
         button={t('button')}
+        servicesButton={t('servicesButton')}
         sectionTop={t('sectionTop')}
         items={itemKeys.map((key) => ({
           key,

@@ -17,6 +17,7 @@
   },
   "Footer": {
     "description": "Customer conversations covered for financial businesses.",
+    "contact": "Let’s Talk",
     "copyright": "© {year} Vinotoraup. All rights reserved."
   },
   "Legal": {
@@ -27,8 +28,28 @@
   },
   "Meta": {
     "home": {
-      "title": "Every Customer Conversation Needs a Next Step",
+      "title": "Call Center Outsourcing for Financial Businesses | Vinotoraup",
       "description": "Vinotoraup handles customer calls and follow-ups for financial businesses. Choose the conversations to outsource and keep your team focused on its work."
+    },
+    "coverage": {
+      "title": "Financial Call Center Services | Vinotoraup",
+      "description": "Explore customer care, application, collections, fraud, compliance, and complaint support. Choose which customer conversations Vinotoraup covers."
+    },
+    "use-cases": {
+      "title": "Call Center Support for Financial Services | Vinotoraup",
+      "description": "See how Vinotoraup supports customer conversations for FinTech, lending, insurance, and other financial businesses."
+    },
+    "handoff": {
+      "title": "How Call Center Outsourcing Works | Vinotoraup",
+      "description": "Learn how Vinotoraup defines customer contact, prepares instructions, handles agreed requests, and passes cases back to your team."
+    },
+    "people": {
+      "title": "About Vinotoraup | Financial Call Center Team",
+      "description": "Get to know how Vinotoraup’s team handles customer questions, follows your instructions, and supports financial businesses."
+    },
+    "lets-talk": {
+      "title": "Contact Vinotoraup | Discuss Call Center Outsourcing",
+      "description": "Tell Vinotoraup which customer calls and follow-ups your financial business needs help with. Send a request to discuss your coverage."
     }
   },
   "HomeHero": {
@@ -38,6 +59,7 @@
     "descriptionTwo": "Vinotoraup takes customer calls and follow-ups off it.",
     "button": "Tell Us What You Need",
     "sectionTop": "What We Can Cover",
+    "servicesButton": "See all services",
     "itemOne": {
       "title": "Application Support",
       "description": "Applications, missing information, and next steps."

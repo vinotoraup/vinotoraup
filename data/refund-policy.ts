@@ -175,7 +175,182 @@ export const refundPolicy: PolicySection[] = [
   },
 ];
 
-export const refundPolicyEs: PolicySection[] = refundPolicy;
+export const refundPolicyEs: PolicySection[] = [
+  {
+    id: 'when-this-policy-applies',
+    title: 'Cuándo se aplica esta Política',
+    paragraphs: [
+      'Esta Política se aplica a los pagos por los servicios de Vinotoraup, salvo que el cliente y Vinotoraup hayan acordado condiciones distintas en un acuerdo de prestación de servicios, una descripción de los trabajos, una propuesta aceptada, un formulario de pedido u otro documento escrito.',
+      'Las condiciones específicas de ese documento prevalecen sobre esta Política para la contratación correspondiente. Enviar una consulta o solicitar un presupuesto a través del sitio web no crea, por sí solo, una obligación de pago.',
+    ],
+  },
+  {
+    id: 'how-service-fees-are-determined',
+    title: 'Cómo se determinan las tarifas',
+    paragraphs: [
+      'Las tarifas pueden tener en cuenta los servicios incluidos, el personal asignado, el horario de atención, el volumen previsto de contactos, la incorporación del cliente, la formación, los procesos de trabajo y la capacidad reservada para el cliente.',
+      'Un pago no pasa a ser automáticamente reembolsable si el cliente decide más adelante reducir o interrumpir el servicio. Antes de determinar si corresponde un ajuste, Vinotoraup revisa el trabajo realizado, los recursos comprometidos, el periodo de facturación aplicable y las condiciones comerciales acordadas.',
+    ],
+  },
+  {
+    id: 'when-an-adjustment-may-be-appropriate',
+    title: 'Cuándo puede corresponder un ajuste',
+    paragraphs: [
+      'Vinotoraup puede considerar un reembolso, un reembolso parcial, un crédito o una corrección de facturación cuando:',
+    ],
+    list: [
+      'Se haya cobrado el mismo importe más de una vez.',
+      'Un cargo sea incorrecto o se haya realizado un pago por error.',
+      'No se haya prestado un servicio acordado y el importe correspondiente no se haya devengado por otro motivo ni aplicado al trabajo acordado.',
+      'Vinotoraup y el cliente acuerden un ajuste.',
+      'El acuerdo aplicable o la ley lo exijan.',
+    ],
+    afterList: [
+      'La solución adecuada puede consistir en corregir una factura, aplicar un crédito a otro importe pendiente de pago o devolver los fondos.',
+    ],
+  },
+  {
+    id: 'work-already-completed',
+    title: 'Trabajo ya realizado',
+    paragraphs: [
+      'Las tarifas correspondientes a servicios ya prestados generalmente no son reembolsables, salvo que el acuerdo aplicable o la ley establezcan lo contrario. El trabajo realizado puede incluir atención al cliente, llamadas salientes, seguimiento de pagos, asistencia con solicitudes, gestión de reclamaciones y otras tareas comprendidas en el alcance acordado.',
+      'Si un cliente ha pagado por un periodo o un conjunto de tareas que solo se ha completado en parte, el tratamiento del importe restante dependerá del acuerdo y de las circunstancias.',
+    ],
+  },
+  {
+    id: 'preparation-and-reserved-capacity',
+    title: 'Preparación y capacidad reservada',
+    paragraphs: [
+      'El trabajo puede comenzar antes de atender la primera llamada de un cliente. Es posible que Vinotoraup deba definir procesos, preparar instrucciones, formar al personal, configurar la operación o asignar personal y capacidad.',
+      'Si el cliente cancela el servicio, las tarifas correspondientes al trabajo realizado o a los recursos debidamente comprometidos pueden seguir siendo exigibles. Cualquier tarifa de preparación no reembolsable, compromiso mínimo o cargo por capacidad reservada debe comunicarse y acordarse como parte de las condiciones del servicio.',
+    ],
+  },
+  {
+    id: 'payments-made-in-advance',
+    title: 'Pagos anticipados',
+    paragraphs: [
+      'Un importe pagado por adelantado que no se haya utilizado no se pierde ni es reembolsable de forma automática. Vinotoraup revisará el acuerdo aplicable, el trabajo realizado, los recursos comprometidos, los cargos pendientes y los requisitos legales pertinentes.',
+      'Si el acuerdo exige reembolsar un saldo no utilizado, Vinotoraup lo hará conforme a sus condiciones.',
+    ],
+  },
+  {
+    id: 'cancellation-by-a-client',
+    title: 'Cancelación por parte del cliente',
+    paragraphs: [
+      'Un cliente puede solicitar la finalización de los servicios con sujeción al plazo de preaviso, compromiso mínimo, ciclo de facturación o procedimiento de terminación acordado para la contratación.',
+      'La solicitud de cancelación no elimina las tarifas ya devengadas ni los cargos por el trabajo realizado y los recursos debidamente comprometidos antes de la fecha efectiva de finalización. Si no se acordaron condiciones de cancelación específicas, Vinotoraup y el cliente revisarán la solicitud teniendo en cuenta el alcance vigente, el trabajo realizado, los recursos asignados y los importes pendientes.',
+    ],
+  },
+  {
+    id: 'changes-to-the-scope',
+    title: 'Cambios en el alcance',
+    paragraphs: [
+      'Un cliente puede solicitar cambios en los servicios, la capacidad, los procesos de trabajo u otros aspectos de la contratación. Reducir el trabajo futuro no genera automáticamente un reembolso por servicios anteriores o costes ya incurridos.',
+      'Las partes determinarán cómo afecta a las tarifas futuras cualquier cambio acordado. Todo pago en exceso o importe no utilizado que deba abonarse como crédito o devolverse conforme a las condiciones acordadas se ajustará según corresponda.',
+    ],
+  },
+  {
+    id: 'incorrect-or-duplicate-charges',
+    title: 'Cargos incorrectos o duplicados',
+    paragraphs: [
+      'Si crees que una factura o un pago es incorrecto, ponte en contacto con Vinotoraup tan pronto como sea razonablemente posible. Incluye los datos de la factura o del pago y explica el problema.',
+      'Revisaremos los registros de facturación y las condiciones del servicio aplicables. Si se confirma un error o un cargo duplicado, Vinotoraup podrá corregir la factura, emitir un crédito o reembolsar el importe correspondiente.',
+    ],
+  },
+  {
+    id: 'concerns-about-a-service',
+    title: 'Problemas relacionados con un servicio',
+    paragraphs: [
+      'Si un cliente considera que un servicio acordado no se prestó conforme a lo previsto, debe proporcionar los detalles del problema. Vinotoraup revisará el alcance, los registros del servicio, las responsabilidades y las demás circunstancias pertinentes.',
+      'Según el acuerdo y el resultado de la revisión, la solución puede consistir en corregir el problema, completar el trabajo afectado, ajustar una factura, emitir un crédito o proporcionar un reembolso parcial o total. Comunicar un problema no da automáticamente derecho a un reembolso completo.',
+    ],
+  },
+  {
+    id: 'making-a-refund-request',
+    title: 'Cómo solicitar un reembolso',
+    paragraphs: [
+      'Para ayudarnos a evaluar la solicitud, proporciona:',
+    ],
+    list: [
+      'El nombre de la empresa cliente.',
+      'El nombre y los datos de contacto de la persona que presenta la solicitud.',
+      'Los datos de la factura o del pago correspondiente.',
+      'El importe en cuestión.',
+      'El motivo de la solicitud.',
+      'Cualquier información justificativa relacionada con el problema.',
+    ],
+    afterList: [
+      'Vinotoraup podrá solicitar más detalles cuando sea razonablemente necesario.',
+    ],
+  },
+  {
+    id: 'how-requests-are-reviewed',
+    title: 'Cómo se revisan las solicitudes',
+    paragraphs: [
+      'Cada solicitud se examina teniendo en cuenta la contratación correspondiente. La revisión puede abarcar el acuerdo escrito, los registros de facturación y pago, los servicios prestados, los recursos comprometidos, los importes pagados por adelantado que no se hayan utilizado, las condiciones de cancelación y los ajustes anteriores.',
+      'Presentar una solicitud no garantiza un reembolso.',
+    ],
+  },
+  {
+    id: 'if-a-refund-is-approved',
+    title: 'Si se aprueba un reembolso',
+    paragraphs: [
+      'Por lo general, un reembolso monetario aprobado se devolverá mediante el método de pago original cuando sea razonablemente posible. Si ese método no está disponible, Vinotoraup y el cliente podrán acordar otro método adecuado.',
+      'El tiempo que tarden los fondos en aparecer puede depender del banco, del proveedor de pagos o del método utilizado. Las comisiones de transacción y las diferencias derivadas de la conversión de divisas se tratarán conforme al acuerdo aplicable y a la ley.',
+    ],
+  },
+  {
+    id: 'credits-and-invoice-corrections',
+    title: 'Créditos y correcciones de facturas',
+    paragraphs: [
+      'En algunas circunstancias, un crédito a favor del cliente o un ajuste de factura puede ser más adecuado que la devolución de fondos. Un crédito acordado puede aplicarse a servicios actuales o futuros de Vinotoraup conforme a las condiciones comerciales correspondientes.',
+      'Un crédito no equivale a un reembolso en efectivo, salvo que las partes acuerden lo contrario o lo exija la legislación aplicable.',
+    ],
+  },
+  {
+    id: 'payment-disputes-and-chargebacks',
+    title: 'Disputas sobre pagos y devoluciones de cargos',
+    paragraphs: [
+      'Si un cliente sospecha que hay un error de facturación, contactar directamente con Vinotoraup nos permite revisarlo junto con los registros de pago y del servicio correspondientes.',
+      'Iniciar una devolución de cargo u otra disputa sobre un pago no elimina una obligación de pago válida conforme al acuerdo aplicable. Al responder a una disputa, Vinotoraup podrá facilitar al banco o al proveedor de pagos los contratos, facturas y registros del servicio pertinentes. Nada de lo dispuesto en esta sección limita derechos que legalmente no puedan restringirse.',
+    ],
+  },
+  {
+    id: 'if-vinotoraup-ends-an-engagement',
+    title: 'Si Vinotoraup finaliza una contratación',
+    paragraphs: [
+      'Si Vinotoraup suspende o finaliza un servicio, el tratamiento de los pagos dependerá del motivo, del trabajo ya realizado, de los recursos comprometidos, de las obligaciones pendientes y del acuerdo aplicable.',
+      'Si Vinotoraup ha recibido un pago por servicios que no prestará y no tiene una base contractual o legal para conservar el importe no utilizado, podrá emitir el reembolso o crédito correspondiente. Si la contratación finaliza por un incumplimiento del cliente, falta de pago, instrucciones ilícitas o uso indebido del servicio, cualquier reembolso se determinará conforme al acuerdo y a la legislación aplicable.',
+    ],
+  },
+  {
+    id: 'business-services-and-return-periods',
+    title: 'Servicios para empresas y plazos de devolución',
+    paragraphs: [
+      'Vinotoraup presta servicios personalizados a empresas. Por ello, los procedimientos de devolución de productos físicos de consumo no se aplican a estos servicios.',
+      'Los derechos de cancelación y reembolso correspondientes a cada contratación se determinan según el acuerdo pertinente y los derechos imperativos establecidos por la legislación aplicable.',
+    ],
+  },
+  {
+    id: 'changes-to-this-policy',
+    title: 'Cambios en esta Política',
+    paragraphs: [
+      'Vinotoraup puede actualizar esta Política cuando cambien sus servicios, prácticas de facturación, acuerdos contractuales o requisitos aplicables. La versión actualizada estará disponible en el sitio web.',
+    ],
+  },
+  {
+    id: 'contact',
+    title: 'Contacto',
+    paragraphs: [
+      [
+        'Si tienes preguntas sobre un pago, una cancelación, un crédito o una solicitud de reembolso, utiliza el ',
+        { href: contactFormHref, label: 'formulario de contacto' },
+        ' de la página Contacto del sitio web de Vinotoraup.',
+      ],
+    ],
+  },
+];
+
 
 export function getRefundPolicy(locale: string): PolicySection[] {
   return locale === 'es' ? refundPolicyEs : refundPolicy;

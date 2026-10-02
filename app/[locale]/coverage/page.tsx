@@ -1,11 +1,17 @@
+import type { Metadata } from 'next';
 import GlobalHero from '@/components/GlobalHero';
 import { getTranslations } from 'next-intl/server';
+import { getPageMetadata } from '@/i18n/metadata';
 import CoverageWhatHandle from '@/app/[locale]/coverage/CoverageWhatHandle';
 import CoverageStartRequest from '@/app/[locale]/coverage/CoverageStartRequest';
 import CoverageDecide from '@/app/[locale]/coverage/CoverageDecide';
 import CoverageKeepCustomer from '@/app/[locale]/coverage/CoverageKeepCustomer';
 import CoverageChangeScope from '@/app/[locale]/coverage/CoverageChangeScope';
 import CoverageWhatWould from '@/app/[locale]/coverage/CoverageWhatWould';
+
+export function generateMetadata(): Promise<Metadata> {
+  return getPageMetadata('coverage');
+}
 
 export default async function CoveragePage() {
   const t = await getTranslations('coveragePage');

@@ -1,10 +1,16 @@
+import type { Metadata } from 'next';
 import GlobalHero from '@/components/GlobalHero';
 import { getTranslations } from 'next-intl/server';
+import { getPageMetadata } from '@/i18n/metadata';
 import PeopleWeWork from '@/app/[locale]/people/components/PeopleWeWork';
 import PeopleClearRole from '@/app/[locale]/people/components/PeopleClearRole';
 import PeopleInfo from '@/app/[locale]/people/components/PeopleInfo';
 import PeopleBuiltFor from '@/app/[locale]/people/components/PeopleBuiltFor';
 import PeopleTellUs from '@/app/[locale]/people/components/PeopleTellUs';
+
+export function generateMetadata(): Promise<Metadata> {
+  return getPageMetadata('people');
+}
 
 export default async function PeoplePage() {
   const t = await getTranslations('PeoplePage');

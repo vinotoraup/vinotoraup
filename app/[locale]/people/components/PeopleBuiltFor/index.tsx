@@ -11,7 +11,7 @@ import ArrowRight from '@/components/Icons/ArrowRight';
 const items = [
   {
     key: 'itemOne',
-    image: 'icons/icon-unknown-one.svg',
+    image: '/icons/icon-unknown-one.svg',
     href: '/use-cases',
     className: 'bg-blue-gray',
     textClassName: undefined,
@@ -20,7 +20,7 @@ const items = [
   },
   {
     key: 'itemTwo',
-    image: 'icons/icon-unknown-two.svg',
+    image: '/icons/icon-unknown-two.svg',
     href: '/handoff',
     className: 'bg-blue',
     textClassName: 'text-white',
@@ -29,7 +29,7 @@ const items = [
   },
   {
     key: 'itemThree',
-    image: 'icons/icon-unknown-three.svg',
+    image: '/icons/icon-unknown-three.svg',
     href: contactFormHref,
     className: 'bg-beige',
     textClassName: undefined,

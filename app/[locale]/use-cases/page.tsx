@@ -1,10 +1,16 @@
+import type { Metadata } from 'next';
 import GlobalHero from '@/components/GlobalHero';
 import { getTranslations } from 'next-intl/server';
+import { getPageMetadata } from '@/i18n/metadata';
 import UseCasesInfo from '@/app/[locale]/use-cases/components/UseCasesInfo';
 import UseCasesOtherServices from '@/app/[locale]/use-cases/components/UseCasesOtherServices';
 import UseCasesMatchCoverage from '@/app/[locale]/use-cases/components/UseCasesMatchCoverage';
 import UseCasesYourBusiness from '@/app/[locale]/use-cases/components/UseCasesYourBusiness';
 import UseCasesWhereDoes from '@/app/[locale]/use-cases/components/UseCasesWhereDoes';
+
+export function generateMetadata(): Promise<Metadata> {
+  return getPageMetadata('use-cases');
+}
 
 export default async function UseCasesPage() {
   const t = await getTranslations('UseCasesPage');
