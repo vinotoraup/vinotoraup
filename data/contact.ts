@@ -5,7 +5,7 @@ export const contact = {
 };
 
 export const contactFormId = 'start-the-conversation';
-export const contactFormHref = `/contact#${contactFormId}`;
+export const contactFormHref = `/lets-talk#${contactFormId}`;
 
 export const socials = [
   {

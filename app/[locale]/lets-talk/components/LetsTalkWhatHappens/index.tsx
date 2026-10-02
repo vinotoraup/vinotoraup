@@ -63,22 +63,21 @@ function TimelineMarker({
   );
 }
 
-export default async function PeopleInfo() {
-  const t = await getTranslations('PeopleInfo');
+export default async function LetsTalkWhatHappens() {
+  const t = await getTranslations('LetsTalkWhatHappens');
 
   return (
     <section className="mb-16 lg:mb-25 overflow-hidden">
       <div className="container">
         <SectionTop text={t('sectionTop')} />
 
-        {steps.map((step, index) => {
+        {steps.map((step) => {
           const content = (
             <div
               className={cn(
                 'mt-14',
                 step.side === 'right' && 'lg:pl-1.75',
-                step.side === 'left' && 'max-lg:order-2',
-                index < steps.length - 1 && 'mb-16'
+                step.side === 'left' && 'max-lg:order-2'
               )}
             >
               <SectionTop

@@ -16,6 +16,7 @@ const descriptionVariants = cva('font-normal', {
       default: 'text-blue',
       'blue-gray-dark/50': 'text-blue-gray-dark/50',
       'blue-gray-dark': 'text-blue-gray-dark',
+      error: 'text-[#ff0000]',
     },
   },
   defaultVariants: {

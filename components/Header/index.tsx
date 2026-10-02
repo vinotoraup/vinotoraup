@@ -150,7 +150,7 @@ export default function Header() {
                 <Link
                   href={contactFormHref}
                   onClick={() => {
-                    if (pathname === '/contact') {
+                    if (pathname === '/lets-talk') {
                       document.getElementById(contactFormId)?.scrollIntoView();
                     }
                   }}

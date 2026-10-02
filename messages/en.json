@@ -347,6 +347,7 @@
     "description": "The division is set for each service you choose to outsource."
   },
   "PeopleInfo": {
+    "sectionTop": "Attention at Every Stage",
     "stepOne": {
       "label": "[01]",
       "title": "Listen",
@@ -385,5 +386,50 @@
     "titleTwo": "Your Team",
     "description": "Let us know which customer conversations your people handle today and where they need support. We’ll discuss what Vinotoraup could take on.",
     "link": "Let’s Talk"
+  },
+  "LetsTalkHero": {
+    "titleOne": "What’s Taking Up Your",
+    "titleTwo": "Team’s Time?",
+    "description": "Tell us which customer conversations you want help with. A short description is enough to start."
+  },
+  "LetsTalkSendUs": {
+    "sectionTop": "Send Us Your Request",
+    "nameLabel": "Your name*",
+    "namePlaceholder": "Enter your name",
+    "companyLabel": "Company name*",
+    "companyPlaceholder": "Enter your company name",
+    "emailLabel": "Business email*",
+    "emailPlaceholder": "Enter your email address",
+    "phoneLabel": "Phone number",
+    "phonePlaceholder": "Enter your phone number",
+    "messageLabel": "Your message*",
+    "messagePlaceholder": "Tell us what customer requests you need help with",
+    "consent": "I agree to the processing of my personal data as described in the <privacy>Privacy Notice</privacy>.*",
+    "consentError": "I agree to the processing of my personal data as described in the Privacy Notice.",
+    "submit": "Send My Request"
+  },
+  "LetsTalkWhatHappens": {
+    "sectionTop": "What Happens Next?",
+    "stepOne": {
+      "label": "[01]",
+      "title": "We Read Your Request",
+      "description": "We look at the type of customer contact you want covered."
+    },
+    "stepTwo": {
+      "label": "[02]",
+      "title": "We Discuss the Details",
+      "description": "We clarify the work involved, expected volume, and any instructions your team needs us to follow."
+    },
+    "stepThree": {
+      "label": "[03]",
+      "title": "We Define the Handoff",
+      "description": "We outline what Vinotoraup can handle and when a case should return to your team."
+    }
+  },
+  "LetsTalkStillDeciding": {
+    "titleOne": "Still Deciding What to",
+    "titleTwo": "Hand Over?",
+    "description": "You can start with the calls and follow-ups that create the most pressure. The Coverage page shows the types of work Vinotoraup can take on.",
+    "link": "Explore Coverage"
   }
 }

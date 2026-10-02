@@ -44,7 +44,7 @@ export default function GlobalHero({
             {description}
           </Description>
 
-          <Button render={<Link href={href} />}>
+          <Button render={<Link href={href} />} size="48">
             {link}
             <ArrowRight color="currentColor" />
           </Button>

@@ -68,7 +68,7 @@ export default function Footer() {
                 <Link
                   href={contactFormHref}
                   onClick={() => {
-                    if (pathname === '/contact') {
+                    if (pathname === '/lets-talk') {
                       document.getElementById(contactFormId)?.scrollIntoView();
                     }
                   }}
