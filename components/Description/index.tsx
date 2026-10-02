@@ -9,6 +9,7 @@ const descriptionVariants = cva('font-normal', {
       xs: 'text-xs',
       '2xl': 'text-base md:text-2xl leading-[120%]',
       '46': 'text-[46px]/[120%] leading-none',
+      '48': 'text-[32px] lg:text-5xl leading-none',
       '54': 'text-[32px] lg:text-[54px] leading-none',
     },
     variant: {

@@ -245,5 +245,64 @@
     "titleTwo": "Need Coverage?",
     "description": "Tell us what customers contact you about and which conversations take the most time. We’ll help define a scope that fits your operation.",
     "link": "Discuss Your Use Case"
+  },
+  "HandoffPage": {
+    "title": "Make the Handoff Clear",
+    "titleHighlight": "Before the Calls Begin",
+    "description": "Vinotoraup takes on the customer contact you agree to transfer. We define the tasks, instructions, and escalation points together so both teams know what happens when a request comes in.",
+    "link": "Talk Through Your Handoff"
+  },
+  "HandoffKeepOpen": {
+    "sectionTop": "Keep Open Cases Moving",
+    "description": "A handoff also needs a clear next step. When a case requires internal review, both teams should know who takes it over and who contacts the customer afterward."
+  },
+  "HandoffReady": {
+    "titleOne": "Ready to Move",
+    "titleTwo": "Part of the Queue?",
+    "description": "You can start with one type of request. Tell us what you want covered, and we’ll work through the handoff with you.",
+    "link": "Start the Conversation"
+  },
+  "HandoffInfo": {
+    "stepOne": {
+      "label": "[01]",
+      "title": "Show Us the Work",
+      "description": "Tell us why customers get in touch, which requests take the most time, and where follow-ups slow down. We use that picture to identify the work Vinotoraup could cover."
+    },
+    "stepTwo": {
+      "label": "[02]",
+      "title": "Draw the Boundaries",
+      "description": "Before launch, we agree on four practical points:"
+    },
+    "listItemOne": {
+      "title": "Requests",
+      "subTitle": "Decide together",
+      "description": "Which conversations Vinotoraup handles"
+    },
+    "listItemTwo": {
+      "title": "Instructions",
+      "subTitle": "Decide together",
+      "description": "What our team can say and do"
+    },
+    "listItemThree": {
+      "title": "Escalations",
+      "subTitle": "Decide together",
+      "description": "When a case returns to your team"
+    },
+    "listItemFour": {
+      "title": "Follow-ups",
+      "subTitle": "Decide together",
+      "description": "Who owns the next customer contact"
+    },
+    "stepThree": {
+      "label": "[03]",
+      "title": "Prepare the Team",
+      "description": "We put the agreed workflows, customer information, and communication instructions in place. Your team reviews the scope before Vinotoraup begins handling those requests."
+    },
+    "stepFour": {
+      "label": "[04]",
+      "title": "Start Handling Contact",
+      "description": "Vinotoraup takes on the agreed calls and follow-ups. Requests outside the defined scope go to the person or team responsible for them."
+    },
+    "link": "Explore Coverage"
   }
 }

@@ -1,8 +1,6 @@
 import { getTranslations } from 'next-intl/server';
 import Description from '@/components/Description';
 import SectionTop from '@/components/SectionTop';
-import { Button } from '@/components/ui/button';
-import { Link } from '@/i18n/navigation';
 
 const itemKeys = ['itemOne', 'itemTwo', 'itemThree', 'itemFour'] as const;
 

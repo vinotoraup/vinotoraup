@@ -15,6 +15,7 @@ const titleVariants = cva(
         black: 'text-blue',
         'blue-gray-dark/50': 'text-blue-gray-dark/50',
         'blue-gray-dark': 'text-blue-gray-dark',
+        'blue-gray': 'text-blue-gray',
       },
     },
     defaultVariants: {
