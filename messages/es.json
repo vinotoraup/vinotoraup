@@ -425,5 +425,39 @@
       "title": "We Define the Handoff",
       "description": "We outline what Vinotoraup can handle and when a case should return to your team."
     }
+  },
+  "LetsTalkStillDeciding": {
+    "titleOne": "Still Deciding What to",
+    "titleTwo": "Hand Over?",
+    "description": "You can start with the calls and follow-ups that create the most pressure. The Coverage page shows the types of work Vinotoraup can take on.",
+    "link": "Explore Coverage"
+  },
+  "TermsHero": {
+    "title": "Terms of Service",
+    "description": [
+      "These Terms of Service apply to the website at vinotoraup.com and to inquiries about the services presented there.",
+      "By using the website or sending an inquiry, you agree to the terms that apply to those activities. If you become a client, the services will also be subject to the written agreement made between your business and Vinotoraup."
+    ]
+  },
+  "PrivacyHero": {
+    "title": "Privacy Notice",
+    "descriptionIntro": "This Privacy Notice explains how Vinotoraup collects and uses personal data when you visit <website>vinotoraup.com</website>, send an inquiry, or communicate with us about our services.",
+    "description": [
+      "The privacy rules that apply to you may depend on your location and how your information is processed."
+    ]
+  },
+  "CookieHero": {
+    "title": "Cookie Notice",
+    "descriptionIntro": "This Cookie Notice explains how Vinotoraup may use cookies and similar technologies on <website>vinotoraup.com</website>.",
+    "description": [
+      "The technologies used on the website may support its operation, security, language settings, and other features. Their availability depends on the website’s configuration."
+    ]
+  },
+  "RefundHero": {
+    "title": "Refund Policy",
+    "description": [
+      "This Refund Policy explains how Vinotoraup reviews refund requests, billing errors, credits, and payments when services are changed or ended.",
+      "Vinotoraup provides call center outsourcing services to businesses. Each engagement may involve preparation, staffing, training, reserved capacity, and ongoing customer support. The treatment of a payment therefore depends on the work agreed, the work completed, and the terms of the relevant engagement."
+    ]
   }
 }

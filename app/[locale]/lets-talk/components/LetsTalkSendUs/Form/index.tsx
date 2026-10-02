@@ -176,7 +176,7 @@ export default function LetsTalkSendUsForm() {
               {t.rich('consent', {
                 privacy: (chunks) => (
                   <Link
-                    href="/privacy-policy"
+                    href="/privacy-notice"
                     className="inline underline underline-offset-2"
                   >
                     {chunks}

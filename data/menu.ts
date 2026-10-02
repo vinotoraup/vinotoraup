@@ -25,10 +25,10 @@ export const footerMenu = getMenuItems([
 export const legalMenu: MenuItem[] = [
   {
     id: 'terms-conditions',
-    href: '/terms-conditions',
+    href: '/terms-of-service',
     label: 'Terms of Service',
   },
-  { id: 'privacy-policy', href: '/privacy-policy', label: 'Privacy Notice' },
+  { id: 'privacy-policy', href: '/privacy-notice', label: 'Privacy Notice' },
   { id: 'refund-policy', href: '/refund-policy', label: 'Refund Policy' },
-  { id: 'cookie-policy', href: '/cookie-policy', label: 'Cookie Notice' },
+  { id: 'cookie-policy', href: '/cookie-notice', label: 'Cookie Notice' },
 ];
