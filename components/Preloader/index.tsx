@@ -19,7 +19,7 @@ export default function Preloader({ svg }: PreloaderProps) {
   return (
     <div
       data-preloader=""
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black p-8"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-white p-8"
       role="status"
       aria-label="Loading"
     >

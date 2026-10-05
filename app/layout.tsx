@@ -38,18 +38,18 @@ export async function generateMetadata(): Promise<Metadata> {
   const page = await getPageMetadata('home');
 
   return {
-    metadataBase: new URL('https://cinpc.com'),
+    metadataBase: new URL('https://vinotoraup.com'),
     title: page.title,
     description: page.description,
     icons: {
       icon: '/favicon.png',
     },
     openGraph: {
-      images: ['/meta.png'],
+      images: ['/meta.jpg'],
     },
     twitter: {
       card: 'summary_large_image',
-      images: ['/meta.png'],
+      images: ['/meta.jpg'],
     },
   };
 }
