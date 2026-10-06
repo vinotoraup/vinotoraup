@@ -268,9 +268,7 @@ export const refundPolicyEs: PolicySection[] = [
   {
     id: 'making-a-refund-request',
     title: 'Cómo solicitar un reembolso',
-    paragraphs: [
-      'Para ayudarnos a evaluar la solicitud, proporciona:',
-    ],
+    paragraphs: ['Para ayudarnos a evaluar la solicitud, proporciona:'],
     list: [
       'El nombre de la empresa cliente.',
       'El nombre y los datos de contacto de la persona que presenta la solicitud.',
@@ -344,13 +342,12 @@ export const refundPolicyEs: PolicySection[] = [
     paragraphs: [
       [
         'Si tienes preguntas sobre un pago, una cancelación, un crédito o una solicitud de reembolso, utiliza el ',
-        { href: contactFormHref, label: 'formulario de contacto' },
+        { href: contactFormHref, label: 'formulario' },
         ' de la página Contacto del sitio web de Vinotoraup.',
       ],
     ],
   },
 ];
-
 
 export function getRefundPolicy(locale: string): PolicySection[] {
   return locale === 'es' ? refundPolicyEs : refundPolicy;

@@ -42,7 +42,7 @@ export default async function PeopleBuiltFor() {
   const t = await getTranslations('PeopleBuiltFor');
 
   return (
-    <div className="mb-16 lg:mb-25">
+    <div>
       <Separator className="mb-10 max-lg:hidden" />
 
       <div className="grid lg:grid-cols-3">

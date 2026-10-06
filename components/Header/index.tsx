@@ -13,7 +13,8 @@ import {
   NavigationMenuList,
 } from '@/components/ui/navigation-menu';
 import { menu } from '@/data/menu';
-import { contactFormHref, contactFormId, contact } from '@/data/contact';
+// import { contactFormHref, contactFormId, contact } from '@/data/contact';
+import { contactFormHref, contactFormId } from '@/data/contact';
 import LocaleSwitcher from '@/components/LocaleSwitcher';
 
 export default function Header() {
@@ -97,13 +98,13 @@ export default function Header() {
     >
       <div className="container">
         <div className="lg:mb-1 lg:flex lg:items-center lg:gap-4 lg:justify-end max-lg:hidden">
-          <a
-            href={`mailto:${contact.email}`}
-            className="flex items-center gap-1 text-xs leading-none tracking-[-1px] bg-light-gray rounded-lg p-2"
-          >
-            <span>✉️</span>
-            {contact.email}
-          </a>
+          {/*<a*/}
+          {/*  href={`mailto:${contact.email}`}*/}
+          {/*  className="flex items-center gap-1 text-xs leading-none tracking-[-1px] bg-light-gray rounded-lg p-2"*/}
+          {/*>*/}
+          {/*  <span>✉️</span>*/}
+          {/*  {contact.email}*/}
+          {/*</a>*/}
 
           <div className="max-lg:hidden">
             <LocaleSwitcher />

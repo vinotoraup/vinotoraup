@@ -77,7 +77,7 @@ export default function Footer() {
 
             <button
               type="button"
-              aria-label="Scroll to top"
+              aria-label={tFooter('scrollToTop')}
               className="px-2.5 py-2 border border-blue rounded-2xl"
               onClick={() => {
                 window.scrollTo({ top: 0, behavior: 'smooth' });

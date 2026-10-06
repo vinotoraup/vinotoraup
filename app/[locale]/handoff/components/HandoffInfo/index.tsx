@@ -123,7 +123,12 @@ function ListItems({
   className,
   itemClassName,
 }: {
-  items: { title: string; subTitle: string; description: string }[];
+  items: {
+    caption: string;
+    title: string;
+    subTitle: string;
+    description: string;
+  }[];
   className?: string;
   itemClassName?: string;
 }) {
@@ -138,13 +143,19 @@ function ListItems({
           )}
         >
           <div className="grid lg:grid-cols-[1fr_1fr] gap-4 items-center">
-            <Description
-              variant="blue-gray-dark/50"
-              className="tracking-[-1.455px]"
-              size="48"
-            >
-              {item.title}
-            </Description>
+            <div>
+              <Description variant="blue-gray-dark/50" className="mb-0.25">
+                {item.caption}
+              </Description>
+
+              <Description
+                variant="blue-gray-dark/50"
+                className="tracking-[-1.455px]"
+                size="48"
+              >
+                {item.title}
+              </Description>
+            </div>
             <div>
               <Description
                 className="font-medium tracking-[-1.455px]"
@@ -166,6 +177,7 @@ function ListItems({
 export default async function HandoffInfo() {
   const t = await getTranslations('HandoffInfo');
   const listItems = listKeys.map((key) => ({
+    caption: t(`${key}.caption`),
     title: t(`${key}.title`),
     subTitle: t(`${key}.subTitle`),
     description: t(`${key}.description`),

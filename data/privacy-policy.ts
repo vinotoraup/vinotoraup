@@ -78,11 +78,26 @@ export const privacyPolicy: PolicySection[] = [
       'Where applicable law requires a legal basis, the basis depends on why we use the information. We may rely on:',
     ],
     list: [
-      'Consent, where you have given valid consent to a specific activity.',
-      'Contractual necessity, where processing is needed to take requested steps before entering into a contract or to perform one.',
-      'Legitimate interests, where processing supports a lawful business purpose and your rights do not override that interest.',
-      'Legal obligations, where processing is required to comply with the law.',
-      'Legal claims, where information is needed to establish, exercise, or defend legal rights.',
+      [
+        { strong: 'Consent' },
+        ', where you have given valid consent to a specific activity.',
+      ],
+      [
+        { strong: 'Contractual necessity' },
+        ', where processing is needed to take requested steps before entering into a contract or to perform one.',
+      ],
+      [
+        { strong: 'Legitimate interests' },
+        ', where processing supports a lawful business purpose and your rights do not override that interest.',
+      ],
+      [
+        { strong: 'Legal obligations' },
+        ', where processing is required to comply with the law.',
+      ],
+      [
+        { strong: 'Legal claims' },
+        ', where information is needed to establish, exercise, or defend legal rights.',
+      ],
     ],
     afterList: [
       'More than one basis may apply to different uses of the same information.',
@@ -171,7 +186,9 @@ export const privacyPolicy: PolicySection[] = [
   {
     id: 'your-privacy-rights',
     title: 'Your Privacy Rights',
-    paragraphs: ['Depending on the law that applies to you, you may have the right to:'],
+    paragraphs: [
+      'Depending on the law that applies to you, you may have the right to:',
+    ],
     list: [
       'Access personal data held about you.',
       'Correct inaccurate or incomplete information.',
@@ -289,9 +306,7 @@ export const privacyPolicyEs: PolicySection[] = [
   {
     id: 'how-we-use-personal-data',
     title: 'Cómo utilizamos los datos personales',
-    paragraphs: [
-      'Podemos utilizar datos personales para:',
-    ],
+    paragraphs: ['Podemos utilizar datos personales para:'],
     list: [
       'Recibir consultas y responderlas.',
       'Entender qué tipo de atención al cliente necesita una empresa.',
@@ -317,11 +332,26 @@ export const privacyPolicyEs: PolicySection[] = [
       'Cuando la legislación aplicable exige una base jurídica, esta depende del motivo por el que utilizamos la información. Podemos basarnos en:',
     ],
     list: [
-      'El consentimiento, cuando hayas dado tu consentimiento válido para una actividad concreta.',
-      'La necesidad contractual, cuando el tratamiento sea necesario para adoptar las medidas que hayas solicitado antes de celebrar un contrato o para ejecutarlo.',
-      'Los intereses legítimos, cuando el tratamiento responda a una finalidad empresarial lícita y tus derechos no prevalezcan sobre ese interés.',
-      'Las obligaciones legales, cuando el tratamiento sea necesario para cumplir la ley.',
-      'Las reclamaciones legales, cuando la información sea necesaria para formular, ejercer o defender derechos.',
+      [
+        { strong: 'El consentimiento' },
+        ', cuando hayas dado tu consentimiento válido para una actividad concreta.',
+      ],
+      [
+        { strong: 'La necesidad contractual' },
+        ', cuando el tratamiento sea necesario para adoptar las medidas que hayas solicitado antes de celebrar un contrato o para ejecutarlo.',
+      ],
+      [
+        { strong: 'Los intereses legítimos' },
+        ', cuando el tratamiento responda a una finalidad empresarial lícita y tus derechos no prevalezcan sobre ese interés.',
+      ],
+      [
+        { strong: 'Las obligaciones legales' },
+        ', cuando el tratamiento sea necesario para cumplir la ley.',
+      ],
+      [
+        { strong: 'Las reclamaciones legales' },
+        ', cuando la información sea necesaria para formular, ejercer o defender derechos.',
+      ],
     ],
     afterList: [
       'Pueden aplicarse distintas bases jurídicas a diferentes usos de la misma información.',
@@ -470,13 +500,12 @@ export const privacyPolicyEs: PolicySection[] = [
     paragraphs: [
       [
         'Si tienes preguntas, solicitudes relacionadas con la privacidad o alguna inquietud, utiliza el ',
-        { href: contactFormHref, label: 'formulario de contacto' },
+        { href: contactFormHref, label: 'formulario' },
         ' de la página Contacto del sitio web de Vinotoraup.',
       ],
     ],
   },
 ];
-
 
 export function getPrivacyPolicy(locale: string): PolicySection[] {
   return locale === 'es' ? privacyPolicyEs : privacyPolicy;

@@ -20,7 +20,9 @@ export const cookiePolicy: PolicySection[] = [
   {
     id: 'why-they-may-be-used',
     title: 'Why They May Be Used',
-    paragraphs: ['Depending on the features installed, cookies may help Vinotoraup:'],
+    paragraphs: [
+      'Depending on the features installed, cookies may help Vinotoraup:',
+    ],
     list: [
       'Keep essential website functions working.',
       'Protect the website and detect misuse.',
@@ -71,7 +73,12 @@ export const cookiePolicy: PolicySection[] = [
     id: 'cookies-set-by-vinotoraup-and-third-parties',
     title: 'Cookies Set by Vinotoraup and Third Parties',
     paragraphs: [
-      'First-party cookies are set by or on behalf of the Vinotoraup website. Third-party cookies may be set or accessed through external services used on the site.',
+      [
+        { strong: 'First-party cookies' },
+        ' are set by or on behalf of the Vinotoraup website. ',
+        { strong: 'Third-party cookies' },
+        ' may be set or accessed through external services used on the site.',
+      ],
       'Depending on the tools implemented, third parties may support hosting, security, analytics, communications, or other website functions. The providers and cookies in use may change when those tools change.',
     ],
   },
@@ -218,7 +225,12 @@ export const cookiePolicyEs: PolicySection[] = [
     id: 'cookies-set-by-vinotoraup-and-third-parties',
     title: 'Cookies de Vinotoraup y de terceros',
     paragraphs: [
-      'Las cookies propias son las instaladas por el sitio web de Vinotoraup o en su nombre. Las cookies de terceros pueden instalarse o utilizarse a través de servicios externos empleados en el sitio.',
+      [
+        { strong: 'Las cookies propias' },
+        ' son las instaladas por el sitio web de Vinotoraup o en su nombre. ',
+        { strong: 'Las cookies de terceros' },
+        ' pueden instalarse o utilizarse a través de servicios externos empleados en el sitio.',
+      ],
       'Según las herramientas implementadas, los terceros pueden prestar servicios de alojamiento web, seguridad, análisis, comunicaciones u otras funciones del sitio web. Los proveedores y las cookies utilizadas pueden cambiar cuando cambien esas herramientas.',
     ],
   },
@@ -286,13 +298,12 @@ export const cookiePolicyEs: PolicySection[] = [
     paragraphs: [
       [
         'Si tienes preguntas sobre las cookies del sitio web de Vinotoraup, utiliza el ',
-        { href: contactFormHref, label: 'formulario de contacto' },
+        { href: contactFormHref, label: 'formulario' },
         ' de la página Contacto.',
       ],
     ],
   },
 ];
-
 
 export function getCookiePolicy(locale: string): PolicySection[] {
   return locale === 'es' ? cookiePolicyEs : cookiePolicy;

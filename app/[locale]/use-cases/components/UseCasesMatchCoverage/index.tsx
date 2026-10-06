@@ -18,14 +18,20 @@ export default async function UseCasesMatchCoverage() {
               key={key}
               className="px-4 lg:px-2 py-6 lg:py-4 bg-blue-gray rounded-2xl lg:min-h-30 flex flex-col justify-end"
             >
-              <div className="grid lg:grid-cols-[1fr_1fr] gap-5.5 items-center">
-                <Description
-                  variant="blue-gray-dark/50"
-                  className="tracking-[-1.455px]"
-                  size="54"
-                >
-                  {t(`${key}.title`)}
-                </Description>
+              <div className="grid lg:grid-cols-[1fr_1fr] gap-y-10 gap-x-5.5 items-center">
+                <div>
+                  <Description variant="blue-gray-dark/50" className="mb-0.25">
+                    {t(`${key}.caption`)}
+                  </Description>
+
+                  <Description
+                    variant="blue-gray-dark/50"
+                    className="tracking-[-1.455px]"
+                    size="54"
+                  >
+                    {t(`${key}.title`)}
+                  </Description>
+                </div>
                 <div>
                   <Description
                     className="font-medium"

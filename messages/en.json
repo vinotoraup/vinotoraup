@@ -18,7 +18,8 @@
   "Footer": {
     "description": "Customer conversations covered for financial businesses.",
     "contact": "Let’s Talk",
-    "copyright": "© {year} Vinotoraup. All rights reserved."
+    "copyright": "© {year} Vinotoraup. All rights reserved.",
+    "scrollToTop": "Scroll to top"
   },
   "Legal": {
     "terms-conditions": "Terms of Service",
@@ -50,6 +51,22 @@
     "lets-talk": {
       "title": "Contact Vinotoraup | Discuss Call Center Outsourcing",
       "description": "Tell Vinotoraup which customer calls and follow-ups your financial business needs help with. Send a request to discuss your coverage."
+    },
+    "terms-of-service": {
+      "title": "Terms of Service | Vinotoraup",
+      "description": "Read the terms that govern the use of the Vinotoraup website and the provision of its call center outsourcing services."
+    },
+    "privacy-notice": {
+      "title": "Privacy Notice | Vinotoraup",
+      "description": "Learn how Vinotoraup may collect, use, store, and protect personal data related to its website and call center outsourcing services."
+    },
+    "cookie-notice": {
+      "title": "Cookie Notice | Vinotoraup",
+      "description": "Learn how Vinotoraup may use cookies and similar technologies to support website functionality, security, preferences, and other features."
+    },
+    "refund-policy": {
+      "title": "Refund Policy | Vinotoraup",
+      "description": "Learn how Vinotoraup handles refund requests, billing errors, credits, and payments related to its call center outsourcing services."
     }
   },
   "HomeHero": {
@@ -59,7 +76,7 @@
     "descriptionTwo": "Vinotoraup takes customer calls and follow-ups off it.",
     "button": "Tell Us What You Need",
     "sectionTop": "What We Can Cover",
-    "servicesButton": "See all services",
+    "servicesButton": "See What We Cover",
     "itemOne": {
       "title": "Application Support",
       "description": "Applications, missing information, and next steps."
@@ -91,24 +108,28 @@
     "descriptionOne": "When routine calls and follow-ups fill the day, Vinotoraup can take on the work you choose to outsource.",
     "descriptionTwo": "You decide what we handle, what stays in-house, and when a case comes back to your team."
   },
-  "HomeLessPressure": {
+  "HomeSupport": {
     "sectionTop": "Support for Financial Businesses",
     "finTech": {
+      "caption": "Business",
       "title": "FinTech",
       "subTitle": "Typical customer contact:",
       "description": "Accounts, products, and verification"
     },
     "lending": {
+      "caption": "Business",
       "title": "Lending",
       "subTitle": "Typical customer contact:",
       "description": "Applications, borrower questions, and payments"
     },
     "insurance": {
+      "caption": "Business",
       "title": "Insurance",
       "subTitle": "Typical customer contact:",
       "description": "Customer requests, follow-ups, and complaints"
     },
     "financialServices": {
+      "caption": "Business",
       "title": "Financial services",
       "subTitle": "Typical customer contact:",
       "description": "Recurring support across existing operations"
@@ -262,21 +283,25 @@
   "UseCasesMatchCoverage": {
     "sectionTop": "Match Coverage to the Moment",
     "itemOne": {
+      "caption": "Customer moment",
       "title": "They have a question",
       "subTitle": "Possible support",
       "description": "Answer or route an incoming inquiry"
     },
     "itemTwo": {
+      "caption": "Customer moment",
       "title": "They need to act",
       "subTitle": "Possible support",
       "description": "Request information or explain the next step"
     },
     "itemThree": {
+      "caption": "Customer moment",
       "title": "They are waiting",
       "subTitle": "Possible support",
       "description": "Provide an agreed update or follow-up"
     },
     "itemFour": {
+      "caption": "Customer moment",
       "title": "Their case needs review",
       "subTitle": "Possible support",
       "description": "Escalate it to the responsible internal team"
@@ -327,21 +352,25 @@
       "description": "Before launch, we agree on four practical points:"
     },
     "listItemOne": {
+      "caption": "Define",
       "title": "Requests",
       "subTitle": "Decide together",
       "description": "Which conversations Vinotoraup handles"
     },
     "listItemTwo": {
+      "caption": "Define",
       "title": "Instructions",
       "subTitle": "Decide together",
       "description": "What our team can say and do"
     },
     "listItemThree": {
+      "caption": "Define",
       "title": "Escalations",
       "subTitle": "Decide together",
       "description": "When a case returns to your team"
     },
     "listItemFour": {
+      "caption": "Define",
       "title": "Follow-ups",
       "subTitle": "Decide together",
       "description": "Who owns the next customer contact"
@@ -372,21 +401,25 @@
   "PeopleClearRole": {
     "sectionTop": "A Clear Role in Your Operation",
     "itemOne": {
+      "caption": "Vinotoraup handles",
       "title": "Agreed customer inquiries",
       "subTitle": "Your team retains",
       "description": "Decisions outside the agreed scope"
     },
     "itemTwo": {
+      "caption": "Vinotoraup handles",
       "title": "Routine calls and follow-ups",
       "subTitle": "Your team retains",
       "description": "Specialist reviews"
     },
     "itemThree": {
+      "caption": "Vinotoraup handles",
       "title": "Responses under your instructions",
       "subTitle": "Your team retains",
       "description": "Ownership of internal policies and requirements"
     },
     "itemFour": {
+      "caption": "Vinotoraup handles",
       "title": "Escalation to the right team",
       "subTitle": "Your team retains",
       "description": "Final handling of escalated cases"
@@ -427,12 +460,6 @@
       "description": "Let us know which customer conversations your people handle today and where they need support. We’ll discuss what Vinotoraup could take on.",
       "link": "Let’s Talk"
     }
-  },
-  "PeopleTellUs": {
-    "titleOne": "Tell Us About",
-    "titleTwo": "Your Team",
-    "description": "Let us know which customer conversations your people handle today and where they need support. We’ll discuss what Vinotoraup could take on.",
-    "link": "Let’s Talk"
   },
   "LetsTalkHero": {
     "titleOne": "What’s Taking Up Your",
@@ -481,8 +508,8 @@
   },
   "TermsHero": {
     "title": "Terms of Service",
+    "descriptionIntro": "These Terms of Service apply to the website at <website>vinotoraup.com</website> and to inquiries about the services presented there.",
     "description": [
-      "These Terms of Service apply to the website at vinotoraup.com and to inquiries about the services presented there.",
       "By using the website or sending an inquiry, you agree to the terms that apply to those activities. If you become a client, the services will also be subject to the written agreement made between your business and Vinotoraup."
     ]
   },

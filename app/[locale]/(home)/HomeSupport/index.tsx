@@ -13,7 +13,7 @@ const itemKeys = [
 ] as const;
 
 export default async function HomeSupport() {
-  const t = await getTranslations('HomeLessPressure');
+  const t = await getTranslations('HomeSupport');
 
   return (
     <div className="mb-20 lg:mb-25">
@@ -27,14 +27,20 @@ export default async function HomeSupport() {
               className="px-4 md:px-2 py-4 bg-blue-gray rounded-2xl min-h-30"
             >
               <div className="grid lg:grid-cols-[1fr_1fr] gap-4 items-center">
-                <Title
-                  as="p"
-                  size="h2"
-                  variant="blue-gray-dark/50"
-                  className="text-[32px]"
-                >
-                  {t(`${key}.title`)}
-                </Title>
+                <div>
+                  <Description variant="blue-gray-dark/50" className="mb-0.25">
+                    {t(`${key}.caption`)}
+                  </Description>
+
+                  <Title
+                    as="p"
+                    size="h2"
+                    variant="blue-gray-dark/50"
+                    className="text-[32px]"
+                  >
+                    {t(`${key}.title`)}
+                  </Title>
+                </div>
                 <div>
                   <Description
                     className="font-medium"

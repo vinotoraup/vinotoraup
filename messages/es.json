@@ -18,7 +18,8 @@
   "Footer": {
     "description": "Atendemos las consultas de los clientes de empresas financieras.",
     "contact": "Contacto",
-    "copyright": "© {year} Vinotoraup. Todos los derechos reservados."
+    "copyright": "© {year} Vinotoraup. Todos los derechos reservados.",
+    "scrollToTop": "Volver arriba"
   },
   "Legal": {
     "terms-conditions": "Términos del servicio",
@@ -50,6 +51,22 @@
     "lets-talk": {
       "title": "Contacta con Vinotoraup | Atención al cliente externalizada",
       "description": "Cuéntanos con qué llamadas y tareas de seguimiento necesita ayuda tu empresa financiera. Envía tu solicitud para hablar del servicio."
+    },
+    "terms-of-service": {
+      "title": "Términos del servicio | Vinotoraup",
+      "description": "Consulta los términos que regulan el uso del sitio web de Vinotoraup y la prestación de sus servicios de atención al cliente externalizada."
+    },
+    "privacy-notice": {
+      "title": "Aviso de privacidad | Vinotoraup",
+      "description": "Descubre cómo Vinotoraup puede recopilar, utilizar, almacenar y proteger los datos personales relacionados con su sitio web y sus servicios."
+    },
+    "cookie-notice": {
+      "title": "Aviso de cookies | Vinotoraup",
+      "description": "Descubre cómo Vinotoraup puede utilizar cookies y tecnologías similares para el funcionamiento, la seguridad, las preferencias y otras funciones del sitio web."
+    },
+    "refund-policy": {
+      "title": "Política de reembolsos | Vinotoraup",
+      "description": "Descubre cómo Vinotoraup gestiona las solicitudes de reembolso, los errores de facturación, los créditos y los pagos relacionados con sus servicios."
     }
   },
   "HomeHero": {
@@ -91,24 +108,28 @@
     "descriptionOne": "Cuando las llamadas habituales y las tareas de seguimiento ocupan gran parte del día, Vinotoraup puede encargarse de las que decidas externalizar.",
     "descriptionTwo": "Tú defines qué atendemos, qué gestiona tu equipo y cuándo debemos devolverle un caso."
   },
-  "HomeLessPressure": {
+  "HomeSupport": {
     "sectionTop": "Atención al cliente para empresas financieras",
     "finTech": {
+      "caption": "Sector",
       "title": "FinTech",
       "subTitle": "Consultas habituales de los clientes:",
       "description": "Cuentas, productos y verificación"
     },
     "lending": {
+      "caption": "Sector",
       "title": "Préstamos",
       "subTitle": "Consultas habituales de los clientes:",
       "description": "Solicitudes, consultas de los prestatarios y pagos"
     },
     "insurance": {
+      "caption": "Sector",
       "title": "Seguros",
       "subTitle": "Consultas habituales de los clientes:",
       "description": "Solicitudes de clientes, seguimiento y reclamaciones"
     },
     "financialServices": {
+      "caption": "Sector",
       "title": "Servicios financieros",
       "subTitle": "Consultas habituales de los clientes:",
       "description": "Atención recurrente en las operaciones habituales"
@@ -252,7 +273,7 @@
       "itemFour": "Reclamaciones y derivación de casos",
       "descriptionAfter": "Vinotoraup sigue tus instrucciones sobre qué consultas puede responder y cuáles requieren la revisión de un especialista."
     },
-    "action": "Read more"
+    "action": "Leer más"
   },
   "UseCasesOtherServices": {
     "sectionTop": "Otros servicios financieros",
@@ -262,21 +283,25 @@
   "UseCasesMatchCoverage": {
     "sectionTop": "La atención que cada situación requiere",
     "itemOne": {
+      "caption": "Situación del cliente",
       "title": "Tiene una duda",
       "subTitle": "Cómo podemos ayudar",
       "description": "Responder a su consulta o derivarla"
     },
     "itemTwo": {
+      "caption": "Situación del cliente",
       "title": "Debe hacer algo",
       "subTitle": "Cómo podemos ayudar",
       "description": "Solicitarle información o explicarle el siguiente paso"
     },
     "itemThree": {
+      "caption": "Situación del cliente",
       "title": "Está esperando una respuesta",
       "subTitle": "Cómo podemos ayudar",
       "description": "Darle una actualización o hacer el seguimiento acordado"
     },
     "itemFour": {
+      "caption": "Situación del cliente",
       "title": "Su caso requiere revisión",
       "subTitle": "Cómo podemos ayudar",
       "description": "Derivarlo al equipo interno responsable"
@@ -327,21 +352,25 @@
       "description": "Antes de empezar, acordamos cuatro puntos:"
     },
     "listItemOne": {
+      "caption": "Punto",
       "title": "Solicitudes",
       "subTitle": "Qué acordamos",
       "description": "Qué consultas atiende Vinotoraup"
     },
     "listItemTwo": {
+      "caption": "Punto",
       "title": "Instrucciones",
       "subTitle": "Qué acordamos",
       "description": "Qué puede decir y hacer nuestro equipo"
     },
     "listItemThree": {
+      "caption": "Punto",
       "title": "Derivaciones",
       "subTitle": "Qué acordamos",
       "description": "Cuándo un caso vuelve a tu equipo"
     },
     "listItemFour": {
+      "caption": "Punto",
       "title": "Seguimiento",
       "subTitle": "Qué acordamos",
       "description": "Quién se encarga del próximo contacto con el cliente"
@@ -372,26 +401,30 @@
   "PeopleClearRole": {
     "sectionTop": "Un papel claro dentro de tu operación",
     "itemOne": {
+      "caption": "Vinotoraup se encarga de",
       "title": "Las consultas de clientes acordadas",
       "subTitle": "Tu equipo conserva",
       "description": "Las decisiones fuera del alcance acordado"
     },
     "itemTwo": {
+      "caption": "Vinotoraup se encarga de",
       "title": "Las llamadas habituales y el seguimiento",
       "subTitle": "Tu equipo conserva",
       "description": "La revisión de casos por especialistas"
     },
     "itemThree": {
+      "caption": "Vinotoraup se encarga de",
       "title": "Las respuestas conforme a tus instrucciones",
       "subTitle": "Tu equipo conserva",
       "description": "La responsabilidad sobre las políticas y los requisitos internos"
     },
     "itemFour": {
+      "caption": "Vinotoraup se encarga de",
       "title": "La derivación de casos al equipo correspondiente",
       "subTitle": "Tu equipo conserva",
       "description": "La resolución final de los casos derivados"
     },
-    "description": "The division is set for each service you choose to outsource."
+    "description": "Este reparto de responsabilidades se define para cada servicio que decidas externalizar."
   },
   "PeopleInfo": {
     "sectionTop": "Atención en cada etapa",
@@ -427,12 +460,6 @@
       "description": "Dinos qué consultas de clientes atiende ahora tu equipo y en cuáles necesita apoyo. Hablaremos de las tareas que podría asumir Vinotoraup.",
       "link": "Hablemos"
     }
-  },
-  "PeopleTellUs": {
-    "titleOne": "Cuéntanos sobre",
-    "titleTwo": "tu equipo",
-    "description": "Dinos qué consultas de clientes atiende ahora tu equipo y en cuáles necesita apoyo. Hablaremos de las tareas que podría asumir Vinotoraup.",
-    "link": "Hablemos"
   },
   "LetsTalkHero": {
     "titleOne": "¿Qué tareas le ocupan más tiempo",
@@ -481,8 +508,8 @@
   },
   "TermsHero": {
     "title": "Términos del servicio",
+    "descriptionIntro": "Estos Términos del servicio se aplican al sitio web <website>vinotoraup.com</website> y a las consultas sobre los servicios que se presentan en él.",
     "description": [
-      "Estos Términos del servicio se aplican al sitio web vinotoraup.com y a las consultas sobre los servicios que se presentan en él.",
       "Al utilizar el sitio web o enviar una consulta, aceptas las condiciones aplicables a esas actividades. Si pasas a ser cliente, los servicios también estarán sujetos al acuerdo escrito entre tu empresa y Vinotoraup."
     ]
   },

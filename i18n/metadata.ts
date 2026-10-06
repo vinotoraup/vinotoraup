@@ -7,7 +7,11 @@ export type MetaPage =
   | 'use-cases'
   | 'handoff'
   | 'people'
-  | 'lets-talk';
+  | 'lets-talk'
+  | 'terms-of-service'
+  | 'privacy-notice'
+  | 'cookie-notice'
+  | 'refund-policy';
 
 export async function getPageMetadata(page: MetaPage): Promise<Metadata> {
   const t = await getTranslations(`Meta.${page}`);

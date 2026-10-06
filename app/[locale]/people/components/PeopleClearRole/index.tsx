@@ -19,13 +19,19 @@ export default async function PeopleClearRole() {
               className="px-4 lg:px-2 py-6 lg:py-4 bg-blue-gray rounded-2xl min-h-30 flex flex-col justify-end"
             >
               <div className="grid lg:grid-cols-[1fr_0.60313fr] gap-5 items-center">
-                <Description
-                  variant="blue-gray-dark/50"
-                  className="tracking-[-1.455px]"
-                  size="48"
-                >
-                  {t(`${key}.title`)}
-                </Description>
+                <div>
+                  <Description variant="blue-gray-dark/50" className="mb-0.25">
+                    {t(`${key}.caption`)}
+                  </Description>
+
+                  <Description
+                    variant="blue-gray-dark/50"
+                    className="tracking-[-1.455px]"
+                    size="48"
+                  >
+                    {t(`${key}.title`)}
+                  </Description>
+                </div>
                 <div>
                   <Description
                     className="font-medium"
