@@ -37,57 +37,32 @@ export default function HomeHeroContent({
   sectionTop,
   items,
 }: HomeHeroContentProps) {
-  const rootRef = useRef<HTMLDivElement>(null);
   const [visibleCount, setVisibleCount] = useState(0);
-  const [atPageTop, setAtPageTop] = useState(true);
   const visibleCountRef = useRef(0);
-  const atPageTopRef = useRef(true);
   const stepLockRef = useRef(false);
   const total = items.length;
   const showCards = visibleCount > 0;
-  const allVisible = visibleCount >= total;
-  const shouldLockScroll = atPageTop && !allVisible;
 
   useEffect(() => {
     visibleCountRef.current = visibleCount;
   }, [visibleCount]);
 
+  // The page itself is never locked (no `overflow: hidden`): we only intercept
+  // the inputs we can turn into a step. Anything we don't recognise scrolls
+  // the page natively, so nobody can get stuck on the hero.
   useEffect(() => {
-    atPageTopRef.current = atPageTop;
-  }, [atPageTop]);
+    const swipeThreshold = 30;
+    let touchY: number | null = null;
 
-  useEffect(() => {
-    function onScroll() {
-      setAtPageTop(window.scrollY <= 0);
+    function isActive() {
+      // Skip while something else owns the page (preloader, mobile menu).
+      return window.scrollY <= 0 && document.body.style.overflow !== 'hidden';
     }
 
-    onScroll();
-    window.addEventListener('scroll', onScroll, { passive: true });
+    function canStep(delta: 1 | -1) {
+      const count = visibleCountRef.current;
 
-    return () => {
-      window.removeEventListener('scroll', onScroll);
-    };
-  }, []);
-
-  useEffect(() => {
-    const html = document.documentElement;
-    const { body } = document;
-
-    html.style.overflow = shouldLockScroll ? 'hidden' : '';
-    body.style.overflow = shouldLockScroll ? 'hidden' : '';
-
-    return () => {
-      html.style.overflow = '';
-      body.style.overflow = '';
-    };
-  }, [shouldLockScroll]);
-
-  useEffect(() => {
-    const root = rootRef.current;
-    const section = root?.closest('section') ?? root;
-
-    if (!section) {
-      return;
+      return delta > 0 ? count < total : count > 0;
     }
 
     function step(delta: 1 | -1) {
@@ -95,17 +70,8 @@ export default function HomeHeroContent({
         return;
       }
 
-      const next = Math.min(
-        total,
-        Math.max(0, visibleCountRef.current + delta)
-      );
-
-      if (next === visibleCountRef.current) {
-        return;
-      }
-
       stepLockRef.current = true;
-      setVisibleCount(next);
+      setVisibleCount((count) => Math.min(total, Math.max(0, count + delta)));
 
       window.setTimeout(() => {
         stepLockRef.current = false;
@@ -113,39 +79,113 @@ export default function HomeHeroContent({
     }
 
     function onWheel(event: WheelEvent) {
-      if (!atPageTopRef.current) {
+      if (event.ctrlKey || !isActive()) {
         return;
       }
 
-      const count = visibleCountRef.current;
-
-      if (event.deltaY > 0) {
-        if (count < total) {
-          event.preventDefault();
-          step(1);
-        }
-
+      if (Math.abs(event.deltaY) <= Math.abs(event.deltaX)) {
         return;
       }
 
-      if (event.deltaY < 0 && count > 0) {
+      const delta = event.deltaY > 0 ? 1 : -1;
+
+      if (canStep(delta)) {
         event.preventDefault();
-        step(-1);
+        step(delta);
       }
     }
 
-    section.addEventListener('wheel', onWheel, { passive: false });
+    function onKeyDown(event: KeyboardEvent) {
+      if (
+        event.defaultPrevented ||
+        event.altKey ||
+        event.ctrlKey ||
+        event.metaKey ||
+        !isActive()
+      ) {
+        return;
+      }
+
+      const target = event.target instanceof HTMLElement ? event.target : null;
+
+      if (
+        target?.closest('input, textarea, select, [contenteditable="true"]')
+      ) {
+        return;
+      }
+
+      let delta: 1 | -1;
+
+      if (event.key === 'ArrowDown' || event.key === 'PageDown') {
+        delta = 1;
+      } else if (event.key === 'ArrowUp' || event.key === 'PageUp') {
+        delta = -1;
+      } else if (event.key === ' ' && !target?.closest('a, button')) {
+        delta = event.shiftKey ? -1 : 1;
+      } else {
+        return;
+      }
+
+      if (canStep(delta)) {
+        event.preventDefault();
+        step(delta);
+      }
+    }
+
+    function onTouchStart(event: TouchEvent) {
+      touchY = event.touches.length === 1 ? event.touches[0].clientY : null;
+    }
+
+    function onTouchMove(event: TouchEvent) {
+      if (touchY === null || event.touches.length !== 1 || !isActive()) {
+        return;
+      }
+
+      const distance = touchY - event.touches[0].clientY;
+
+      if (distance === 0) {
+        return;
+      }
+
+      const delta = distance > 0 ? 1 : -1;
+
+      if (!canStep(delta)) {
+        return;
+      }
+
+      if (event.cancelable) {
+        event.preventDefault();
+      }
+
+      if (Math.abs(distance) >= swipeThreshold) {
+        touchY = event.touches[0].clientY;
+        step(delta);
+      }
+    }
+
+    function onTouchEnd() {
+      touchY = null;
+    }
+
+    window.addEventListener('wheel', onWheel, { passive: false });
+    window.addEventListener('keydown', onKeyDown);
+    window.addEventListener('touchstart', onTouchStart, { passive: true });
+    window.addEventListener('touchmove', onTouchMove, { passive: false });
+    window.addEventListener('touchend', onTouchEnd);
+    window.addEventListener('touchcancel', onTouchEnd);
 
     return () => {
-      section.removeEventListener('wheel', onWheel);
+      window.removeEventListener('wheel', onWheel);
+      window.removeEventListener('keydown', onKeyDown);
+      window.removeEventListener('touchstart', onTouchStart);
+      window.removeEventListener('touchmove', onTouchMove);
+      window.removeEventListener('touchend', onTouchEnd);
+      window.removeEventListener('touchcancel', onTouchEnd);
     };
   }, [total]);
 
   return (
-    <div
-      ref={rootRef}
-      className="p-16 max-lg:px-4 flex flex-col justify-between h-full"
-    >
+    <div className="p-16 max-lg:px-4 flex flex-col justify-between h-full">
       <div className="relative min-h-0 flex-1">
         <Title
           as="h1"
@@ -224,9 +264,7 @@ export default function HomeHeroContent({
         <Button
           className={cn('max-md:w-full', showCards && 'ml-auto')}
           size="48"
-          render={
-            <Link href={showCards ? '/coverage' : contactFormHref} />
-          }
+          render={<Link href={showCards ? '/coverage' : contactFormHref} />}
         >
           {showCards ? servicesButton : button}
           <ArrowRight color="currentColor" />
