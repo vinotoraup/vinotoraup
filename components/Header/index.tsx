@@ -112,7 +112,7 @@ export default function Header() {
         </div>
         <div className="relative flex flex-wrap items-center justify-between gap-6">
           <Link href="/" aria-label={tMenu('home')}>
-            <Image src="/logo.svg" alt="Vinotoraup" width={202} height={32} />
+            <Image src="/logo.svg" alt="Vinotoraup" width={184} height={40} />
           </Link>
 
           <div

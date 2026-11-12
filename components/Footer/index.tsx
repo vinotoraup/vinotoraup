@@ -31,7 +31,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 lg:grid-cols-[328px_397px_auto] justify-between mb-6 lg:mb-15 gap-6">
           <div>
             <Link href="/" aria-label={tMenu('home')} className="mb-5">
-              <Image src="/logo.svg" alt="Vinotoraup" width={202} height={32} />
+              <Image src="/logo.svg" alt="Vinotoraup" width={184} height={40} />
             </Link>
 
             <Description size="2xl" className="tracking-[-1px]">
@@ -93,7 +93,7 @@ export default function Footer() {
           aria-label={tMenu('home')}
           className="mb-3.5 text-center"
         >
-          <Image src="/logo.svg" alt="Vinotoraup" width={1268} height={202} />
+          <Image src="/logo.svg" alt="Vinotoraup" width={1268} height={277} />
         </Link>
 
         <div className="pt-6 flex flex-wrap items-center justify-between gap-y-10 gap-x-4 max-md:justify-center max-lg:flex-col">
