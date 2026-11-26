@@ -214,7 +214,8 @@
         "title": "Team Leader",
         "description": "Coordinate daily assignments, guide colleagues, and monitor performance while contributing to departmental objectives."
       }
-    }
+    },
+    "button": "View All Open Positions"
   },
   "coveragePage": {
     "title": "Coverage for the Calls",

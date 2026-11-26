@@ -1,6 +1,8 @@
 import { getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
 import ArrowLink from '@/components/Icons/ArrowLink';
+import ArrowRight16 from '@/components/Icons/ArrowRight16';
+import { Button } from '@/components/ui/button';
 import Title from '@/components/Title';
 import Description from '@/components/Description';
 import SectionTop from '@/components/SectionTop';
@@ -13,16 +15,16 @@ import {
 import { wordsDuration } from '@/components/Motion/timing';
 
 // Careers at Vintora: head like Growth Opportunities, then "Featured
-// Roles:" cards. Hover and card motion wait for the motion spec.
+// Roles:" cards.
 
 // Standard reveal: divider draws → tag fades → title words rise one by
 // one → copy fades up.
 const TITLE_DELAY = 100;
 const COPY_GAP = 200;
 
-// Role cards fade up one after another.
+// Role cards fade up 100 ms apart.
 const ROLE_DELAY = 100;
-const ROLE_STAGGER = 120;
+const ROLE_STAGGER = 100;
 
 const roles = [
   'customerRelations',
@@ -81,12 +83,14 @@ export default async function HomeCareers() {
               Each card spans 3 rows (title, copy, link) via subgrid, so
               titles and copy of different lengths still line up the links
               across a row. The card's own 16 px gap spaces its rows. */}
-          <div className="grid gap-3 md:grid-cols-2 md:gap-6 lg:gap-8">
+          <div className="grid gap-3 md:grid-cols-2 md:gap-6 lg:gap-8 mb-8 md:mb-10 lg:mb-14">
             {roles.map((role, index) => (
               <RevealItem
                 key={role}
                 delay={ROLE_DELAY + index * ROLE_STAGGER}
-                className="row-span-3 grid grid-rows-subgrid gap-4 rounded-2xl bg-white px-6 pt-6 pb-8"
+                // Hover (tap on phones): White → Tertialy, link underline slides
+                // in from the left, arrow nudges 4 px right. 250 ms.
+                className="group/role row-span-3 grid grid-rows-subgrid gap-4 rounded-2xl bg-white px-6 pt-6 pb-8 transition-colors duration-250 hover:bg-tertiary active:bg-tertiary"
               >
                 {/* H4 here is 24/28 on tablet too, 28/31 on desktop only. */}
                 <Title
@@ -103,12 +107,27 @@ export default async function HomeCareers() {
                   href="/opportunities"
                   className="flex w-fit items-center gap-2 py-2 text-base leading-4 font-medium text-prime"
                 >
-                  {t('roleLink')}
-                  <ArrowLink color="currentColor" />
+                  <span className="relative after:absolute after:inset-x-0 after:-bottom-0.5 after:h-px after:origin-left after:scale-x-0 after:bg-current after:transition-transform after:duration-250 group-hover/role:after:scale-x-100 group-active/role:after:scale-x-100 motion-reduce:after:transition-none">
+                    {t('roleLink')}
+                  </span>
+                  <span className="transition-[translate] duration-250 motion-safe:group-hover/role:translate-x-1 motion-safe:group-active/role:translate-x-1">
+                    <ArrowLink color="currentColor" />
+                  </span>
                 </Link>
               </RevealItem>
             ))}
           </div>
+
+          <RevealItem
+            delay={ROLE_DELAY + roles.length * ROLE_STAGGER}
+            // Right on desktop, left on tablet and phone.
+            className="flex lg:justify-end"
+          >
+            <Button className="h-13" render={<Link href="/opportunities" />}>
+              {t('button')}
+              <ArrowRight16 color="currentColor" />
+            </Button>
+          </RevealItem>
         </Reveal>
       </div>
     </Reveal>
