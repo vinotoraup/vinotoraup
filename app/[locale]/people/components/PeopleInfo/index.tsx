@@ -86,7 +86,7 @@ export default async function PeopleInfo() {
                 text={t(`${step.key}.label`)}
                 className="mb-2"
               />
-              <Title className="tracking-[-1.455px] mb-2" variant="blue-gray">
+              <Title className="tracking-[-1.455px] mb-2" variant="tertiary">
                 {t(`${step.key}.title`)}
               </Title>
               <Description size="2xl" className="leading-[110%]">

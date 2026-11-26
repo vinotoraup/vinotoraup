@@ -29,10 +29,10 @@ export default async function HandoffReviewWhat() {
               className="rounded-inherit md:hidden"
             />
           </div>
-          <div className="bg-blue-gray rounded-2xl px-4 py-6 lg:px-6 lg:min-h-98.5 flex flex-col justify-between gap-4">
+          <div className="bg-tertiary rounded-2xl px-4 py-6 lg:px-6 lg:min-h-98.5 flex flex-col justify-between gap-4">
             <Title
-              className="tracking-[-1.455px] lg:leading-none [&_span]:text-light-gray"
-              variant="blue-gray-dark"
+              className="tracking-[-1.455px] lg:leading-none [&_span]:text-background"
+              variant="secondary"
             >
               <span>{t('titleOne')}</span> {t('titleTwo')}
             </Title>

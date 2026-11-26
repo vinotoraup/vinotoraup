@@ -23,19 +23,19 @@ export default async function CoverageWhatHandle() {
           {itemKeys.map((key) => (
             <div
               key={key}
-              className="px-4 py-6 md:px-2 md:py-4 bg-blue-gray rounded-2xl min-h-35 md:min-h-30 flex items-end"
+              className="px-4 py-6 md:px-2 md:py-4 bg-tertiary rounded-2xl min-h-35 md:min-h-30 flex items-end"
             >
               <div className="grid lg:grid-cols-[1fr_1fr] gap-x-4 items-end justify-between w-full gap-y-10">
                 <Description
                   size="54"
-                  variant="blue-gray-dark/50"
+                  variant="secondary/50"
                   className="tracking-[-1.455px]"
                 >
                   {t(`${key}.title`)}
                 </Description>
                 <Description
                   size="2xl"
-                  variant="blue-gray-dark"
+                  variant="secondary"
                   className="font-medium tracking-[-1.455px]"
                 >
                   {t(`${key}.description`)}

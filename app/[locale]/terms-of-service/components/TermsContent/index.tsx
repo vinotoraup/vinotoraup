@@ -24,14 +24,14 @@ function isPolicyStrong(part: PolicyPart): part is { strong: string } {
 function PolicyRichText({ text }: { text: PolicyText }) {
   if (typeof text === 'string') {
     return (
-      <Description variant="blue-gray-dark" className="leading-[110%]">
+      <Description variant="secondary" className="leading-[110%]">
         {text}
       </Description>
     );
   }
 
   return (
-    <Description variant="blue-gray-dark" className="leading-[110%]">
+    <Description variant="secondary" className="leading-[110%]">
       {text.map((part, index) => {
         if (typeof part === 'string') {
           return (
@@ -83,10 +83,7 @@ export default function TermsContent({ sections }: TermsContentProps) {
               ))}
 
               {section.listIntro && (
-                <Description
-                  variant="blue-gray-dark"
-                  className="leading-[110%]"
-                >
+                <Description variant="secondary" className="leading-[110%]">
                   {section.listIntro}
                 </Description>
               )}

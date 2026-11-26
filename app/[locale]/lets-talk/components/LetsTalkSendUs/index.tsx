@@ -29,7 +29,7 @@ export default async function LetsTalkSendUs() {
             />
           </div>
 
-          <div className="bg-blue-gray rounded-2xl p-6">
+          <div className="bg-tertiary rounded-2xl p-6">
             <LetsTalkSendUsForm />
           </div>
         </div>

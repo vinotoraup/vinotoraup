@@ -13,9 +13,9 @@ const descriptionVariants = cva('font-normal', {
       '54': 'text-[32px] lg:text-[54px] leading-none',
     },
     variant: {
-      default: 'text-blue',
-      'blue-gray-dark/50': 'text-blue-gray-dark/50',
-      'blue-gray-dark': 'text-blue-gray-dark',
+      default: 'text-prime',
+      'secondary/50': 'text-secondary/50',
+      secondary: 'text-secondary',
       error: 'text-[#ff0000]',
     },
   },

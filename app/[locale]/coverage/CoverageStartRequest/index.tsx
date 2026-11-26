@@ -8,19 +8,19 @@ const items = [
   {
     key: 'start-with-requests',
     image: '/icons/icon-unknown-one.svg',
-    className: 'bg-blue-gray',
+    className: 'bg-tertiary',
     textClassName: undefined,
   },
   {
     key: 'keep-follow-ups-moving',
     image: '/icons/icon-unknown-two.svg',
-    className: 'bg-blue',
+    className: 'bg-prime',
     textClassName: 'text-white',
   },
   {
     key: 'cover-more-than-calls',
     image: '/icons/icon-unknown-three.svg',
-    className: 'bg-beige',
+    className: 'bg-additional',
     textClassName: undefined,
   },
 ] as const;

@@ -1,74 +1,90 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
-import Image from 'next/image';
+import { useState } from 'react';
 import { useLocale } from 'next-intl';
+import { cn } from 'cn';
 import { locales, type Locale } from '@/i18n/config';
 import { getPathname, usePathname } from '@/i18n/navigation';
 
-const flags: Record<Locale, string> = {
-  en: '🇬🇧',
-  es: '🇪🇸',
-};
+// Matches the pill's slide duration, so the switch finishes before reload.
+const SLIDE_MS = 250;
+
+const variants = {
+  // Desktop: sits next to the nav menu.
+  default: {
+    root: 'bg-background/80',
+    item: 'py-1.75',
+    gap: 0,
+  },
+  // Mobile: sits in the header bar next to the burger.
+  compact: {
+    root: 'bg-white gap-0.5',
+    item: 'py-2',
+    gap: 2,
+  },
+} as const;
 
 export default function LocaleSwitcher({
-  className = 'flex items-center gap-1 p-0 cursor-pointer border-0 bg-transparent',
+  className,
+  variant = 'default',
 }: {
   className?: string;
+  variant?: keyof typeof variants;
 }) {
   const locale = useLocale() as Locale;
   const pathname = usePathname();
-  const [open, setOpen] = useState(false);
-  const rootRef = useRef<HTMLDivElement>(null);
-  const otherLocales = locales.filter((item) => item !== locale);
-
-  useEffect(() => {
-    function onPointerDown(event: PointerEvent) {
-      if (!rootRef.current?.contains(event.target as Node)) {
-        setOpen(false);
-      }
-    }
-
-    document.addEventListener('pointerdown', onPointerDown);
-    return () => document.removeEventListener('pointerdown', onPointerDown);
-  }, []);
+  const [active, setActive] = useState<Locale>(locale);
+  const activeIndex = locales.indexOf(active);
+  const styles = variants[variant];
 
   function selectLocale(next: Locale) {
-    setOpen(false);
-    window.location.assign(
-      getPathname({ href: pathname, locale: next, forcePrefix: true })
-    );
+    if (next === active) {
+      return;
+    }
+
+    setActive(next);
+
+    window.setTimeout(() => {
+      window.location.assign(
+        getPathname({ href: pathname, locale: next, forcePrefix: true })
+      );
+    }, SLIDE_MS);
   }
 
   return (
-    <div ref={rootRef} className="relative">
-      <button
-        type="button"
-        className={className}
-        aria-label="Language"
-        aria-expanded={open}
-        onClick={() => setOpen((value) => !value)}
-      >
-        <span className="leading-none"> {flags[locale]}</span>
-        <Image src="/icons/caret-down.svg" alt="Icon" width={11} height={11} />
-      </button>
+    <div
+      role="group"
+      aria-label="Language"
+      className={cn(
+        'relative grid w-fit grid-flow-col auto-cols-fr rounded-[14px] p-1',
+        styles.root,
+        className
+      )}
+    >
+      <span
+        aria-hidden
+        className="absolute inset-y-1 left-1 rounded-[10px] bg-prime transition-transform duration-250 ease-out"
+        style={{
+          width: `calc((100% - 8px - ${styles.gap * (locales.length - 1)}px) / ${locales.length})`,
+          transform: `translateX(calc(${activeIndex} * (100% + ${styles.gap}px)))`,
+        }}
+      />
 
-      {open ? (
-        <ul className="absolute left-0 mt-4 z-50">
-          {otherLocales.map((item) => (
-            <li key={item}>
-              <button
-                type="button"
-                className="flex cursor-pointer items-center border-0 bg-transparent leading-none"
-                onClick={() => selectLocale(item)}
-                aria-label={item.toUpperCase()}
-              >
-                {flags[item]}
-              </button>
-            </li>
-          ))}
-        </ul>
-      ) : null}
+      {locales.map((item) => (
+        <button
+          key={item}
+          type="button"
+          aria-pressed={item === active}
+          className={cn(
+            'relative z-1 cursor-pointer rounded-[10px] border-0 bg-transparent px-2.5 text-sm leading-4 font-medium transition-colors duration-250',
+            styles.item,
+            item === active ? 'text-background' : 'text-prime'
+          )}
+          onClick={() => selectLocale(item)}
+        >
+          {item.toUpperCase()}
+        </button>
+      ))}
     </div>
   );
 }

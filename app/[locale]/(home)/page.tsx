@@ -2,8 +2,12 @@ import type { Metadata } from 'next';
 import { getPageMetadata } from '@/i18n/metadata';
 import HomeHero from '@/app/[locale]/(home)/HomeHero';
 import HomeTakeRecurring from '@/app/[locale]/(home)/HomeTakeRecurring';
-import HomeSupport from '@/app/[locale]/(home)/HomeSupport';
+import HomeMission from '@/app/[locale]/(home)/HomeMission';
+import HomeContribute from '@/app/[locale]/(home)/HomeContribute';
 import HomeHandoff from '@/app/[locale]/(home)/HomeHandoff';
+import HomeWhyJoin from '@/app/[locale]/(home)/HomeWhyJoin';
+import HomeGrowthOpportunities from '@/app/[locale]/(home)/HomeGrowthOpportunities';
+import HomeCareers from '@/app/[locale]/(home)/HomeCareers';
 
 export function generateMetadata(): Promise<Metadata> {
   return getPageMetadata('home');
@@ -14,8 +18,12 @@ export default function Home() {
     <>
       <HomeHero />
       <HomeTakeRecurring />
-      <HomeSupport />
+      <HomeMission />
+      <HomeContribute />
       <HomeHandoff />
+      <HomeWhyJoin />
+      <HomeGrowthOpportunities />
+      <HomeCareers />
     </>
   );
 }

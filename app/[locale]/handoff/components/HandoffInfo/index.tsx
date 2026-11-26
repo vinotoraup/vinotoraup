@@ -104,7 +104,7 @@ function StepText({
   return (
     <div className={cn('mt-14', className)}>
       <SectionTop hasSeparator={false} text={label} className="mb-2" />
-      <Title className="tracking-[-1.455px] mb-2" variant="blue-gray">
+      <Title className="tracking-[-1.455px] mb-2" variant="tertiary">
         {title}
       </Title>
       <Description
@@ -138,18 +138,18 @@ function ListItems({
         <div
           key={item.title}
           className={cn(
-            'bg-blue-gray rounded-2xl lg:min-h-30 flex flex-col justify-end',
+            'bg-tertiary rounded-2xl lg:min-h-30 flex flex-col justify-end',
             itemClassName
           )}
         >
           <div className="grid lg:grid-cols-[1fr_1fr] gap-4 items-center">
             <div>
-              <Description variant="blue-gray-dark/50" className="mb-0.25">
+              <Description variant="secondary/50" className="mb-0.25">
                 {item.caption}
               </Description>
 
               <Description
-                variant="blue-gray-dark/50"
+                variant="secondary/50"
                 className="tracking-[-1.455px]"
                 size="48"
               >
@@ -159,7 +159,7 @@ function ListItems({
             <div>
               <Description
                 className="font-medium tracking-[-1.455px]"
-                variant="blue-gray-dark/50"
+                variant="secondary/50"
               >
                 {item.subTitle}
               </Description>

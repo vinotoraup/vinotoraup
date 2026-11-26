@@ -11,27 +11,27 @@ import ArrowRightSmall from '@/components/Icons/ArrowRightSmall';
 const items = [
   {
     key: 'requests-we-can-handle',
-    className: 'bg-blue-gray',
-    titleClassName: 'text-blue-gray-dark',
-    textClassName: 'text-blue',
+    className: 'bg-tertiary',
+    titleClassName: 'text-secondary',
+    textClassName: 'text-prime',
   },
   {
     key: 'a-case-must-be-escalated',
-    className: 'bg-blue-gray-dark',
-    titleClassName: 'text-light-gray',
-    textClassName: 'text-beige',
+    className: 'bg-secondary',
+    titleClassName: 'text-background',
+    textClassName: 'text-additional',
   },
   {
     key: 'information-we-can-provide',
-    className: 'bg-beige',
-    titleClassName: 'text-blue-gray-dark',
-    textClassName: 'text-blue',
+    className: 'bg-additional',
+    titleClassName: 'text-secondary',
+    textClassName: 'text-prime',
   },
   {
     key: 'owns-the-next-step',
-    className: 'bg-blue',
-    titleClassName: 'text-light-gray',
-    textClassName: 'text-beige',
+    className: 'bg-prime',
+    titleClassName: 'text-background',
+    textClassName: 'text-additional',
   },
 ] as const;
 

@@ -32,10 +32,10 @@ export default async function UseCasesYourBusiness() {
               className="rounded-inherit md:hidden"
             />
           </div>
-          <div className="bg-blue-gray rounded-2xl p-6">
+          <div className="bg-tertiary rounded-2xl p-6">
             <Title
-              className="tracking-[-1.455px] lg:leading-none [&_span]:text-light-gray mb-4"
-              variant="blue-gray-dark"
+              className="tracking-[-1.455px] lg:leading-none [&_span]:text-background mb-4"
+              variant="secondary"
             >
               <span>{t('titleOne')}</span> {t('titleTwo')}
             </Title>

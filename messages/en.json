@@ -13,7 +13,7 @@
     }
   },
   "Header": {
-    "quote": "Tell Us What You Need"
+    "quote": "Request a Quote"
   },
   "Footer": {
     "description": "Customer conversations covered for financial businesses.",
@@ -70,87 +70,150 @@
     }
   },
   "HomeHero": {
-    "title": "Every Customer Conversation Needs a",
-    "titleHighlight": "Next Step",
-    "descriptionOne": "Your team has enough on its plate.",
-    "descriptionTwo": "Vinotoraup takes customer calls and follow-ups off it.",
-    "button": "Tell Us What You Need",
-    "sectionTop": "What We Can Cover",
-    "servicesButton": "See What We Cover",
-    "itemOne": {
-      "title": "Application Support",
-      "description": "Applications, missing information, and next steps."
-    },
-    "itemTwo": {
-      "title": "Customer Care",
-      "description": "Everyday questions and account-related requests."
-    },
-    "itemThree": {
-      "title": "Collections Support",
-      "description": "Agreed payment reminders and follow-ups."
-    },
-    "itemFour": {
-      "title": "Fraud Support",
-      "description": "Customer communication around suspicious activity and verification."
-    },
-    "itemFive": {
-      "title": "Compliance Support",
-      "description": "Customer-facing tasks under your procedures."
-    },
-    "itemSix": {
-      "title": "Complaint Handling",
-      "description": "Responses, follow-ups, and escalations."
-    }
+    "titleStart": "Connecting People,",
+    "titleHighlight": "Opportunities,",
+    "titleEnd": "and Businesses",
+    "description": "Discover a workplace where your ambitions matter. At Vintora, we create career opportunities for talented individuals while providing customer experience and business outsourcing services to companies. Our approach combines professional development, collaboration, and a commitment to delivering meaningful results.",
+    "button": "Explore Available Positions"
   },
   "HomeTakeRecurring": {
-    "titleOne": "Take Recurring Contact Off",
-    "titleTwo": "Your Team’s Desk",
-    "descriptionOne": "When routine calls and follow-ups fill the day, Vinotoraup can take on the work you choose to outsource.",
-    "descriptionTwo": "You decide what we handle, what stays in-house, and when a case comes back to your team."
+    "sectionTop": "About Vintora",
+    "titleOne": "Talent, Progress,",
+    "titleTwo": "and Possibilities",
+    "descriptionOne": "Vintora brings together driven minds with different backgrounds, perspectives, and ambitions. We are committed to building an organisation where integrity, adaptability, and a forward-looking approach guide the way we work.",
+    "descriptionTwo": "Our focus is on creating a positive professional atmosphere that encourages initiative and values dedication.",
+    "button": "Get to Know Vintora"
   },
-  "HomeSupport": {
-    "sectionTop": "Support for Financial Businesses",
-    "finTech": {
-      "caption": "Business",
-      "title": "FinTech",
-      "subTitle": "Typical customer contact:",
-      "description": "Accounts, products, and verification"
+  "HomeMission": {
+    "sectionTop": "Our Mission",
+    "titleOne": "Growing Together,",
+    "titleTwo": "Achieving More",
+    "descriptionOne": "Our mission is to create a community where personal ambition supports shared success. By combining meaningful career opportunities with business outsourcing solutions, Vintora aims to make a positive impact on both its employees and partner organisations.",
+    "descriptionTwo": "We believe lasting progress comes from giving individuals the confidence to take initiative, explore their strengths, and work toward greater responsibilities.",
+    "guidesTitle": "What Guides Us:",
+    "guides": {
+      "potential": {
+        "title": "Individual Potential",
+        "description": "Everyone brings something different to the table. We focus on recognising personal strengths and encouraging employees to make the most of their abilities."
+      },
+      "experience": {
+        "title": "Learning Through Experience",
+        "description": "Real progress happens when knowledge meets practice. New tasks and everyday challenges provide valuable lessons that extend beyond any single position."
+      },
+      "leadership": {
+        "title": "Leadership Mindset",
+        "description": "Leadership starts long before a management title. Taking ownership and making thoughtful decisions are important qualities at every career level."
+      },
+      "success": {
+        "title": "Shared Success",
+        "description": "The strongest results come from working toward a common goal. We believe trust, accountability, and celebrating achievements help create a more connected team."
+      }
     },
-    "lending": {
-      "caption": "Business",
-      "title": "Lending",
-      "subTitle": "Typical customer contact:",
-      "description": "Applications, borrower questions, and payments"
+    "button": "Discover Our Mission"
+  },
+  "HomeContribute": {
+    "sectionTop": "We Contribute",
+    "titleOne": "Turning Ambition",
+    "titleTwo": "Into Real-World Experience",
+    "description": "Every career has a starting point, but it doesn’t have to follow a single direction. At Vintora, we strive to create a workplace where team members can discover their strengths, broaden their expertise, and pursue new professional paths within the financial sector.",
+    "journeyTitle": "Where Can Your Journey Take You?",
+    "journeys": {
+      "strengths": {
+        "title": "Discover Your Strengths",
+        "description": "Find your place in a dynamic industry. Customer interactions, commercial activities, and operational assignments introduce you to different aspects of the business and help you identify what interests you most."
+      },
+      "expertise": {
+        "title": "Expand Your Expertise",
+        "description": "Go beyond familiar routines. Explore new functions, gain insight into financial-sector operations, and develop capabilities that can support your ambitions across different professional fields."
+      },
+      "higher": {
+        "title": "Aim Higher",
+        "description": "Interested in taking the lead? As your knowledge and responsibilities evolve, you may explore pathways toward specialist, supervisory, or management positions, depending on available roles and qualifications."
+      }
     },
-    "insurance": {
-      "caption": "Business",
-      "title": "Insurance",
-      "subTitle": "Typical customer contact:",
-      "description": "Customer requests, follow-ups, and complaints"
-    },
-    "financialServices": {
-      "caption": "Business",
-      "title": "Financial services",
-      "subTitle": "Typical customer contact:",
-      "description": "Recurring support across existing operations"
-    },
-    "link": "Explore Use Cases"
+    "button": "See What’s Possible"
   },
   "HomeHandoff": {
-    "fintech": {
-      "title": "A Handoff Built Around Your Rules",
-      "description": "We agree on the tasks, workflows, and escalation points before work begins. The scope can then change as your customer volumes and priorities change.",
-      "link": "See How the Handoff Works"
+    "sectionTop": "Services",
+    "titleOne": "Business Solutions",
+    "titleTwo": "Powered by People",
+    "descriptionOne": "Vintora provides outsourcing services that help companies manage customer interactions and essential business functions.",
+    "descriptionTwo": "Our business lines include:",
+    "lines": {
+      "one": {
+        "title": "Customer Experience",
+        "description": "Managing customer inquiries and communication across multiple service channels."
+      },
+      "two": {
+        "title": "Sales & Client Engagement",
+        "description": "Supporting commercial activities, customer relationships, and sales-related interactions."
+      },
+      "three": {
+        "title": "Administrative Operations",
+        "description": "Handling recurring administrative responsibilities and day-to-day operational tasks."
+      },
+      "four": {
+        "title": "Technical Assistance",
+        "description": "Addressing technical inquiries and helping customers navigate service-related issues."
+      }
     },
-    "lending": {
-      "title": "People Behind the Answers",
-      "description": "Vinotoraup gives customers someone to speak with and your team a clear way to pass on recurring work. Each conversation follows the process agreed with your business.",
-      "link": "Meet Vinotoraup"
-    },
-    "insurance": {
-      "title": "What’s Filling Your Queue?",
-      "description": "Tell us which calls and follow-ups take up your team’s time. We’ll help identify what Vinotoraup can cover.",
-      "link": "Start the Conversation"
+    "button": "See Our Solutions"
+  },
+  "HomeWhyJoin": {
+    "sectionTop": "Why Join Vintora?",
+    "title": "A Place to Progress",
+    "description": "At Vintora, we believe a fulfilling professional journey is shaped by meaningful challenges, supportive colleagues, and the freedom to take initiative. We aim to create a positive workplace where individual contributions are valued, fresh ideas are welcomed, and every team member has room to pursue new ambitions."
+  },
+  "HomeGrowthOpportunities": {
+    "sectionTop": "Growth Opportunities",
+    "titleOne": "Your Career",
+    "titleTwo": "Doesn’t Have to Stand Still",
+    "description": "A professional journey can begin with one role and develop in many directions. At Vintora, we believe experience, initiative, and a willingness to learn can open the door to new responsibilities.",
+    "progressionTitle": "A Possible Career Progression:",
+    "button": "Grow With Vintora",
+    "steps": {
+      "agent": {
+        "title": "Customer Service Agent",
+        "description": "Build a strong foundation in communication, problem-solving, and day-to-day business processes."
+      },
+      "specialist": {
+        "title": "Senior Specialist",
+        "description": "Handle more complex assignments, deepen your industry knowledge, and gain greater autonomy."
+      },
+      "leader": {
+        "title": "Team Leader",
+        "description": "Guide colleagues, coordinate daily activities, and contribute to overall team performance and strategic decision-making."
+      },
+      "management": {
+        "title": "Management & Beyond",
+        "description": "Pursue broader roles in operations, coordination, or specialised business functions as positions become available."
+      }
+    }
+  },
+  "HomeCareers": {
+    "sectionTop": "Careers at Vintora",
+    "titleOne": "Discover Where",
+    "titleTwo": "Your Ambition Can Take You",
+    "description": "Looking for a new professional challenge? Explore career opportunities at Vintora and discover positions that may align with your experience, interests, and future ambitions.",
+    "progressionTitle": "Featured Roles:",
+    "roleLink": "More About This Role",
+    "roles": {
+      "customerRelations": {
+        "title": "Customer Relations Agent",
+        "description": "Assist customers with inquiries, provide clear information, and help maintain positive interactions across communication channels."
+      },
+      "salesRepresentative": {
+        "title": "Sales Representative",
+        "description": "Engage with potential customers, present relevant offerings, and contribute to commercial activities through effective communication."
+      },
+      "administrativeAssistant": {
+        "title": "Administrative Assistant",
+        "description": "Handle documentation, organise information, and support essential office processes to keep daily activities running smoothly."
+      },
+      "teamLeader": {
+        "title": "Team Leader",
+        "description": "Coordinate daily assignments, guide colleagues, and monitor performance while contributing to departmental objectives."
+      }
     }
   },
   "coveragePage": {

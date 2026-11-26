@@ -1,36 +1,25 @@
 import type { Metadata } from 'next';
-import localFont from 'next/font/local';
+import { Geist, Roboto_Mono } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
 import { getLocale } from 'next-intl/server';
 import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import MotionProvider from '@/components/Motion/MotionProvider';
 import { getPageMetadata } from '@/i18n/metadata';
 
-const abcArealSuperFamily = localFont({
-  src: [
-    {
-      path: '../public/fonts/ABCAreal-Regular.woff2',
-      weight: '400',
-      style: 'normal',
-    },
-    {
-      path: '../public/fonts/ABCAreal-Medium.woff2',
-      weight: '500',
-      style: 'normal',
-    },
-    {
-      path: '../public/fonts/ABCAreal-Bold.woff2',
-      weight: '700',
-      style: 'normal',
-    },
-    {
-      path: '../public/fonts/ABCAreal-RegularItalic.woff2',
-      weight: '400',
-      style: 'italic',
-    },
-  ],
-  variable: '--font-abc-areal-super-family',
+// Geist is a variable font: every weight comes from a single file.
+const geist = Geist({
+  subsets: ['latin'],
+  variable: '--font-geist-sans',
+  display: 'swap',
+});
+
+// Only used for small numerals (UI/Number).
+const robotoMono = Roboto_Mono({
+  subsets: ['latin'],
+  weight: ['400'],
+  variable: '--font-roboto-mono',
   display: 'swap',
 });
 
@@ -60,13 +49,15 @@ export default async function RootLayout({ children }: LayoutProps<'/'>) {
   return (
     <html
       lang={locale}
-      className={`${abcArealSuperFamily.variable} h-full antialiased`}
+      className={`${geist.variable} ${robotoMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
         <NextIntlClientProvider>
-          <Header />
-          <main className="rounded-[0_0_20px_20px]">{children}</main>
-          <Footer />
+          <MotionProvider>
+            <Header />
+            <main className="rounded-[0_0_20px_20px]">{children}</main>
+            <Footer />
+          </MotionProvider>
         </NextIntlClientProvider>
       </body>
     </html>

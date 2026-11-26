@@ -16,16 +16,16 @@ export default async function PeopleClearRole() {
           {itemKeys.map((key) => (
             <div
               key={key}
-              className="px-4 lg:px-2 py-6 lg:py-4 bg-blue-gray rounded-2xl min-h-30 flex flex-col justify-end"
+              className="px-4 lg:px-2 py-6 lg:py-4 bg-tertiary rounded-2xl min-h-30 flex flex-col justify-end"
             >
               <div className="grid lg:grid-cols-[1fr_0.60313fr] gap-5 items-center">
                 <div>
-                  <Description variant="blue-gray-dark/50" className="mb-0.25">
+                  <Description variant="secondary/50" className="mb-0.25">
                     {t(`${key}.caption`)}
                   </Description>
 
                   <Description
-                    variant="blue-gray-dark/50"
+                    variant="secondary/50"
                     className="tracking-[-1.455px]"
                     size="48"
                   >
@@ -33,10 +33,7 @@ export default async function PeopleClearRole() {
                   </Description>
                 </div>
                 <div>
-                  <Description
-                    className="font-medium"
-                    variant="blue-gray-dark/50"
-                  >
+                  <Description className="font-medium" variant="secondary/50">
                     {t(`${key}.subTitle`)}
                   </Description>
                   <Description size="2xl" className="font-medium">

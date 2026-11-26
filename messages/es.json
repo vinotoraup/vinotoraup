@@ -13,7 +13,7 @@
     }
   },
   "Header": {
-    "quote": "Cuéntanos qué necesitas"
+    "quote": "Solicitar presupuesto"
   },
   "Footer": {
     "description": "Atendemos las consultas de los clientes de empresas financieras.",
@@ -70,87 +70,150 @@
     }
   },
   "HomeHero": {
-    "title": "Cada consulta de un cliente necesita una",
-    "titleHighlight": "respuesta",
-    "descriptionOne": "Tu equipo ya tiene bastante trabajo.",
-    "descriptionTwo": "Vinotoraup se encarga de las llamadas de los clientes y de hacer el seguimiento.",
-    "button": "Cuéntanos qué necesitas",
-    "sectionTop": "En qué podemos ayudarte",
-    "servicesButton": "Ver todos los servicios",
-    "itemOne": {
-      "title": "Asistencia con solicitudes",
-      "description": "Consultas sobre solicitudes, información pendiente y próximos pasos."
-    },
-    "itemTwo": {
-      "title": "Atención al cliente",
-      "description": "Consultas habituales y solicitudes relacionadas con las cuentas."
-    },
-    "itemThree": {
-      "title": "Gestión de cobros",
-      "description": "Recordatorios de pago y seguimiento según lo acordado."
-    },
-    "itemFour": {
-      "title": "Atención ante posibles fraudes",
-      "description": "Comunicación con los clientes sobre actividades sospechosas y procesos de verificación."
-    },
-    "itemFive": {
-      "title": "Asistencia en cumplimiento normativo",
-      "description": "Gestiones con clientes conforme a tus procedimientos."
-    },
-    "itemSix": {
-      "title": "Gestión de reclamaciones",
-      "description": "Respuestas, seguimiento y derivación de casos."
-    }
+    "titleStart": "Conectamos personas,",
+    "titleHighlight": "oportunidades",
+    "titleEnd": "y empresas",
+    "description": "Descubre un lugar de trabajo donde tus ambiciones importan. En Vintora creamos oportunidades profesionales para personas con talento y, al mismo tiempo, ofrecemos a las empresas servicios de experiencia del cliente y externalización de procesos de negocio. Nuestro enfoque combina el desarrollo profesional, la colaboración y el compromiso de lograr resultados significativos.",
+    "button": "Ver vacantes disponibles"
   },
   "HomeTakeRecurring": {
-    "titleOne": "Libera a tu equipo de las",
-    "titleTwo": "consultas recurrentes",
-    "descriptionOne": "Cuando las llamadas habituales y las tareas de seguimiento ocupan gran parte del día, Vinotoraup puede encargarse de las que decidas externalizar.",
-    "descriptionTwo": "Tú defines qué atendemos, qué gestiona tu equipo y cuándo debemos devolverle un caso."
+    "sectionTop": "Sobre Vintora",
+    "titleOne": "Talento, progreso",
+    "titleTwo": "y posibilidades",
+    "descriptionOne": "Vintora reúne a personas motivadas con trayectorias, perspectivas y ambiciones diferentes. Nos comprometemos a construir una organización en la que la integridad, la capacidad de adaptación y una visión de futuro guíen nuestra forma de trabajar.",
+    "descriptionTwo": "Nos centramos en crear un ambiente profesional positivo que fomente la iniciativa y valore el compromiso.",
+    "button": "Conoce Vintora"
   },
-  "HomeSupport": {
-    "sectionTop": "Atención al cliente para empresas financieras",
-    "finTech": {
-      "caption": "Sector",
-      "title": "FinTech",
-      "subTitle": "Consultas habituales de los clientes:",
-      "description": "Cuentas, productos y verificación"
+  "HomeMission": {
+    "sectionTop": "Nuestra misión",
+    "titleOne": "Crecer juntos,",
+    "titleTwo": "lograr más",
+    "descriptionOne": "Nuestra misión es crear una comunidad en la que la ambición personal impulse el éxito compartido. Al combinar oportunidades profesionales significativas con soluciones de externalización para empresas, Vintora busca generar un impacto positivo tanto en sus empleados como en las organizaciones con las que colabora.",
+    "descriptionTwo": "Creemos que el progreso duradero nace de dar a las personas la confianza para tomar la iniciativa, descubrir sus fortalezas y asumir cada vez más responsabilidades.",
+    "guidesTitle": "Lo que nos guía:",
+    "guides": {
+      "potential": {
+        "title": "Potencial individual",
+        "description": "Cada persona aporta algo diferente. Nos centramos en reconocer las fortalezas personales y en animar a nuestros empleados a sacar el máximo partido de sus capacidades."
+      },
+      "experience": {
+        "title": "Aprender con la experiencia",
+        "description": "El verdadero progreso llega cuando el conocimiento se pone en práctica. Las nuevas tareas y los retos del día a día aportan aprendizajes valiosos que van más allá de cualquier puesto."
+      },
+      "leadership": {
+        "title": "Mentalidad de liderazgo",
+        "description": "El liderazgo empieza mucho antes de ocupar un puesto directivo. Asumir responsabilidades y tomar decisiones meditadas son cualidades importantes en cualquier etapa profesional."
+      },
+      "success": {
+        "title": "Éxito compartido",
+        "description": "Los mejores resultados se consiguen trabajando por un objetivo común. Creemos que la confianza, la responsabilidad y celebrar los logros ayudan a crear un equipo más unido."
+      }
     },
-    "lending": {
-      "caption": "Sector",
-      "title": "Préstamos",
-      "subTitle": "Consultas habituales de los clientes:",
-      "description": "Solicitudes, consultas de los prestatarios y pagos"
+    "button": "Descubre nuestra misión"
+  },
+  "HomeContribute": {
+    "sectionTop": "Nuestra contribución",
+    "titleOne": "Convertir la ambición",
+    "titleTwo": "en experiencia real",
+    "description": "Toda carrera tiene un punto de partida, pero no tiene por qué seguir una única dirección. En Vintora nos esforzamos por crear un entorno de trabajo en el que los miembros del equipo puedan descubrir sus fortalezas, ampliar sus conocimientos y explorar nuevas trayectorias profesionales dentro del sector financiero.",
+    "journeyTitle": "¿Hasta dónde puede llevarte tu trayectoria?",
+    "journeys": {
+      "strengths": {
+        "title": "Descubre tus fortalezas",
+        "description": "Encuentra tu lugar en un sector dinámico. La atención al cliente, las actividades comerciales y las tareas operativas te acercan a distintos ámbitos del negocio y te ayudan a identificar lo que más te interesa."
+      },
+      "expertise": {
+        "title": "Amplía tus conocimientos",
+        "description": "Ve más allá de la rutina. Explora nuevas funciones, conoce de cerca el funcionamiento del sector financiero y desarrolla capacidades que impulsen tus ambiciones en distintos ámbitos profesionales."
+      },
+      "higher": {
+        "title": "Apunta más alto",
+        "description": "¿Te interesa liderar? A medida que crecen tus conocimientos y responsabilidades, podrás explorar el camino hacia puestos de especialista, supervisión o dirección, según las vacantes disponibles y tu cualificación."
+      }
     },
-    "insurance": {
-      "caption": "Sector",
-      "title": "Seguros",
-      "subTitle": "Consultas habituales de los clientes:",
-      "description": "Solicitudes de clientes, seguimiento y reclamaciones"
-    },
-    "financialServices": {
-      "caption": "Sector",
-      "title": "Servicios financieros",
-      "subTitle": "Consultas habituales de los clientes:",
-      "description": "Atención recurrente en las operaciones habituales"
-    },
-    "link": "Explorar sectores"
+    "button": "Descubre las posibilidades"
   },
   "HomeHandoff": {
-    "fintech": {
-      "title": "Una transferencia de tareas adaptada a tus reglas",
-      "description": "Antes de empezar, acordamos las tareas, los procesos de trabajo y cuándo debemos derivar un caso a tu equipo. Después podemos ajustar el alcance si cambian el volumen de consultas o tus prioridades.",
-      "link": "Descubre cómo trabajamos"
+    "sectionTop": "Servicios",
+    "titleOne": "Soluciones empresariales",
+    "titleTwo": "impulsadas por personas",
+    "descriptionOne": "Vintora ofrece servicios de externalización que ayudan a las empresas a gestionar la relación con sus clientes y funciones empresariales esenciales.",
+    "descriptionTwo": "Nuestras líneas de negocio incluyen:",
+    "lines": {
+      "one": {
+        "title": "Experiencia del cliente",
+        "description": "Gestión de consultas y comunicación con los clientes a través de múltiples canales de atención."
+      },
+      "two": {
+        "title": "Ventas y relación con clientes",
+        "description": "Apoyo en actividades comerciales, relaciones con los clientes e interacciones relacionadas con las ventas."
+      },
+      "three": {
+        "title": "Operaciones administrativas",
+        "description": "Gestión de responsabilidades administrativas recurrentes y tareas operativas del día a día."
+      },
+      "four": {
+        "title": "Asistencia técnica",
+        "description": "Resolución de consultas técnicas y ayuda a los clientes con incidencias relacionadas con el servicio."
+      }
     },
-    "lending": {
-      "title": "Personas detrás de cada respuesta",
-      "description": "Con Vinotoraup, tus clientes tienen a quién dirigirse y tu equipo sabe cómo delegar las tareas recurrentes. Cada conversación se atiende según el proceso acordado con tu empresa.",
-      "link": "Conoce a Vinotoraup"
-    },
-    "insurance": {
-      "title": "¿Qué consultas se acumulan en tu equipo?",
-      "description": "Cuéntanos qué llamadas y tareas de seguimiento le ocupan más tiempo. Te ayudaremos a identificar cuáles puede asumir Vinotoraup.",
-      "link": "Hablemos"
+    "button": "Ver nuestras soluciones"
+  },
+  "HomeWhyJoin": {
+    "sectionTop": "¿Por qué unirte a Vintora?",
+    "title": "Un lugar para crecer",
+    "description": "En Vintora creemos que una trayectoria profesional plena se construye con retos significativos, compañeros que te apoyan y libertad para tomar la iniciativa. Queremos crear un entorno de trabajo positivo en el que se valoren las aportaciones de cada persona, se acojan las nuevas ideas y todos los miembros del equipo tengan espacio para perseguir nuevas ambiciones."
+  },
+  "HomeGrowthOpportunities": {
+    "sectionTop": "Oportunidades de crecimiento",
+    "titleOne": "Tu carrera",
+    "titleTwo": "no tiene por qué quedarse quieta",
+    "description": "Una trayectoria profesional puede empezar con un puesto y evolucionar en muchas direcciones. En Vintora creemos que la experiencia, la iniciativa y las ganas de aprender pueden abrir la puerta a nuevas responsabilidades.",
+    "progressionTitle": "Una posible progresión profesional:",
+    "button": "Crece con Vintora",
+    "steps": {
+      "agent": {
+        "title": "Agente de atención al cliente",
+        "description": "Construye una base sólida en comunicación, resolución de problemas y procesos de negocio del día a día."
+      },
+      "specialist": {
+        "title": "Especialista sénior",
+        "description": "Asume tareas más complejas, profundiza en el conocimiento del sector y gana más autonomía."
+      },
+      "leader": {
+        "title": "Líder de equipo",
+        "description": "Guía a tus compañeros, coordina las actividades diarias y contribuye al rendimiento del equipo y a la toma de decisiones estratégicas."
+      },
+      "management": {
+        "title": "Dirección y más allá",
+        "description": "Opta a funciones más amplias en operaciones, coordinación o áreas de negocio especializadas a medida que surjan vacantes."
+      }
+    }
+  },
+  "HomeCareers": {
+    "sectionTop": "Empleo en Vintora",
+    "titleOne": "Descubre hasta dónde",
+    "titleTwo": "puede llevarte tu ambición",
+    "description": "¿Buscas un nuevo reto profesional? Explora las oportunidades de empleo en Vintora y descubre puestos que encajen con tu experiencia, tus intereses y tus ambiciones de futuro.",
+    "progressionTitle": "Puestos destacados:",
+    "roleLink": "Más sobre este puesto",
+    "roles": {
+      "customerRelations": {
+        "title": "Agente de relaciones con clientes",
+        "description": "Atiende las consultas de los clientes, ofrece información clara y contribuye a mantener interacciones positivas en todos los canales de comunicación."
+      },
+      "salesRepresentative": {
+        "title": "Representante de ventas",
+        "description": "Conecta con clientes potenciales, presenta ofertas adecuadas y contribuye a las actividades comerciales mediante una comunicación eficaz."
+      },
+      "administrativeAssistant": {
+        "title": "Asistente administrativo",
+        "description": "Gestiona la documentación, organiza la información y da soporte a los procesos de oficina esenciales para que el día a día funcione sin contratiempos."
+      },
+      "teamLeader": {
+        "title": "Líder de equipo",
+        "description": "Coordina las tareas diarias, guía a tus compañeros y supervisa el rendimiento mientras contribuyes a los objetivos del departamento."
+      }
     }
   },
   "coveragePage": {

@@ -17,7 +17,7 @@ export default function Footer() {
 
   return (
     <footer className="pt-18.5 lg:pt-33.75 pb-6 relative z-1">
-      <span className="h-12.5 absolute top-0 left-0 w-full -z-1 bg-light-gray rounded-[0_0_40px_40px] md:rounded-[0_0_500px_500px]"></span>
+      <span className="h-12.5 absolute top-0 left-0 w-full -z-1 bg-background rounded-[0_0_40px_40px] md:rounded-[0_0_500px_500px]"></span>
       <video
         className="absolute top-0 left-0 size-full object-cover -z-2"
         src="/video/footer-video.mp4"
@@ -41,7 +41,7 @@ export default function Footer() {
 
           <div className="grid md:grid-cols-2 gap-x-4 gap-y-4 lg:gap-y-21.25">
             {footerMenu.map((item) => (
-              <div key={item.id} className="p-4 border-l border-blue">
+              <div key={item.id} className="p-4 border-l border-prime">
                 <Link
                   href={item.href}
                   className="text-xl/[110%] font-bold tracking-[-1px] mb-1"
@@ -78,7 +78,7 @@ export default function Footer() {
             <button
               type="button"
               aria-label={tFooter('scrollToTop')}
-              className="px-2.5 py-2 border border-blue rounded-2xl"
+              className="px-2.5 py-2 border border-prime rounded-2xl"
               onClick={() => {
                 window.scrollTo({ top: 0, behavior: 'smooth' });
               }}
@@ -99,7 +99,7 @@ export default function Footer() {
         <div className="pt-6 flex flex-wrap items-center justify-between gap-y-10 gap-x-4 max-md:justify-center max-lg:flex-col">
           <Description
             className="lg:max-w-31.5 tracking-[-1px] max-lg:order-2"
-            variant="blue-gray-dark"
+            variant="secondary"
           >
             {tFooter('copyright', { year: new Date().getFullYear() })}
           </Description>
@@ -108,7 +108,7 @@ export default function Footer() {
               <li key={item.id}>
                 <Link
                   href={item.href}
-                  className="text-base leading-none text-blue-gray-dark tracking-[-1px]"
+                  className="text-base leading-none text-secondary tracking-[-1px]"
                 >
                   {tLegal(item.id)}
                 </Link>

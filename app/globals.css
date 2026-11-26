@@ -1,27 +1,27 @@
-@import "tailwindcss";
-@import "tw-animate-css";
-@import "shadcn/tailwind.css";
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
 
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --font-sans: var(--font-abc-areal-super-family);
-  --color-blue: var(--blue);
-  --color-black: var(--black);
-  --color-light-gray: var(--light-gray);
-  --color-muted: var(--muted);
-  --color-blue-gray: #C0C8DE;
-  --color-blue-gray-dark: #2E5E7C;
-  --color-beige: #EEDCD0;
-}
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-roboto-mono);
 
-:root {
-  --blue: #003544;
-  --black: #000;
-  --light-gray: #eeeeee;
-  --blue-gray: #C0C8DE;
-  --blue-gray-dark: #2E5E7C;
-  --beige: #EEDCD0;
+  /* Colours, named as in the UI Kit (Home). */
+  --color-prime: #003544;
+  --color-prime-hover: #00242f;
+  --color-secondary: #2e5e7c;
+  --color-tertiary: #c0c8de; /* Kit: "Tertialy" */
+  --color-tertiary-text: #9aa6c6;
+  --color-additional: #eedcd0;
+  --color-background: #eeeeee; /* Background 80% = bg-background/80 */
+  --color-white: #ffffff;
+  --color-neutral: #444444;
+  /* Prime 40% / 15% = prime/40, prime/15 */
+
+  --color-black: #000;
+  --color-muted: var(--muted);
 }
 
 @utility container {
@@ -38,7 +38,7 @@
 
 @layer base {
   body {
-    @apply bg-light-gray text-blue font-normal;
+    @apply bg-background text-prime font-normal;
   }
   html {
     @apply font-sans;
