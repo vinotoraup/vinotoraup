@@ -3,7 +3,7 @@
     "home": "Inicio",
     "our-mission": "Nuestra misión",
     "services": "Servicios",
-    "handoff": "Cómo trabajamos",
+    "testimonials": "Testimonios",
     "people": "Equipo"
   },
   "Header": {
@@ -80,6 +80,10 @@
     "services": {
       "title": "Servicios | Vintora",
       "description": "Soluciones de experiencia del cliente y externalización de procesos de negocio para gestionar funciones esenciales y centrarse en las prioridades principales."
+    },
+    "testimonials": {
+      "title": "Testimonios | Vintora",
+      "description": "Historias y opiniones de quienes trabajan en Vintora sobre las responsabilidades diarias, los logros personales y las relaciones que se crean por el camino."
     }
   },
   "HomeHero": {
@@ -707,5 +711,82 @@
       "description": "Cuéntanos con qué funciones necesita ayuda tu empresa y qué te gustaría tratar.",
       "button": "Comenta tus necesidades"
     }
+  },
+  "TestimonialsHero": {
+    "titleStart": "Cada voz tiene",
+    "titleHighlight": "una historia",
+    "description": "En Vintora creemos que cada trayectoria profesional ofrece una perspectiva única sobre las responsabilidades diarias, los logros personales y las relaciones que se crean por el camino. Descubre cómo podría ser trabajar en Vintora a través de las historias y opiniones que encontrarás a continuación.",
+    "button": "Trabaja con nosotros"
+  },
+  "TestimonialsVoices": {
+    "sectionTop": "Desde dentro de Vintora",
+    "titleOne": "En sus",
+    "titleTwo": "propias palabras",
+    "description": "Distintas trayectorias y ambiciones influyen en nuestra forma de trabajar. Aquí tienes algunas perspectivas sobre los retos, los logros y los momentos que pueden hacer que una trayectoria profesional sea memorable.",
+    "voices": {
+      "amelia": {
+        "quote": "«Antes de unirme a Vintora, nunca había trabajado de cara al cliente. Lo que más valoro es todo lo que he aprendido gestionando situaciones distintas. Empiezas a notar lo diferente que se comunica cada persona, y encontrar el enfoque adecuado se convierte en una habilidad en sí misma.»",
+        "name": "Amelia Foster",
+        "role": "Agente de relaciones con clientes"
+      },
+      "daniel": {
+        "quote": "«Las ventas son mucho más que mantener una buena conversación. Se trata de escuchar con atención, entender lo que le importa a cada persona y saber cuándo ajustar tu enfoque. He ganado seguridad para afrontar situaciones nuevas.»",
+        "name": "Daniel Brooks",
+        "role": "Representante de ventas"
+      },
+      "sophie": {
+        "quote": "«Disfruto de la parte organizativa de mi trabajo. Es satisfactorio dar sentido a la información, mantener las cosas en orden y saber que los pequeños detalles pueden marcar la diferencia en cómo transcurre el día.»",
+        "name": "Sophie Mitchell",
+        "role": "Asistente administrativa"
+      },
+      "oliver": {
+        "quote": "«El mayor cambio para mí ha sido mi forma de abordar las tareas difíciles. En lugar de buscar una respuesta rápida, he aprendido a entender bien la situación antes de tomar una decisión. Ese cambio ha sido muy valioso.»",
+        "name": "Oliver Bennett",
+        "role": "Especialista sénior"
+      }
+    }
+  },
+  "TestimonialsDepartments": {
+    "sectionTop": "Dentro de nuestros departamentos",
+    "titleOne": "Hay más de una forma",
+    "titleTwo": "de dejar huella",
+    "description": "Cada departamento ofrece una visión distinta de cómo funciona una organización. Desde atender consultas hasta coordinar actividades internas, cada responsabilidad individual contribuye al conjunto.",
+    "departments": {
+      "customerRelations": {
+        "department": "Relaciones con clientes",
+        "name": "Chloe Harrison",
+        "role": "Especialista en relaciones con clientes",
+        "quote": "«Hay días imprevisibles, y eso es lo que hace interesante este trabajo. Aprendes a mantener la calma, pensar con claridad y comunicarte con todo tipo de personas.»"
+      },
+      "commercial": {
+        "department": "Operaciones comerciales",
+        "name": "Ethan Clarke",
+        "role": "Coordinador de ventas",
+        "quote": "«Siempre me ha gustado el trabajo que combina planificación y comunicación. Participar en las actividades comerciales me ha enseñado lo importante que es entender tanto los detalles como la visión de conjunto.»"
+      },
+      "management": {
+        "department": "Gestión de equipos",
+        "name": "Grace Wilson",
+        "role": "Líder de equipo",
+        "quote": "«Para mí, una de las partes más gratificantes de liderar un equipo es ver cómo alguien gana autonomía. Ayudar a los compañeros a encontrar su propio enfoque suele ser más valioso que limitarse a dar instrucciones.»"
+      }
+    }
+  },
+  "TestimonialsAchievement": {
+    "sectionTop": "Detrás del logro",
+    "title": "De aprender lo básico a liderar a otros",
+    "journeyTitle": "Una trayectoria profesional — Charlotte Evans",
+    "journeyRole": "Líder de equipo | Antes agente de relaciones con clientes",
+    "journeyQuote": "«Empecé en un puesto de atención al cliente y, al principio, mi objetivo era sobre todo entender el trabajo y sentirme cómoda con las responsabilidades diarias. Con el tiempo, empezó a interesarme cómo funcionaba todo el equipo. Me fijaba en cómo se afrontaban los retos, cómo se tomaban las decisiones y qué ayudaba a mis compañeros a dar lo mejor de sí. Pasar a un puesto de liderazgo cambió por completo mi perspectiva. Ya no se trata solo de completar tus propias tareas. Tienes que pensar en cómo trabaja todo el equipo, reconocer cuándo alguien necesita orientación y tomar decisiones que afectan a todos. Mirando atrás, lo más valioso ha sido descubrir capacidades que no sabía que tenía cuando empecé.»",
+    "pathLabel": "Trayectoria:",
+    "pathFrom": "Agente de relaciones con clientes",
+    "pathTo": "Líder de equipo"
+  },
+  "TestimonialsJoin": {
+    "titleOne": "Forma parte",
+    "titleTwo": "de nuestra historia",
+    "descriptionOne": "Cada trayectoria profesional es distinta. Lo importante es encontrar un puesto que encaje con tus intereses y te dé la oportunidad de descubrir lo que viene después.",
+    "descriptionTwo": "Si estás preparado para un nuevo reto, echa un vistazo a los puestos disponibles en Vintora y encuentra el que mejor se adapte a ti.",
+    "button": "Descubre los puestos disponibles"
   }
 }

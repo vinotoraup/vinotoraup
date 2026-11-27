@@ -187,16 +187,20 @@ type RevealClipProps = ComponentPropsWithoutRef<typeof m.div> & {
   delay?: number;
   /** Duration, in ms. */
   duration?: number;
+  /** Wipe from the bottom up (default) or from the left. */
+  from?: 'bottom' | 'left';
 };
 
 /**
- * Child of <Reveal> uncovered from the bottom up with a clip-path wipe.
+ * Child of <Reveal> uncovered with a clip-path wipe, from the bottom up or
+ * from the left.
  * Clip-path isn't a transform, so MotionConfig's reduced-motion setting
  * doesn't cover it; reduced-motion users get a plain fade instead.
  */
 export function RevealClip({
   delay = 0,
   duration = 600,
+  from = 'bottom',
   ...props
 }: RevealClipProps) {
   const reduceMotion = useReducedMotion();
@@ -215,7 +219,12 @@ export function RevealClip({
               visible: { opacity: 1, transition },
             }
           : {
-              hidden: { clipPath: 'inset(100% 0% 0% 0%)' },
+              hidden: {
+                clipPath:
+                  from === 'left'
+                    ? 'inset(0% 100% 0% 0%)'
+                    : 'inset(100% 0% 0% 0%)',
+              },
               visible: { clipPath: 'inset(0% 0% 0% 0%)', transition },
             }
       }

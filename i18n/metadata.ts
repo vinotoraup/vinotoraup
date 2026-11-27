@@ -5,6 +5,7 @@ export type MetaPage =
   | 'home'
   | 'our-mission'
   | 'services'
+  | 'testimonials'
   | 'use-cases'
   | 'handoff'
   | 'people'

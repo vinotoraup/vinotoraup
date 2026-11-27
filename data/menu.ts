@@ -9,7 +9,7 @@ export type MenuItem = {
 export const menu: MenuItem[] = [
   { id: 'our-mission', href: '/our-mission', label: 'Our Mission' },
   { id: 'services', href: '/services', label: 'Services' },
-  { id: 'handoff', href: '/handoff', label: 'Handoff' },
+  { id: 'testimonials', href: '/testimonials', label: 'Testimonials' },
   { id: 'people', href: '/people', label: 'People' },
 ];
 

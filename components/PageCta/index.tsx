@@ -27,7 +27,8 @@ const COPY_DELAY = 400;
 type PageCtaProps = {
   /** Title split in two; the first part is highlighted (Tertialy). */
   title: { highlight: string; rest: string };
-  description: ReactNode;
+  /** One paragraph, or several (16 px apart). */
+  description: ReactNode | ReactNode[];
   button: { label: ReactNode; href?: string };
 };
 
@@ -54,10 +55,17 @@ export default function PageCta({ title, description, button }: PageCtaProps) {
           </Title>
 
           <div>
-            <RevealItem delay={COPY_DELAY}>
-              <Description className="text-base leading-6 text-background">
-                {description}
-              </Description>
+            <RevealItem delay={COPY_DELAY} className="space-y-4">
+              {(Array.isArray(description) ? description : [description]).map(
+                (paragraph, index) => (
+                  <Description
+                    key={index}
+                    className="text-base leading-6 text-background"
+                  >
+                    {paragraph}
+                  </Description>
+                )
+              )}
             </RevealItem>
 
             {/* 24 px above the button on desktop and phone, 32 on tablet.

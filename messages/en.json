@@ -3,7 +3,7 @@
     "home": "Home",
     "our-mission": "Our Mission",
     "services": "Services",
-    "handoff": "Handoff",
+    "testimonials": "Testimonials",
     "people": "People"
   },
   "Header": {
@@ -80,6 +80,10 @@
     "services": {
       "title": "Services | Vintora",
       "description": "Customer experience and business process outsourcing solutions that help companies manage essential functions while focusing on their core priorities."
+    },
+    "testimonials": {
+      "title": "Testimonials | Vintora",
+      "description": "Stories and viewpoints from people at Vintora about daily responsibilities, personal achievements, and the relationships formed along the way."
     }
   },
   "HomeHero": {
@@ -707,5 +711,82 @@
       "description": "Tell us which functions your company needs help with and what you would like to discuss.",
       "button": "Discuss Your Requirements"
     }
+  },
+  "TestimonialsHero": {
+    "titleStart": "Every Voice Has",
+    "titleHighlight": "a Story",
+    "description": "At Vintora, we believe every professional journey offers a unique perspective on daily responsibilities, personal achievements, and the relationships formed along the way. Discover what working at Vintora could look like through the stories and viewpoints featured below.",
+    "button": "Work With Us"
+  },
+  "TestimonialsVoices": {
+    "sectionTop": "Insights From Within Vintora",
+    "titleOne": "In Their",
+    "titleTwo": "Own Words",
+    "description": "Different backgrounds and ambitions shape the way we approach our work. Here are a few perspectives on the challenges, achievements, and moments that can make a professional journey memorable.",
+    "voices": {
+      "amelia": {
+        "quote": "“Before joining Vintora, I hadn’t worked in a customer-facing position. What I appreciate most is how much I’ve learned from handling different situations. You start noticing how differently people communicate, and finding the right approach becomes a skill of its own.”",
+        "name": "Amelia Foster",
+        "role": "Customer Relations Agent"
+      },
+      "daniel": {
+        "quote": "“Sales is about much more than having a good conversation. It’s about listening carefully, understanding what matters to someone, and knowing when to adjust your approach. I’ve become more confident in dealing with unfamiliar situations.”",
+        "name": "Daniel Brooks",
+        "role": "Sales Representative"
+      },
+      "sophie": {
+        "quote": "“I enjoy the organisational side of my role. There’s something satisfying about making sense of information, keeping things in order, and knowing that small details can make a difference to how smoothly the day runs.”",
+        "name": "Sophie Mitchell",
+        "role": "Administrative Assistant"
+      },
+      "oliver": {
+        "quote": "“The biggest change for me has been how I approach difficult tasks. Instead of looking for a quick answer, I’ve learned to understand the situation properly before making a decision. That shift has been valuable.”",
+        "name": "Oliver Bennett",
+        "role": "Senior Specialist"
+      }
+    }
+  },
+  "TestimonialsDepartments": {
+    "sectionTop": "Inside Our Departments",
+    "titleOne": "There’s More Than One Way",
+    "titleTwo": "to Make an Impact",
+    "description": "Every department offers a different view of how an organisation operates. From handling enquiries to coordinating internal activities, individual responsibilities contribute to the wider picture.",
+    "departments": {
+      "customerRelations": {
+        "department": "Customer Relations",
+        "name": "Chloe Harrison",
+        "role": "Customer Relations Specialist",
+        "quote": "“Some days are unpredictable, and that’s what keeps the role interesting. You learn to stay composed, think clearly, and communicate with all kinds of personalities.”"
+      },
+      "commercial": {
+        "department": "Commercial Operations",
+        "name": "Ethan Clarke",
+        "role": "Sales Coordinator",
+        "quote": "“I’ve always enjoyed work that involves planning and communication. Being involved in commercial activities has shown me how important it is to understand both the details and the bigger picture.”"
+      },
+      "management": {
+        "department": "Team Management",
+        "name": "Grace Wilson",
+        "role": "Team Leader",
+        "quote": "“For me, one of the most rewarding parts of leading a team is seeing someone become more independent. Helping colleagues find their own approach is often more valuable than simply giving instructions.”"
+      }
+    }
+  },
+  "TestimonialsAchievement": {
+    "sectionTop": "Behind the Achievement",
+    "title": "From Learning the Basics to Leading Others",
+    "journeyTitle": "A Career Journey — Charlotte Evans",
+    "journeyRole": "Team Leader | Previously Customer Relations Agent",
+    "journeyQuote": "“I joined in a customer-facing role, and initially my main focus was simply understanding the work and becoming comfortable with daily responsibilities. Over time, I became more interested in how the whole team operated. I started paying attention to the way challenges were handled, how decisions were made, and what helped colleagues perform at their best. Moving into a leadership position completely changed my perspective. It’s no longer just about completing your own tasks. You have to consider how everyone works together, recognise when someone needs guidance, and make decisions that affect the wider team. Looking back, the most valuable part has been discovering abilities I didn’t realise I had when I first started.”",
+    "pathLabel": "Career Path:",
+    "pathFrom": "Customer Relations Agent",
+    "pathTo": "Team Leader"
+  },
+  "TestimonialsJoin": {
+    "titleOne": "Become Part of",
+    "titleTwo": "Our Story",
+    "descriptionOne": "Every professional journey is different. What matters is finding a role that matches your interests and gives you the chance to discover what comes next.",
+    "descriptionTwo": "If you’re ready for a new challenge, take a look at the positions available at Vintora and find the one that suits you.",
+    "button": "Discover Available Roles"
   }
 }
