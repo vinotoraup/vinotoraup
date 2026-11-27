@@ -8,6 +8,9 @@ import HomeHandoff from '@/app/[locale]/(home)/HomeHandoff';
 import HomeWhyJoin from '@/app/[locale]/(home)/HomeWhyJoin';
 import HomeGrowthOpportunities from '@/app/[locale]/(home)/HomeGrowthOpportunities';
 import HomeCareers from '@/app/[locale]/(home)/HomeCareers';
+import HomeFaq from '@/app/[locale]/(home)/HomeFaq';
+import HomeWorkWithUs from '@/app/[locale]/(home)/HomeWorkWithUs';
+import HomeLetsTalk from '@/app/[locale]/(home)/HomeLetsTalk';
 
 export function generateMetadata(): Promise<Metadata> {
   return getPageMetadata('home');
@@ -24,6 +27,9 @@ export default function Home() {
       <HomeWhyJoin />
       <HomeGrowthOpportunities />
       <HomeCareers />
+      <HomeFaq />
+      <HomeWorkWithUs />
+      <HomeLetsTalk />
     </>
   );
 }

@@ -83,7 +83,7 @@ export default async function LetsTalkWhatHappens() {
               <SectionTop
                 hasSeparator={false}
                 text={t(`${step.key}.label`)}
-                className="mb-2"
+                className="mb-6"
               />
               <Title className="tracking-[-1.455px] mb-2" variant="tertiary">
                 {t(`${step.key}.title`)}

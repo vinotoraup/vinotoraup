@@ -1,4 +1,5 @@
 import { getTranslations } from 'next-intl/server';
+import { cn } from 'cn';
 import Image from 'next/image';
 import { Link } from '@/i18n/navigation';
 import { Button } from '@/components/ui/button';
@@ -26,11 +27,12 @@ const GUIDE_STAGGER = 100;
 const GUIDE_DURATION = 600;
 const GUIDE_RISE = { mobile: 16, tabletUp: 32 };
 
-const guides = [
+const guides: { key: string; icon: string; titleClassName?: string }[] = [
   { key: 'potential', icon: '/icons/guides-1.svg' },
   { key: 'experience', icon: '/icons/guides-2.svg' },
   { key: 'leadership', icon: '/icons/guides-3.svg' },
-  { key: 'success', icon: '/icons/guides-4.svg' },
+  // Desktop only: narrower title so "Shared Success" wraps as in the mockup.
+  { key: 'success', icon: '/icons/guides-4.svg', titleClassName: 'lg:w-50' },
 ];
 
 export default async function HomeMission() {
@@ -51,12 +53,7 @@ export default async function HomeMission() {
         <div className="grid gap-6 lg:grid-cols-[704fr_480fr] lg:gap-20 mb-8 md:mb-10 lg:mb-14">
           <div>
             <RevealItem distance={0} className="mb-5 md:mb-6">
-              <SectionTop
-                text={t('sectionTop')}
-                hasSeparator={false}
-                className="mb-0"
-                badgeClassName="mb-0"
-              />
+              <SectionTop text={t('sectionTop')} hasSeparator={false} />
             </RevealItem>
 
             <Title>
@@ -64,7 +61,7 @@ export default async function HomeMission() {
             </Title>
           </div>
 
-          <div className="flex flex-col gap-5 md:gap-4">
+          <div className="space-y-5 md:space-y-4">
             <RevealItem delay={copyDelay}>
               <Description className="text-base leading-6">
                 {t('descriptionOne')}
@@ -118,7 +115,7 @@ export default async function HomeMission() {
                   </span>
                 </div>
 
-                <Title as="h4" className="mb-3">
+                <Title as="h4" className={cn('mb-3', guide.titleClassName)}>
                   {t(`guides.${guide.key}.title`)}
                 </Title>
                 <Description className="text-base leading-6 text-neutral">
@@ -133,7 +130,7 @@ export default async function HomeMission() {
             // Right on desktop, left on tablet and phone.
             className="flex lg:justify-end"
           >
-            <Button className="h-13" render={<Link href="/our-mission" />}>
+            <Button size="cta" render={<Link href="/our-mission" />}>
               {t('button')}
               <ArrowRight16 color="currentColor" />
             </Button>

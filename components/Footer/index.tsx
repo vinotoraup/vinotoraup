@@ -1,23 +1,49 @@
 'use client';
 
+import { animate, useReducedMotion } from 'motion/react';
+import * as m from 'motion/react-m';
 import { useTranslations } from 'next-intl';
 import { Link, usePathname } from '@/i18n/navigation';
-import { footerMenu, legalMenu } from '@/data/menu';
-import Description from '@/components/Description';
+import { footerColumns } from '@/data/menu';
 import { contactFormHref, contactFormId } from '@/data/contact';
-import { Button } from '@/components/ui/button';
-import ArrowRightSmall from '@/components/Icons/ArrowRightSmall';
+import ArrowUp from '@/components/Icons/ArrowUp';
 import Image from 'next/image';
+import Wordmark from './Wordmark';
+
+// Links: underline slides in from the left on hover, or tap on phones
+// (200 ms).
+const linkUnderline =
+  'relative after:absolute after:inset-x-0 after:-bottom-0.5 after:h-px after:origin-left after:scale-x-0 after:bg-current after:transition-transform after:duration-200 group-hover/link:after:scale-x-100 group-active/link:after:scale-x-100 motion-reduce:after:transition-none';
 
 export default function Footer() {
   const tMenu = useTranslations('Menu');
   const tFooter = useTranslations('Footer');
   const tLegal = useTranslations('Legal');
   const pathname = usePathname();
+  const reduceMotion = useReducedMotion();
+
+  // Back to top: a smooth 800 ms scroll (instant for reduced motion).
+  function scrollToTop() {
+    if (reduceMotion) {
+      window.scrollTo(0, 0);
+      return;
+    }
+
+    animate(window.scrollY, 0, {
+      duration: 0.8,
+      ease: 'easeInOut',
+      onUpdate: (value) => window.scrollTo(0, value),
+    });
+  }
 
   return (
-    <footer className="pt-18.5 lg:pt-33.75 pb-6 relative z-1">
-      <span className="h-12.5 absolute top-0 left-0 w-full -z-1 bg-background rounded-[0_0_40px_40px] md:rounded-[0_0_500px_500px]"></span>
+    // The wordmark letters slide up once 30% of the footer is in view.
+    <m.footer
+      className="pb-10 relative z-1"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.3 }}
+    >
       <video
         className="absolute top-0 left-0 size-full object-cover -z-2"
         src="/video/footer-video.mp4"
@@ -27,96 +53,93 @@ export default function Footer() {
         playsInline
       />
 
-      <div className="container">
-        <div className="grid grid-cols-1 lg:grid-cols-[328px_397px_auto] justify-between mb-6 lg:mb-15 gap-6">
-          <div>
-            <Link href="/" aria-label={tMenu('home')} className="mb-5">
-              <Image src="/logo.svg" alt="Vinotoraup" width={184} height={40} />
-            </Link>
+      <div className="container pt-20 md:pt-24 lg:pt-30">
+        {/* Desktop: logo · menus · back to top as an auto / 1fr / auto grid,
+            40 px apart, top aligned.
+            Tablet / phone: logo and back to top share the first row (pushed
+            apart, centred), 56 / 48 px above the menus, which take the full
+            second row. Bottom margin 80 / 56 / 48. */}
+        <div className="mb-12 grid grid-cols-[1fr_auto] items-center gap-x-10 gap-y-12 md:mb-14 md:gap-y-14 lg:mb-20 lg:grid-cols-[auto_1fr_auto] lg:items-start lg:gap-10">
+          <Link
+            href="/"
+            aria-label={tMenu('home')}
+            className="col-start-1 row-start-1 justify-self-start"
+          >
+            <Image src="/logo.svg" alt="Vintora" width={184} height={40} />
+          </Link>
 
-            <Description size="2xl" className="tracking-[-1px]">
-              {tFooter('description')}
-            </Description>
-          </div>
+          {/* Four equal columns (two on phones), 32 / 24 / 16 px apart. */}
+          <nav className="col-span-2 row-start-2 grid w-full grid-cols-2 items-start gap-4 md:grid-cols-4 md:gap-6 lg:col-span-1 lg:col-start-2 lg:row-start-1 lg:gap-8">
+            {footerColumns.map((column) => (
+              <div key={column.id} className="border-l border-prime/40 pl-4">
+                {/* UI/Small heading, 12 px below it. */}
+                <p className="mb-3 text-xs leading-4 font-medium text-secondary">
+                  {tFooter(`columns.${column.id}`)}
+                </p>
 
-          <div className="grid md:grid-cols-2 gap-x-4 gap-y-4 lg:gap-y-21.25">
-            {footerMenu.map((item) => (
-              <div key={item.id} className="p-4 border-l border-prime">
-                <Link
-                  href={item.href}
-                  className="text-xl/[110%] font-bold tracking-[-1px] mb-1"
-                >
-                  {tMenu(item.id)}
-                </Link>
-                <Description className="tracking-[-1px] leading-[110%]">
-                  {tMenu(`descriptions.${item.id}`)}
-                </Description>
+                <ul className="space-y-3">
+                  {column.links.map((link) => (
+                    <li key={link.id}>
+                      <Link
+                        href={link.href}
+                        // UI/Footer link: 20/110% desktop, 16/24 below.
+                        className="group/link text-base leading-6 font-medium text-prime lg:text-xl lg:leading-[110%]"
+                        onClick={() => {
+                          // Already on the form's page: just scroll to it.
+                          if (
+                            link.href === contactFormHref &&
+                            pathname === '/lets-talk'
+                          ) {
+                            document
+                              .getElementById(contactFormId)
+                              ?.scrollIntoView();
+                          }
+                        }}
+                      >
+                        <span className={linkUnderline}>
+                          {column.id === 'legal'
+                            ? tLegal(link.id)
+                            : tFooter(`links.${link.id}`)}
+                        </span>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
               </div>
             ))}
-          </div>
+          </nav>
 
-          <div className="flex flex-col justify-between items-end gap-10">
-            <Button
-              nativeButton={false}
-              className="tracking-[-1px] h-11.25 gap-1 max-md:w-full"
-              variant="secondary"
-              render={
-                <Link
-                  href={contactFormHref}
-                  onClick={() => {
-                    if (pathname === '/lets-talk') {
-                      document.getElementById(contactFormId)?.scrollIntoView();
-                    }
-                  }}
-                />
-              }
-            >
-              {tFooter('contact')}
-              <ArrowRightSmall />
-            </Button>
-
-            <button
-              type="button"
-              aria-label={tFooter('scrollToTop')}
-              className="px-2.5 py-2 border border-prime rounded-2xl"
-              onClick={() => {
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-              }}
-            >
-              <Image src="/icons/arrow-up.svg" width={32} height={38} alt="" />
-            </button>
-          </div>
+          {/* 48 px circle, 1.5 px Prime border; the arrow nudges up 4 px on
+              hover (tap on phones). */}
+          <button
+            type="button"
+            aria-label={tFooter('scrollToTop')}
+            className="group/top col-start-2 row-start-1 flex size-12 items-center justify-center justify-self-end rounded-3xl border-[1.5px] border-prime p-[13px] lg:col-start-3"
+            onClick={scrollToTop}
+          >
+            <ArrowUp
+              color="currentColor"
+              className="text-prime transition-[translate] duration-200 motion-safe:group-hover/top:-translate-y-1 motion-safe:group-active/top:-translate-y-1"
+            />
+          </button>
         </div>
 
         <Link
           href="/"
           aria-label={tMenu('home')}
-          className="mb-3.5 text-center"
+          className="mb-12 text-center md:mb-14 lg:mb-20"
         >
-          <Image src="/logo.svg" alt="Vinotoraup" width={1268} height={277} />
+          <Wordmark className="h-[78px] w-full md:h-[153px] lg:h-auto" />
         </Link>
 
-        <div className="pt-6 flex flex-wrap items-center justify-between gap-y-10 gap-x-4 max-md:justify-center max-lg:flex-col">
-          <Description
-            className="lg:max-w-31.5 tracking-[-1px] max-lg:order-2"
-            variant="secondary"
-          >
-            {tFooter('copyright', { year: new Date().getFullYear() })}
-          </Description>
-          <ul className="grid gap-x-10 lg:gap-x-29.5 grid-cols-2 md:grid-cols-4 gap-y-10 max-lg:order-1 justify-center">
-            {legalMenu.map((item) => (
-              <li key={item.id}>
-                <Link
-                  href={item.href}
-                  className="text-base leading-none text-secondary tracking-[-1px]"
-                >
-                  {tLegal(item.id)}
-                </Link>
-              </li>
-            ))}
-          </ul>
+        {/* Copyright left, rights notice right (max 560 px, right-aligned),
+            bottoms aligned; stacked and left-aligned on phones. 12 px gap.
+            Both in UI/Small. */}
+        <div className="grid gap-3 text-xs leading-4 font-medium text-prime md:grid-cols-[auto_minmax(0,560px)] md:items-end md:justify-between">
+          <p>{tFooter('copyright', { year: new Date().getFullYear() })}</p>
+          <p className="md:text-right">{tFooter('rights')}</p>
         </div>
       </div>
-    </footer>
+    </m.footer>
   );
 }

@@ -56,6 +56,11 @@ export default async function RootLayout({ children }: LayoutProps<'/'>) {
           <MotionProvider>
             <Header />
             <main className="rounded-[0_0_20px_20px]">{children}</main>
+            {/* Rounded end of the page content, right above the footer. */}
+            <span
+              aria-hidden
+              className="h-26 md:h-30 lg:h-36 w-full bg-background rounded-b-3xl"
+            />
             <Footer />
           </MotionProvider>
         </NextIntlClientProvider>

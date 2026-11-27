@@ -47,12 +47,7 @@ export default async function HomeContribute() {
         <div className="grid items-end gap-6 lg:grid-cols-[704fr_480fr] lg:gap-20 mb-8 md:mb-10 lg:mb-14">
           <div>
             <RevealItem distance={0} className="mb-6">
-              <SectionTop
-                text={t('sectionTop')}
-                hasSeparator={false}
-                className="mb-0"
-                badgeClassName="mb-0"
-              />
+              <SectionTop text={t('sectionTop')} hasSeparator={false} />
             </RevealItem>
 
             <Title>
@@ -75,7 +70,7 @@ export default async function HomeContribute() {
             </Title>
           </RevealItem>
 
-          <div className="flex flex-col gap-2 mb-8 md:mb-10 lg:mb-14">
+          <div className="space-y-2 mb-8 md:mb-10 lg:mb-14">
             {journeys.map((key, index) => (
               <RevealItem
                 key={key}
@@ -111,7 +106,7 @@ export default async function HomeContribute() {
             // Right on desktop, left on tablet and phone.
             className="flex lg:justify-end"
           >
-            <Button className="h-13" render={<Link href="/opportunities" />}>
+            <Button size="cta" render={<Link href="/opportunities" />}>
               {t('button')}
               <ArrowRight16 color="currentColor" />
             </Button>

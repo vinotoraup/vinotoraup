@@ -48,12 +48,7 @@ export default async function HomeTakeRecurring() {
 
           <div className="flex flex-col items-start gap-6">
             <RevealItem distance={0}>
-              <SectionTop
-                text={t('sectionTop')}
-                hasSeparator={false}
-                className="mb-0"
-                badgeClassName="mb-0"
-              />
+              <SectionTop text={t('sectionTop')} hasSeparator={false} />
             </RevealItem>
 
             <Title>
@@ -72,10 +67,7 @@ export default async function HomeTakeRecurring() {
             </RevealItem>
 
             <RevealItem delay={copyDelay} className="max-md:w-full">
-              <Button
-                className="h-13 max-md:w-full"
-                render={<Link href="/our-mission" />}
-              >
+              <Button size="cta" render={<Link href="/our-mission" />}>
                 {t('button')}
                 <ArrowRight16 color="currentColor" />
               </Button>

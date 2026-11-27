@@ -1,3 +1,5 @@
+import { contactFormHref } from '@/data/contact';
+
 export type MenuItem = {
   id: string;
   href: string;
@@ -11,17 +13,6 @@ export const menu: MenuItem[] = [
   { id: 'people', href: '/people', label: 'People' },
 ];
 
-export function getMenuItems(ids: string[]) {
-  return ids.flatMap((id) => menu.filter((item) => item.id === id));
-}
-
-export const footerMenu = getMenuItems([
-  'coverage',
-  'handoff',
-  'use-cases',
-  'people',
-]);
-
 export const legalMenu: MenuItem[] = [
   {
     id: 'terms-conditions',
@@ -31,4 +22,41 @@ export const legalMenu: MenuItem[] = [
   { id: 'privacy-policy', href: '/privacy-notice', label: 'Privacy Notice' },
   { id: 'refund-policy', href: '/refund-policy', label: 'Refund Policy' },
   { id: 'cookie-policy', href: '/cookie-notice', label: 'Cookie Notice' },
+];
+
+export type FooterLink = { id: string; href: string };
+
+export type FooterColumn = {
+  id: 'explore' | 'careers' | 'business' | 'legal';
+  links: FooterLink[];
+};
+
+// Footer menu, four columns. Labels: Footer.columns.<id> for the headings,
+// Footer.links.<id> for the links (Legal.<id> for the legal column).
+export const footerColumns: FooterColumn[] = [
+  {
+    id: 'explore',
+    links: [
+      { id: 'home', href: '/' },
+      { id: 'ourMission', href: '/our-mission' },
+      { id: 'services', href: '/services' },
+      { id: 'testimonials', href: '/testimonials' },
+    ],
+  },
+  {
+    id: 'careers',
+    links: [
+      { id: 'jobOpportunities', href: '/opportunities' },
+      { id: 'faq', href: '/faq' },
+      { id: 'workWithUs', href: '/work-with-us' },
+    ],
+  },
+  {
+    id: 'business',
+    links: [{ id: 'requestQuote', href: contactFormHref }],
+  },
+  {
+    id: 'legal',
+    links: legalMenu.map(({ id, href }) => ({ id, href })),
+  },
 ];

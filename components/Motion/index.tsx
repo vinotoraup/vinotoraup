@@ -9,8 +9,10 @@ import {
 } from 'react';
 import {
   stagger,
+  useMotionValue,
   useReducedMotion,
   useScroll,
+  useSpring,
   useTransform,
   type Variants,
 } from 'motion/react';
@@ -354,7 +356,8 @@ function subscribe(onChange: () => void) {
   return () => media.removeEventListener('change', onChange);
 }
 
-function useIsTabletUp() {
+/** True from 768 px up. Always false on the server and first render. */
+export function useIsTabletUp() {
   return useSyncExternalStore(
     subscribe,
     () => window.matchMedia(tabletUp).matches,
@@ -393,6 +396,79 @@ export function ScrollRotate({
       ref={ref}
       className={className}
       style={{ rotate: enabled ? rotate : 0 }}
+    >
+      {children}
+    </m.div>
+  );
+}
+
+const finePointer = '(hover: hover) and (pointer: fine)';
+
+function subscribePointer(onChange: () => void) {
+  const media = window.matchMedia(finePointer);
+  media.addEventListener('change', onChange);
+  return () => media.removeEventListener('change', onChange);
+}
+
+/** True on devices with a mouse-like pointer. False on the server. */
+function useFinePointer() {
+  return useSyncExternalStore(
+    subscribePointer,
+    () => window.matchMedia(finePointer).matches,
+    () => false
+  );
+}
+
+type MagneticProps = {
+  children: ReactNode;
+  /** Furthest the content may follow the pointer, in px. */
+  max?: number;
+  className?: string;
+};
+
+/**
+ * Magnetic hover: while the pointer is over it, the content leans towards
+ * the pointer (at most `max` px) and springs back when it leaves.
+ * Mouse-like pointers only, and off for reduced-motion users.
+ */
+export function Magnetic({ children, max = 6, className }: MagneticProps) {
+  const ref = useRef<HTMLDivElement>(null);
+  const reduceMotion = useReducedMotion();
+  const enabled = useFinePointer() && !reduceMotion;
+  const x = useMotionValue(0);
+  const y = useMotionValue(0);
+  const spring = { stiffness: 300, damping: 20, mass: 0.5 };
+  const springX = useSpring(x, spring);
+  const springY = useSpring(y, spring);
+
+  function onPointerMove(event: React.PointerEvent<HTMLDivElement>) {
+    const element = ref.current;
+
+    if (!enabled || !element) {
+      return;
+    }
+
+    const rect = element.getBoundingClientRect();
+    // -1 … 1 from the centre to each edge.
+    const dx = (event.clientX - rect.left - rect.width / 2) / (rect.width / 2);
+    const dy = (event.clientY - rect.top - rect.height / 2) / (rect.height / 2);
+
+    x.set(Math.max(-1, Math.min(1, dx)) * max);
+    y.set(Math.max(-1, Math.min(1, dy)) * max);
+  }
+
+  function reset() {
+    x.set(0);
+    y.set(0);
+  }
+
+  return (
+    <m.div
+      ref={ref}
+      className={className}
+      style={enabled ? { x: springX, y: springY } : undefined}
+      onPointerMove={onPointerMove}
+      onPointerLeave={reset}
     >
       {children}
     </m.div>

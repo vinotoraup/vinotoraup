@@ -103,7 +103,7 @@ function StepText({
 }) {
   return (
     <div className={cn('mt-14', className)}>
-      <SectionTop hasSeparator={false} text={label} className="mb-2" />
+      <SectionTop hasSeparator={false} text={label} className="mb-6" />
       <Title className="tracking-[-1.455px] mb-2" variant="tertiary">
         {title}
       </Title>

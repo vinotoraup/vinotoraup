@@ -9,7 +9,11 @@ export default async function LetsTalkSendUs() {
   return (
     <div className="mb-16 lg:mb-25">
       <div className="container">
-        <SectionTop hasSeparator={false} text={t('sectionTop')} />
+        <SectionTop
+          hasSeparator={false}
+          text={t('sectionTop')}
+          className="mb-14"
+        />
 
         <div className="grid grid-cols-1 lg:grid-cols-[0.9136fr_1fr] gap-6">
           <div className="relative rounded-3xl max-lg:aspect-[592/533] max-lg:max-w-148 max-md:aspect-[364/380] max-md:max-w-91 max-lg:order-2">

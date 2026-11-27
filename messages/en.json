@@ -4,22 +4,31 @@
     "coverage": "Coverage",
     "use-cases": "Use Cases",
     "handoff": "Handoff",
-    "people": "People",
-    "descriptions": {
-      "coverage": "Customer operations we handle",
-      "handoff": "How work moves to our team",
-      "use-cases": "Support across financial sectors",
-      "people": "The team behind Vinotoraup"
-    }
+    "people": "People"
   },
   "Header": {
     "quote": "Request a Quote"
   },
   "Footer": {
-    "description": "Customer conversations covered for financial businesses.",
-    "contact": "Let’s Talk",
-    "copyright": "© {year} Vinotoraup. All rights reserved.",
-    "scrollToTop": "Scroll to top"
+    "copyright": "© {year} Vintora. All rights reserved.",
+    "scrollToTop": "Scroll to top",
+    "columns": {
+      "explore": "Explore",
+      "careers": "Careers",
+      "business": "Business",
+      "legal": "Legal"
+    },
+    "links": {
+      "home": "Home",
+      "ourMission": "Our Mission",
+      "services": "Services",
+      "testimonials": "Testimonials",
+      "jobOpportunities": "Job Opportunities",
+      "faq": "FAQ",
+      "workWithUs": "Work With Us",
+      "requestQuote": "Request a Quote"
+    },
+    "rights": "Website content, career materials, visuals, and brand assets are protected by intellectual property laws. Unauthorized use or reproduction is prohibited."
   },
   "Legal": {
     "terms-conditions": "Terms of Service",
@@ -216,6 +225,45 @@
       }
     },
     "button": "View All Open Positions"
+  },
+  "HomeFaq": {
+    "sectionTop": "Frequently Asked Questions",
+    "titleOne": "Have Concerns?",
+    "titleTwo": "Start Here.",
+    "button": "View All FAQs",
+    "questions": {
+      "positions": {
+        "question": "What types of positions are available at Vintora?",
+        "answer": "Roles may include customer relations, sales, administration, and team coordination. Visit our <link>vacancies page</link> for current openings."
+      },
+      "skills": {
+        "question": "What skills does Vintora look for in candidates?",
+        "answer": "Communication, adaptability, and a responsible attitude are valuable across many roles. Specific requirements vary by position."
+      },
+      "afterApplying": {
+        "question": "What happens after I submit my application?",
+        "answer": "Applications are reviewed against the relevant role requirements. Candidates selected for the next stage will be contacted with further details."
+      },
+      "remote": {
+        "question": "Are positions remote or office-based?",
+        "answer": "Working arrangements depend on the role. Check the vacancy description for information about the location and format."
+      }
+    }
+  },
+  "HomeWorkWithUs": {
+    "sectionTop": "Work With Us",
+    "titleOne": "Your Next Role",
+    "titleTwo": "Could Lead to Much More",
+    "descriptionOne": "Every new position brings the chance to discover different responsibilities, meet colleagues, and gain valuable industry knowledge.",
+    "descriptionTwo": "At Vintora, we’re interested in motivated candidates who are ready to contribute, embrace fresh challenges, and become part of our organisation.",
+    "descriptionThree": "Tell us about your background, interests, and aspirations. We’d like to learn more about you.",
+    "button": "Become Part of Vintora"
+  },
+  "HomeLetsTalk": {
+    "titleOne": "Let’s Talk",
+    "titleTwo": "About Your Business Needs",
+    "description": "Interested in working with Vintora? Share your requirements with us, and let's discuss how our outsourcing solutions could fit your operations.",
+    "button": "Get in Touch"
   },
   "coveragePage": {
     "title": "Coverage for the Calls",

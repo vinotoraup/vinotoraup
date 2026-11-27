@@ -37,8 +37,6 @@ export default async function HomeWhyJoin() {
                 text={t('sectionTop')}
                 variant="dark"
                 hasSeparator={false}
-                className="mb-0"
-                badgeClassName="mb-0"
               />
             </RevealItem>
 

@@ -18,6 +18,8 @@ const buttonVariants = cva(
       size: {
         default: 'h-11.25',
         '48': 'h-12 ',
+        // Page CTA: 52 px; on phones full width with text and arrow at the ends.
+        cta: 'h-13 max-md:w-full max-md:justify-between',
         sm: "h-7 gap-1 rounded-md px-2.5 text-[0.8rem] in-data-[slot=button-group]:rounded-lg has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 [&_svg:not([class*='size-'])]:size-3.5",
         lg: 'h-9 gap-1.5 px-2.5 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2',
         icon: 'size-8',

@@ -4,22 +4,31 @@
     "coverage": "Servicios",
     "use-cases": "Sectores",
     "handoff": "Cómo trabajamos",
-    "people": "Equipo",
-    "descriptions": {
-      "coverage": "Gestiones con clientes que atendemos",
-      "handoff": "Cómo transferimos las tareas a nuestro equipo",
-      "use-cases": "Atención al cliente en distintos sectores financieros",
-      "people": "Las personas detrás de Vinotoraup"
-    }
+    "people": "Equipo"
   },
   "Header": {
     "quote": "Solicitar presupuesto"
   },
   "Footer": {
-    "description": "Atendemos las consultas de los clientes de empresas financieras.",
-    "contact": "Contacto",
-    "copyright": "© {year} Vinotoraup. Todos los derechos reservados.",
-    "scrollToTop": "Volver arriba"
+    "copyright": "© {year} Vintora. Todos los derechos reservados.",
+    "scrollToTop": "Volver arriba",
+    "columns": {
+      "explore": "Explorar",
+      "careers": "Empleo",
+      "business": "Empresas",
+      "legal": "Legal"
+    },
+    "links": {
+      "home": "Inicio",
+      "ourMission": "Nuestra misión",
+      "services": "Servicios",
+      "testimonials": "Testimonios",
+      "jobOpportunities": "Ofertas de empleo",
+      "faq": "Preguntas frecuentes",
+      "workWithUs": "Trabaja con nosotros",
+      "requestQuote": "Solicitar presupuesto"
+    },
+    "rights": "El contenido del sitio web, los materiales de empleo, los recursos visuales y los elementos de marca están protegidos por las leyes de propiedad intelectual. Queda prohibido su uso o reproducción sin autorización."
   },
   "Legal": {
     "terms-conditions": "Términos del servicio",
@@ -216,6 +225,45 @@
       }
     },
     "button": "Ver todas las vacantes"
+  },
+  "HomeFaq": {
+    "sectionTop": "Preguntas frecuentes",
+    "titleOne": "¿Tienes dudas?",
+    "titleTwo": "Empieza aquí.",
+    "button": "Ver todas las preguntas",
+    "questions": {
+      "positions": {
+        "question": "¿Qué tipos de puestos ofrece Vintora?",
+        "answer": "Los puestos pueden incluir relaciones con clientes, ventas, administración y coordinación de equipos. Consulta nuestra <link>página de vacantes</link> para ver las ofertas actuales."
+      },
+      "skills": {
+        "question": "¿Qué habilidades busca Vintora en los candidatos?",
+        "answer": "La comunicación, la capacidad de adaptación y una actitud responsable son valiosas en muchos puestos. Los requisitos concretos varían según el puesto."
+      },
+      "afterApplying": {
+        "question": "¿Qué ocurre después de enviar mi candidatura?",
+        "answer": "Las candidaturas se revisan según los requisitos del puesto correspondiente. Nos pondremos en contacto con las personas seleccionadas para la siguiente fase y les daremos más detalles."
+      },
+      "remote": {
+        "question": "¿Los puestos son en remoto o presenciales?",
+        "answer": "La modalidad de trabajo depende del puesto. Consulta la descripción de la vacante para conocer la ubicación y el formato."
+      }
+    }
+  },
+  "HomeWorkWithUs": {
+    "sectionTop": "Trabaja con nosotros",
+    "titleOne": "Tu próximo puesto",
+    "titleTwo": "puede llevarte mucho más lejos",
+    "descriptionOne": "Cada nuevo puesto es una oportunidad para descubrir responsabilidades distintas, conocer a nuevos compañeros y adquirir un valioso conocimiento del sector.",
+    "descriptionTwo": "En Vintora buscamos candidatos motivados, dispuestos a aportar, asumir nuevos retos y formar parte de nuestra organización.",
+    "descriptionThree": "Cuéntanos sobre tu trayectoria, tus intereses y tus aspiraciones. Nos gustaría conocerte mejor.",
+    "button": "Forma parte de Vintora"
+  },
+  "HomeLetsTalk": {
+    "titleOne": "Hablemos",
+    "titleTwo": "de las necesidades de tu empresa",
+    "description": "¿Te interesa trabajar con Vintora? Cuéntanos qué necesitas y veamos cómo nuestras soluciones de externalización pueden adaptarse a tus operaciones.",
+    "button": "Contáctanos"
   },
   "coveragePage": {
     "title": "Atención para las consultas",

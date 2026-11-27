@@ -30,24 +30,31 @@ export default function SectionTop({
 }: SectionTopProps) {
   const colors = variants[variant];
 
+  const badge = (extraClassName?: string) => (
+    <div
+      className={cn(
+        'px-3 py-1.5 rounded-lg flex items-center gap-2 w-max',
+        colors.badge,
+        extraClassName
+      )}
+    >
+      <span className={cn('size-2 rounded-[1px]', colors.square)}></span>
+
+      <Description className={cn('text-sm leading-4 font-medium', colors.text)}>
+        {text}
+      </Description>
+    </div>
+  );
+
+  // Without a separator it's just the tag: no wrapper, no default margins.
+  if (!hasSeparator) {
+    return badge(cn(className, badgeClassName));
+  }
+
   return (
     <div className={cn('mb-10', className)}>
-      <div
-        className={cn(
-          'px-3 py-1.5 rounded-lg flex items-center gap-2 w-max mb-4',
-          colors.badge,
-          badgeClassName
-        )}
-      >
-        <span className={cn('size-2 rounded-[1px]', colors.square)}></span>
-
-        <Description
-          className={cn('text-sm leading-4 font-medium', colors.text)}
-        >
-          {text}
-        </Description>
-      </div>
-      {hasSeparator && <Separator />}
+      {badge(cn('mb-4', badgeClassName))}
+      <Separator />
     </div>
   );
 }
