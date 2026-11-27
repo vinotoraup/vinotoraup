@@ -35,6 +35,7 @@ export default function Header() {
   const [prevPathname, setPrevPathname] = useState(pathname);
   const menuRef = useRef<HTMLDivElement>(null);
   const buttonRef = useRef<HTMLButtonElement>(null);
+  const headerRef = useRef<HTMLElement>(null);
 
   if (pathname !== prevPathname) {
     setPrevPathname(pathname);
@@ -95,15 +96,37 @@ export default function Header() {
     };
   }, [open]);
 
-  const isHome = pathname === '/';
+  // The header is fixed and its height changes with the breakpoint (the
+  // menu even wraps between 1024 and 1279 px), so it publishes where it
+  // ends as --header-offset. Pages without the full-screen PageHero use it
+  // to keep their top clear of the header.
+  useEffect(() => {
+    const header = headerRef.current;
+
+    if (!header) {
+      return;
+    }
+
+    const root = document.documentElement;
+    const update = () =>
+      root.style.setProperty(
+        '--header-offset',
+        `${header.getBoundingClientRect().bottom}px`
+      );
+    const observer = new ResizeObserver(update);
+
+    update();
+    observer.observe(header);
+
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <header
+      ref={headerRef}
       className={cn(
-        'top-6 z-50 py-2 transition-colors duration-150',
-        // Home overlays the hero video; other pages keep the header in flow
-        // so their content starts below it.
-        isHome ? 'fixed inset-x-0' : 'sticky mt-6',
+        // Fixed on every page; PageHero is laid out for it.
+        'fixed inset-x-0 top-6 z-50 py-2 transition-colors duration-150',
         scrolled && 'bg-background/80'
       )}
     >

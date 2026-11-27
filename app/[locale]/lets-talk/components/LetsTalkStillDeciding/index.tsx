@@ -24,7 +24,7 @@ export default async function LetsTalkStillDeciding() {
           </Description>
 
           <Button
-            render={<Link href="/coverage" />}
+            render={<Link href="/our-mission" />}
             variant="secondary"
             className="max-md:w-full"
           >

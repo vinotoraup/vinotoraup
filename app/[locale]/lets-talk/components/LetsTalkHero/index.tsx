@@ -8,7 +8,7 @@ export default async function LetsTalkHero() {
   const t = await getTranslations('LetsTalkHero');
 
   return (
-    <section className="pt-16 mb-20 lg:mb-25">
+    <section className="pt-[calc(var(--header-offset,106px)+4rem)] mb-20 lg:mb-25">
       <div className="container">
         <Title as="h1" className="max-w-200 mb-6">
           {t('titleOne')} <span> {t('titleTwo')}</span>

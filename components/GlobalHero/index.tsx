@@ -31,7 +31,7 @@ export default function GlobalHero({
   href = contactFormHref,
 }: GlobalHeroProps) {
   return (
-    <section className="pt-16 lg:pb-16 mb-20 lg:mb-25">
+    <section className="pt-[calc(var(--header-offset,106px)+4rem)] lg:pb-16 mb-20 lg:mb-25">
       <div className="container">
         <Title as="h1" className="max-w-200 pb-10">
           {title} <span>{titleHighlight}</span>

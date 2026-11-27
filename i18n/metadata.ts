@@ -3,7 +3,7 @@ import { getTranslations } from 'next-intl/server';
 
 export type MetaPage =
   | 'home'
-  | 'coverage'
+  | 'our-mission'
   | 'use-cases'
   | 'handoff'
   | 'people'

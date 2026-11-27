@@ -26,7 +26,7 @@ export default async function UseCasesOtherServices() {
             <Description className="mb-6">{t('description')}</Description>
 
             <Button
-              render={<Link href="/coverage" />}
+              render={<Link href="/our-mission" />}
               variant="secondary"
               className="max-md:w-full"
             >

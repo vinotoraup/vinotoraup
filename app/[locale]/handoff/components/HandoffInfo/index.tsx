@@ -212,7 +212,7 @@ export default async function HandoffInfo() {
               {'hasButton' in step && step.hasButton && (
                 <div className="text-right">
                   <Button
-                    render={<Link href="/coverage" />}
+                    render={<Link href="/our-mission" />}
                     variant="secondary"
                     className="max-md:w-full"
                   >

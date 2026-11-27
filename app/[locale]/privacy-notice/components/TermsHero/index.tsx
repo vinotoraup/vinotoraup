@@ -16,7 +16,7 @@ export default function TermsHero({
   imageSrc = '/icons/icon-unknown-seven.svg',
 }: TermsHeroProps) {
   return (
-    <section className="pt-16 lg:mb-8">
+    <section className="pt-[calc(var(--header-offset,106px)+4rem)] lg:mb-8">
       <div className="container">
         <Title as="h1" className="max-w-200 mb-6">
           {title}

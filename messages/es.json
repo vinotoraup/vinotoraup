@@ -1,7 +1,7 @@
 {
   "Menu": {
     "home": "Inicio",
-    "coverage": "Servicios",
+    "our-mission": "Nuestra misión",
     "use-cases": "Sectores",
     "handoff": "Cómo trabajamos",
     "people": "Equipo"
@@ -41,9 +41,9 @@
       "title": "Externalización de atención al cliente financiero | Vinotoraup",
       "description": "Vinotoraup atiende llamadas y hace seguimiento para empresas financieras. Decide qué consultas delegar y libera tiempo para tu equipo."
     },
-    "coverage": {
-      "title": "Servicios de atención al cliente financiero | Vinotoraup",
-      "description": "Atención al cliente, solicitudes, cobros, posibles fraudes, cumplimiento normativo y reclamaciones. Elige qué gestiones delegar a Vinotoraup."
+    "our-mission": {
+      "title": "Nuestra misión | Vintora",
+      "description": "Nuestra misión es crear una comunidad en la que la ambición personal impulse el éxito compartido, combinando oportunidades profesionales con soluciones de externalización para empresas."
     },
     "use-cases": {
       "title": "Atención al cliente para el sector financiero | Vinotoraup",
@@ -264,92 +264,6 @@
     "titleTwo": "de las necesidades de tu empresa",
     "description": "¿Te interesa trabajar con Vintora? Cuéntanos qué necesitas y veamos cómo nuestras soluciones de externalización pueden adaptarse a tus operaciones.",
     "button": "Contáctanos"
-  },
-  "coveragePage": {
-    "title": "Atención para las consultas",
-    "titleHighlight": "que no dejan de llegar",
-    "description": "Un cliente necesita saber cómo va su caso. Otro tiene una duda sobre un pago. Un tercero no puede completar una solicitud. Vinotoraup se encarga de las consultas que decidas delegar.",
-    "link": "Define qué necesitas"
-  },
-  "CoverageWhatHandle": {
-    "sectionTop": "Qué gestiona nuestro equipo",
-    "customerCare": {
-      "title": "Atención al cliente",
-      "description": "Consultas habituales y solicitudes relacionadas con las cuentas"
-    },
-    "application": {
-      "title": "Asistencia con solicitudes",
-      "description": "Información pendiente, consultas sobre el estado de las solicitudes y próximos pasos"
-    },
-    "collections": {
-      "title": "Gestión de cobros",
-      "description": "Recordatorios de pago y seguimiento según lo acordado"
-    },
-    "fraud": {
-      "title": "Atención ante posibles fraudes",
-      "description": "Comunicación sobre actividades sospechosas y procesos de verificación"
-    },
-    "compliance": {
-      "title": "Asistencia en cumplimiento normativo",
-      "description": "Comunicaciones habituales con los clientes conforme a tus procedimientos"
-    },
-    "complaint": {
-      "title": "Gestión de reclamaciones",
-      "description": "Respuestas, seguimiento y derivación de casos"
-    }
-  },
-  "CoverageStartRequest": {
-    "start-with-requests": {
-      "title": "Empieza por las consultas entrantes",
-      "description": "Cuando un cliente se pone en contacto, necesita saber que alguien se está ocupando de su consulta. Nuestro equipo atiende las solicitudes dentro del alcance acordado y deriva al tuyo los casos que requieren una decisión interna."
-    },
-    "keep-follow-ups-moving": {
-      "title": "Mantén al día las tareas de seguimiento",
-      "description": "Algunas conversaciones las inicia tu empresa. Vinotoraup puede encargarse de los recordatorios acordados, solicitar información y comunicar novedades a los clientes para que los casos abiertos sigan avanzando."
-    },
-    "cover-more-than-calls": {
-      "title": "Más allá de las llamadas",
-      "description": "La atención al cliente puede incluir llamadas y otros canales de comunicación acordados. Definimos los canales y las tareas antes de comenzar el servicio."
-    }
-  },
-  "CoverageDecide": {
-    "sectionTop": "Decide qué gestiona tu equipo",
-    "titleOne": "Tú defines los límites de",
-    "titleTwo": "nuestra labor:",
-    "requests-we-can-handle": {
-      "title": "Qué",
-      "description": "solicitudes podemos atender"
-    },
-    "a-case-must-be-escalated": {
-      "title": "Cuándo",
-      "description": "debemos derivar un caso"
-    },
-    "information-we-can-provide": {
-      "title": "Qué",
-      "description": "información podemos proporcionar"
-    },
-    "owns-the-next-step": {
-      "title": "Quién",
-      "description": "se encarga del siguiente paso"
-    },
-    "link": "Descubre cómo trabajamos"
-  },
-  "CoverageKeepCustomer": {
-    "titleOne": "Una atención continua",
-    "titleTwo": "para cada cliente",
-    "description": "Un cliente puede consultar primero por una solicitud y después necesitar una verificación o una llamada de seguimiento. Si un mismo equipo atiende varias de estas tareas, se evitan derivaciones innecesarias entre distintos equipos de atención.",
-    "link": "Ver los sectores"
-  },
-  "CoverageChangeScope": {
-    "titleOne": "Ajusta el alcance",
-    "titleTwo": "cuando lo necesites",
-    "description": "Empieza por las tareas que más tiempo le quitan a tu equipo. Si cambia el volumen de consultas o lo que necesitan tus clientes, puedes revisar qué gestiones atiende Vinotoraup."
-  },
-  "CoverageWhatWould": {
-    "titleOne": "¿Qué delegarías",
-    "titleTwo": "primero?",
-    "description": "Cuéntanos qué consultas recibes con más frecuencia y en qué tareas tu equipo necesita apoyo.",
-    "link": "Cuéntanos qué necesitas"
   },
   "UseCasesPage": {
     "title": "Cada consulta requiere una",
@@ -645,5 +559,65 @@
       "Esta Política de reembolsos explica cómo Vinotoraup revisa las solicitudes de reembolso, los errores de facturación, los créditos y los pagos cuando un servicio se modifica o finaliza.",
       "Vinotoraup presta servicios de atención al cliente externalizada a empresas. Cada contratación puede implicar preparación, asignación de personal, formación, reserva de capacidad y atención continua a los clientes. Por ello, el tratamiento de un pago depende del trabajo acordado, del trabajo realizado y de las condiciones de la contratación correspondiente."
     ]
+  },
+  "OurMissionHero": {
+    "titleStart": "Creamos valor con",
+    "titleHighlight": "talento y propósito",
+    "description": "En Vintora, nuestra misión es conectar el potencial humano con resultados empresariales significativos. Combinamos nuestra experiencia en atención al cliente y externalización con el compromiso de impulsar el desarrollo profesional en el sector financiero. Nuestra filosofía es sencilla: las prácticas responsables, los empleados motivados y un rumbo claro construyen organizaciones más sólidas.",
+    "button": "Ver vacantes disponibles"
+  },
+  "OurMissionValues": {
+    "sectionTop": "Lo que defendemos",
+    "titleOne": "Principios",
+    "titleTwo": "que marcan nuestro rumbo",
+    "description": "Nuestros valores influyen en cómo afrontamos los retos, tomamos decisiones y construimos relaciones con compañeros y socios de negocio.",
+    "values": {
+      "integrity": {
+        "title": "Integridad en la práctica",
+        "description": "La honestidad, la responsabilidad y la ética guían nuestras decisiones. Creemos que la credibilidad se gana con acciones coherentes y una comunicación transparente."
+      },
+      "perspectives": {
+        "title": "Perspectivas diversas",
+        "description": "Las distintas trayectorias y puntos de vista aportan nuevas ideas. Fomentamos el diálogo abierto y la consideración atenta de opiniones diferentes."
+      },
+      "quality": {
+        "title": "Compromiso con la calidad",
+        "description": "Los detalles importan. Desde las tareas cotidianas hasta las situaciones complejas, apostamos por la coherencia, el buen criterio y un enfoque responsable en cada tarea."
+      },
+      "adaptability": {
+        "title": "Adaptabilidad en la práctica",
+        "description": "Los sectores evolucionan, las prioridades cambian y surgen nuevos retos. Valoramos la flexibilidad y la capacidad de responder de forma constructiva a los cambios."
+      }
+    }
+  },
+  "OurMissionCareer": {
+    "sectionTop": "Desarrollo profesional en la práctica",
+    "titleOne": "Toma las riendas",
+    "titleTwo": "de tu futuro",
+    "descriptionOne": "El crecimiento profesional requiere algo más que tiempo en un puesto. Implica desarrollar buen criterio, comprender los objetivos más amplios de la organización y mostrar disposición para asumir nuevas responsabilidades.",
+    "descriptionTwo": "Vintora anima a sus empleados a mirar más allá de sus tareas inmediatas, detectar oportunidades de mejora y pensar en la dirección profesional que desean seguir.",
+    "descriptionThree": "Desde reforzar la especialización hasta prepararse para funciones de supervisión, la progresión depende del rendimiento individual, la cualificación necesaria y los puestos disponibles.",
+    "button": "Descubre cómo puedes progresar"
+  },
+  "OurMissionCommitment": {
+    "sectionTop": "Nuestro compromiso",
+    "titleOne": "Un mismo estándar",
+    "titleTwo": "para cada relación",
+    "cards": {
+      "employees": {
+        "title": "Para nuestros empleados",
+        "description": "Queremos ofrecer un entorno basado en un trato justo, expectativas claras y el reconocimiento de las aportaciones de cada persona."
+      },
+      "partners": {
+        "title": "Para nuestros socios de negocio",
+        "description": "Nos centramos en un servicio fiable, una comunicación atenta y soluciones alineadas con los requisitos operativos acordados."
+      }
+    }
+  },
+  "OurMissionJoin": {
+    "titleOne": "Forma parte",
+    "titleTwo": "de lo que estamos construyendo",
+    "description": "Toda organización se construye con las decisiones, la dedicación y las perspectivas de quienes la forman. Vintora da la bienvenida a personas que valoran un trabajo con propósito y quieren contribuir a algo más allá de sus responsabilidades inmediatas.",
+    "button": "Únete a Vintora"
   }
 }

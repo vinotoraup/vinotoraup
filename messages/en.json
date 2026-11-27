@@ -1,7 +1,7 @@
 {
   "Menu": {
     "home": "Home",
-    "coverage": "Coverage",
+    "our-mission": "Our Mission",
     "use-cases": "Use Cases",
     "handoff": "Handoff",
     "people": "People"
@@ -41,9 +41,9 @@
       "title": "Call Center Outsourcing for Financial Businesses | Vinotoraup",
       "description": "Vinotoraup handles customer calls and follow-ups for financial businesses. Choose the conversations to outsource and keep your team focused on its work."
     },
-    "coverage": {
-      "title": "Financial Call Center Services | Vinotoraup",
-      "description": "Explore customer care, application, collections, fraud, compliance, and complaint support. Choose which customer conversations Vinotoraup covers."
+    "our-mission": {
+      "title": "Our Mission | Vintora",
+      "description": "Our mission is to create a community where personal ambition supports shared success, combining meaningful career opportunities with business outsourcing solutions."
     },
     "use-cases": {
       "title": "Call Center Support for Financial Services | Vinotoraup",
@@ -264,92 +264,6 @@
     "titleTwo": "About Your Business Needs",
     "description": "Interested in working with Vintora? Share your requirements with us, and let's discuss how our outsourcing solutions could fit your operations.",
     "button": "Get in Touch"
-  },
-  "coveragePage": {
-    "title": "Coverage for the Calls",
-    "titleHighlight": "That Keep Coming",
-    "description": "A customer needs an update. Another has a payment question. A third cannot finish an application. Vinotoraup takes on the customer contact you choose to move outside your team.",
-    "link": "Plan Your Coverage"
-  },
-  "CoverageWhatHandle": {
-    "sectionTop": "What We Handle",
-    "customerCare": {
-      "title": "Customer Care",
-      "description": "Everyday questions and account-related requests"
-    },
-    "application": {
-      "title": "Application Support",
-      "description": "Missing information, status questions, and next steps"
-    },
-    "collections": {
-      "title": "Collections Support",
-      "description": "Agreed payment reminders and follow-ups"
-    },
-    "fraud": {
-      "title": "Fraud Support",
-      "description": "Suspicious activity and verification communication"
-    },
-    "compliance": {
-      "title": "Compliance Support",
-      "description": "Routine contact under your procedures"
-    },
-    "complaint": {
-      "title": "Complaint Handling",
-      "description": "Responses, follow-ups, and escalation"
-    }
-  },
-  "CoverageStartRequest": {
-    "start-with-requests": {
-      "title": "Start with Incoming Requests",
-      "description": "When customers reach out, they need to know someone has picked up the issue. Our team handles requests within the agreed scope and routes cases that need an internal decision to yours."
-    },
-    "keep-follow-ups-moving": {
-      "title": "Keep Follow-Ups Moving",
-      "description": "Some conversations begin with your business. Vinotoraup can handle agreed reminders, information requests, and customer updates so open tasks have a next step."
-    },
-    "cover-more-than-calls": {
-      "title": "Cover More Than Calls",
-      "description": "Customer contact can include calls and other agreed communication channels. We define the channels and the work involved before the service begins."
-    }
-  },
-  "CoverageDecide": {
-    "sectionTop": "Decide What Stays with You",
-    "titleOne": "You set the limits of",
-    "titleTwo": "our role:",
-    "requests-we-can-handle": {
-      "title": "Which",
-      "description": "requests we can handle"
-    },
-    "a-case-must-be-escalated": {
-      "title": "When",
-      "description": "a case must be escalated"
-    },
-    "information-we-can-provide": {
-      "title": "What",
-      "description": "information we can provide"
-    },
-    "owns-the-next-step": {
-      "title": "Who",
-      "description": "owns the next step"
-    },
-    "link": "Explore the Handoff"
-  },
-  "CoverageKeepCustomer": {
-    "titleOne": "Keep the",
-    "titleTwo": "Customer Journey Connected",
-    "description": "One customer may contact you about an application, then need a verification or a follow-up. Covering several functions together can reduce unnecessary transfers between separate support queues.",
-    "link": "See the Use Cases"
-  },
-  "CoverageChangeScope": {
-    "titleOne": "Change the Scope",
-    "titleTwo": "When You Need To",
-    "description": "Begin with the work taking up the most time. If contact volumes or customer needs change, review which tasks Vinotoraup covers."
-  },
-  "CoverageWhatWould": {
-    "titleOne": "What Would",
-    "titleTwo": "You Move First?",
-    "description": "Tell us which customer conversations arrive most often and where your team needs more capacity.",
-    "link": "Talk Through Your Needs"
   },
   "UseCasesPage": {
     "title": "The Reason for the Call",
@@ -645,5 +559,65 @@
       "This Refund Policy explains how Vinotoraup reviews refund requests, billing errors, credits, and payments when services are changed or ended.",
       "Vinotoraup provides call center outsourcing services to businesses. Each engagement may involve preparation, staffing, training, reserved capacity, and ongoing customer support. The treatment of a payment therefore depends on the work agreed, the work completed, and the terms of the relevant engagement."
     ]
+  },
+  "OurMissionHero": {
+    "titleStart": "Creating Value Through",
+    "titleHighlight": "Talent and Purpose",
+    "description": "At Vintora, our mission is to connect human potential with meaningful business outcomes. We combine customer experience and outsourcing expertise with a commitment to fostering professional advancement within the financial sector. Our philosophy is simple: responsible practices, motivated employees, and a clear sense of direction build stronger organizations.",
+    "button": "Explore Available Positions"
+  },
+  "OurMissionValues": {
+    "sectionTop": "What We Stand For",
+    "titleOne": "Principles",
+    "titleTwo": "That Shape Our Direction",
+    "description": "Our values influence how we approach challenges, make decisions, and establish relationships with colleagues and business partners.",
+    "values": {
+      "integrity": {
+        "title": "Integrity in Action",
+        "description": "Honesty, accountability, and ethical conduct guide our decisions. We believe credibility is earned through consistent actions and transparent communication."
+      },
+      "perspectives": {
+        "title": "Diverse Perspectives",
+        "description": "Varied backgrounds and viewpoints bring fresh insight to the table. We encourage open dialogue and thoughtful consideration of different ideas."
+      },
+      "quality": {
+        "title": "A Commitment to Quality",
+        "description": "Attention to detail matters. From everyday assignments to complex situations, we emphasise consistency, sound judgement, and a responsible approach to every task."
+      },
+      "adaptability": {
+        "title": "Adaptability in Practice",
+        "description": "Industries evolve, priorities shift, and new challenges emerge. We value flexibility and the ability to respond constructively to changing circumstances."
+      }
+    }
+  },
+  "OurMissionCareer": {
+    "sectionTop": "Career Development in Action",
+    "titleOne": "Taking Ownership",
+    "titleTwo": "of Your Future",
+    "descriptionOne": "Professional growth requires more than time spent in a position. It involves developing sound judgement, understanding wider organisational objectives, and showing readiness for additional responsibilities.",
+    "descriptionTwo": "Vintora encourages employees to look beyond their immediate duties, recognise areas for improvement, and consider the professional direction they wish to pursue.",
+    "descriptionThree": "From strengthening specialist expertise to preparing for supervisory responsibilities, advancement depends on individual performance, relevant qualifications, and available roles.",
+    "button": "See How You Can Progress"
+  },
+  "OurMissionCommitment": {
+    "sectionTop": "Our Commitment",
+    "titleOne": "A Shared Standard",
+    "titleTwo": "for Every Relationship",
+    "cards": {
+      "employees": {
+        "title": "For Our Employees",
+        "description": "We aim to provide an atmosphere defined by fair treatment, clear expectations, and recognition of individual contributions."
+      },
+      "partners": {
+        "title": "For Our Business Partners",
+        "description": "We focus on dependable service, attentive communication, and solutions aligned with agreed operational requirements."
+      }
+    }
+  },
+  "OurMissionJoin": {
+    "titleOne": "Be Part of",
+    "titleTwo": "What We’re Building",
+    "description": "Every organisation is shaped by the decisions, dedication, and perspectives of those involved. Vintora welcomes individuals who value purposeful work and want to contribute to something beyond their immediate responsibilities.",
+    "button": "Join Vintora"
   }
 }

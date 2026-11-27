@@ -7,7 +7,7 @@ export type MenuItem = {
 };
 
 export const menu: MenuItem[] = [
-  { id: 'coverage', href: '/coverage', label: 'Coverage' },
+  { id: 'our-mission', href: '/our-mission', label: 'Our Mission' },
   { id: 'use-cases', href: '/use-cases', label: 'Use Cases' },
   { id: 'handoff', href: '/handoff', label: 'Handoff' },
   { id: 'people', href: '/people', label: 'People' },
