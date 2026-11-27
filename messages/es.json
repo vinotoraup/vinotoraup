@@ -2,7 +2,7 @@
   "Menu": {
     "home": "Inicio",
     "our-mission": "Nuestra misión",
-    "use-cases": "Sectores",
+    "services": "Servicios",
     "handoff": "Cómo trabajamos",
     "people": "Equipo"
   },
@@ -76,6 +76,10 @@
     "refund-policy": {
       "title": "Política de reembolsos | Vinotoraup",
       "description": "Descubre cómo Vinotoraup gestiona las solicitudes de reembolso, los errores de facturación, los créditos y los pagos relacionados con sus servicios."
+    },
+    "services": {
+      "title": "Servicios | Vintora",
+      "description": "Soluciones de experiencia del cliente y externalización de procesos de negocio para gestionar funciones esenciales y centrarse en las prioridades principales."
     }
   },
   "HomeHero": {
@@ -619,5 +623,89 @@
     "titleTwo": "de lo que estamos construyendo",
     "description": "Toda organización se construye con las decisiones, la dedicación y las perspectivas de quienes la forman. Vintora da la bienvenida a personas que valoran un trabajo con propósito y quieren contribuir a algo más allá de sus responsabilidades inmediatas.",
     "button": "Únete a Vintora"
+  },
+  "ServicesHero": {
+    "titleStart": "Soluciones prácticas para",
+    "titleHighlight": "empresas modernas",
+    "description": "Toda organización depende de una comunicación eficaz, de actividades coordinadas y de procesos diarios fiables. Vintora ofrece soluciones de experiencia del cliente y de externalización de procesos de negocio que ayudan a las empresas a gestionar funciones esenciales sin perder de vista sus prioridades principales.",
+    "button": "Descubre nuestra misión"
+  },
+  "ServicesLines": {
+    "sectionTop": "Nuestras líneas de negocio",
+    "titleOne": "Experiencia",
+    "titleTwo": "en múltiples sectores",
+    "description": "Vintora opera en varias áreas de externalización empresarial, cada una con tareas, responsabilidades y formas de interactuar con los clientes propias.",
+    "lines": {
+      "customerExperience": {
+        "label": "Experiencia del cliente",
+        "title": "Que cada interacción cuente",
+        "descriptionOne": "Una comunicación clara es esencial para mantener relaciones positivas con los clientes. Esta línea de negocio abarca consultas cotidianas, solicitudes de información y conversaciones relacionadas con el servicio a través de los canales de comunicación acordados.",
+        "descriptionTwo": "Nos centramos en ofrecer respuestas útiles, atender las inquietudes y crear interacciones coherentes que reflejen las expectativas de cada cliente."
+      },
+      "sales": {
+        "label": "Ventas y relación con clientes",
+        "title": "Convertir conversaciones en relaciones",
+        "descriptionOne": "La comunicación comercial implica comprender los intereses de los clientes, presentar ofertas adecuadas y mantener relaciones productivas.",
+        "descriptionTwo": "Esta área incluye consultas relacionadas con las ventas, actividades de relación con clientes y una comunicación que ayuda a las organizaciones a conectar sus productos o servicios con el público adecuado."
+      },
+      "administrative": {
+        "label": "Operaciones administrativas",
+        "title": "Tareas esenciales bien organizadas",
+        "descriptionOne": "Detrás de cada interacción con un cliente hay procesos que requieren atención, precisión y coordinación.",
+        "descriptionTwo": "Las actividades administrativas pueden incluir la gestión de documentación, la organización de la información, la actualización de registros y el apoyo a tareas operativas recurrentes que mantienen los flujos de trabajo internos en marcha."
+      },
+      "technical": {
+        "label": "Asistencia técnica",
+        "title": "Hacer más sencillos los problemas complejos",
+        "descriptionOne": "Las consultas técnicas requieren paciencia, claridad y un enfoque estructurado para identificar los problemas.",
+        "descriptionTwo": "Esta función ayuda a los clientes con incidencias relacionadas con el servicio, explica los procedimientos correspondientes y deriva los asuntos más especializados al personal adecuado cuando es necesario."
+      }
+    }
+  },
+  "ServicesApproach": {
+    "sectionTop": "Cómo aportamos valor",
+    "titleOne": "Un enfoque",
+    "titleTwo": "centrado en lo que importa",
+    "description": "Una externalización eficaz implica algo más que transferir tareas. Requiere comprender las expectativas, comunicarse con coherencia y adaptarse a medida que cambian los requisitos.",
+    "guides": {
+      "clarity": {
+        "title": "Claridad",
+        "description": "Unas responsabilidades y una comunicación claras ayudan a crear un entendimiento compartido del trabajo."
+      },
+      "consistency": {
+        "title": "Coherencia",
+        "description": "Un enfoque cuidadoso de las tareas rutinarias ayuda a mantener interacciones fiables y flujos de trabajo organizados."
+      },
+      "adaptability": {
+        "title": "Adaptabilidad",
+        "description": "Las prioridades cambiantes pueden requerir enfoques distintos. Reconocemos la necesidad de ajustar nuestros métodos a medida que evolucionan las circunstancias."
+      },
+      "accountability": {
+        "title": "Responsabilidad",
+        "description": "Asumir las tareas asignadas y reconocer cuándo es necesaria una mayor implicación es esencial para operar de forma responsable."
+      }
+    }
+  },
+  "ServicesBehind": {
+    "sectionTop": "Detrás de cada servicio",
+    "titleOne": "El trabajo",
+    "titleTwo": "que marca la diferencia",
+    "descriptionOne": "Cada función de externalización se apoya en una combinación distinta de capacidades. Algunos puestos exigen una comunicación segura y una escucha atenta; otros requieren pensamiento analítico, precisión administrativa o la capacidad de explicar información técnica.",
+    "descriptionTwo": "En Vintora, estas actividades permiten conocer la parte práctica de las operaciones empresariales. Entender cómo cada función contribuye a objetivos más amplios ayuda a tener una visión más clara del sector y de sus responsabilidades.",
+    "quote": "Un buen servicio empieza por conocer la tarea, entender su propósito y abordar cada interacción con cuidado."
+  },
+  "ServicesPaths": {
+    "join": {
+      "titleOne": "¿Te interesa",
+      "titleTwo": "unirte a nuestro equipo?",
+      "description": "Descubre lo que significa trabajar en Vintora y da el primer paso para formar parte de nuestra comunidad.",
+      "button": "Encuentra tu lugar en Vintora"
+    },
+    "partner": {
+      "titleOne": "¿Buscas",
+      "titleTwo": "un socio de externalización?",
+      "description": "Cuéntanos con qué funciones necesita ayuda tu empresa y qué te gustaría tratar.",
+      "button": "Comenta tus necesidades"
+    }
   }
 }

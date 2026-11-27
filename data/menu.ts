@@ -8,7 +8,7 @@ export type MenuItem = {
 
 export const menu: MenuItem[] = [
   { id: 'our-mission', href: '/our-mission', label: 'Our Mission' },
-  { id: 'use-cases', href: '/use-cases', label: 'Use Cases' },
+  { id: 'services', href: '/services', label: 'Services' },
   { id: 'handoff', href: '/handoff', label: 'Handoff' },
   { id: 'people', href: '/people', label: 'People' },
 ];

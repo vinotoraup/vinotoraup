@@ -2,7 +2,7 @@
   "Menu": {
     "home": "Home",
     "our-mission": "Our Mission",
-    "use-cases": "Use Cases",
+    "services": "Services",
     "handoff": "Handoff",
     "people": "People"
   },
@@ -76,6 +76,10 @@
     "refund-policy": {
       "title": "Refund Policy | Vinotoraup",
       "description": "Learn how Vinotoraup handles refund requests, billing errors, credits, and payments related to its call center outsourcing services."
+    },
+    "services": {
+      "title": "Services | Vintora",
+      "description": "Customer experience and business process outsourcing solutions that help companies manage essential functions while focusing on their core priorities."
     }
   },
   "HomeHero": {
@@ -619,5 +623,89 @@
     "titleTwo": "What We’re Building",
     "description": "Every organisation is shaped by the decisions, dedication, and perspectives of those involved. Vintora welcomes individuals who value purposeful work and want to contribute to something beyond their immediate responsibilities.",
     "button": "Join Vintora"
+  },
+  "ServicesHero": {
+    "titleStart": "Practical Solutions for",
+    "titleHighlight": "Modern Businesses",
+    "description": "Every organisation depends on effective communication, coordinated activities, and reliable day-to-day processes. Vintora provides customer experience and business process outsourcing solutions that help companies manage essential functions while maintaining focus on their core priorities.",
+    "button": "Discover Our Mission"
+  },
+  "ServicesLines": {
+    "sectionTop": "Our Business Lines",
+    "titleOne": "Expertise",
+    "titleTwo": "Across Multiple Sectors",
+    "description": "Vintora operates across several business outsourcing areas, each with distinct tasks, responsibilities, and ways of interacting with customers.",
+    "lines": {
+      "customerExperience": {
+        "label": "Customer Experience",
+        "title": "Making Every Interaction Count",
+        "descriptionOne": "Clear communication is essential to maintaining positive customer relationships. This business line covers everyday enquiries, information requests, and service-related conversations across agreed communication channels.",
+        "descriptionTwo": "Our focus is on providing helpful responses, addressing concerns, and creating consistent interactions that reflect each client’s expectations."
+      },
+      "sales": {
+        "label": "Sales & Client Engagement",
+        "title": "Turning Conversations Into Connections",
+        "descriptionOne": "Commercial communication involves understanding customer interests, presenting relevant offerings, and maintaining productive relationships.",
+        "descriptionTwo": "This area includes sales-related enquiries, customer engagement activities, and communication that helps organisations connect their products or services with the right audience."
+      },
+      "administrative": {
+        "label": "Administrative Operations",
+        "title": "Keeping Essential Tasks Organised",
+        "descriptionOne": "Behind every customer interaction are processes that require attention, accuracy, and coordination.",
+        "descriptionTwo": "Administrative activities may include managing documentation, organising information, updating records, and supporting recurring operational tasks that keep internal workflows running smoothly."
+      },
+      "technical": {
+        "label": "Technical Assistance",
+        "title": "Making Complex Issues Easier to Navigate",
+        "descriptionOne": "Technical enquiries require patience, clarity, and a structured approach to identifying problems.",
+        "descriptionTwo": "This function helps customers with service-related issues, explains relevant procedures, and routes more specialised matters to the right personnel when needed."
+      }
+    }
+  },
+  "ServicesApproach": {
+    "sectionTop": "How We Deliver Value",
+    "titleOne": "An Approach",
+    "titleTwo": "Built Around What Matters",
+    "description": "Effective outsourcing involves more than transferring tasks. It requires understanding expectations, communicating consistently, and adapting as requirements evolve.",
+    "guides": {
+      "clarity": {
+        "title": "Clarity",
+        "description": "Clear responsibilities and communication help establish a shared understanding of the work involved."
+      },
+      "consistency": {
+        "title": "Consistency",
+        "description": "A considered approach to routine activities helps maintain dependable interactions and organised workflows."
+      },
+      "adaptability": {
+        "title": "Adaptability",
+        "description": "Changing priorities may require different approaches. We recognise the need to adjust our methods as circumstances evolve."
+      },
+      "accountability": {
+        "title": "Accountability",
+        "description": "Taking ownership of assigned tasks and recognising when further involvement is needed are essential to responsible operations."
+      }
+    }
+  },
+  "ServicesBehind": {
+    "sectionTop": "Behind Every Service",
+    "titleOne": "The Work",
+    "titleTwo": "That Makes a Difference",
+    "descriptionOne": "Each outsourcing function relies on a different combination of abilities. Some roles demand confident communication and attentive listening; others involve analytical thinking, administrative accuracy, or the ability to explain technical information.",
+    "descriptionTwo": "At Vintora, these activities provide insight into the practical side of business operations. Understanding how separate functions contribute to wider objectives helps create a clearer picture of the industry and its responsibilities.",
+    "quote": "Good service begins with knowing the task, understanding its purpose, and approaching each interaction with care."
+  },
+  "ServicesPaths": {
+    "join": {
+      "titleOne": "Interested in",
+      "titleTwo": "Joining Our Team?",
+      "description": "Discover what it means to work at Vintora and take the first step towards becoming part of our community.",
+      "button": "Find Your Place at Vintora"
+    },
+    "partner": {
+      "titleOne": "Looking for",
+      "titleTwo": "an Outsourcing Partner?",
+      "description": "Tell us which functions your company needs help with and what you would like to discuss.",
+      "button": "Discuss Your Requirements"
+    }
   }
 }

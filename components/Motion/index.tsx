@@ -145,25 +145,31 @@ type RevealBarProps = ComponentPropsWithoutRef<typeof m.span> & {
   delay?: number;
   /** Duration, in ms. */
   duration?: number;
+  /** Grow left → right (default) or top → bottom. */
+  direction?: 'horizontal' | 'vertical';
 };
 
 /**
- * Child of <Reveal>: a bar that grows from zero to its full width, from
- * the left. Uses scaleX, so reduced-motion users just see the full bar.
+ * Child of <Reveal>: a bar that grows from zero to full length, from the
+ * left (or the top). Uses scale, so reduced-motion users just see the
+ * full bar.
  */
 export function RevealBar({
   delay = 0,
   duration = DURATION * 1000,
+  direction = 'horizontal',
   style,
   ...props
 }: RevealBarProps) {
+  const vertical = direction === 'vertical';
+
   return (
     <m.span
-      style={{ originX: 0, ...style }}
+      style={vertical ? { originY: 0, ...style } : { originX: 0, ...style }}
       variants={{
-        hidden: { scaleX: 0 },
+        hidden: vertical ? { scaleY: 0 } : { scaleX: 0 },
         visible: {
-          scaleX: 1,
+          ...(vertical ? { scaleY: 1 } : { scaleX: 1 }),
           transition: {
             duration: ms(duration),
             ease: 'easeOut',

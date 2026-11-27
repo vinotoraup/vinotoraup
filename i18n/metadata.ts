@@ -4,6 +4,7 @@ import { getTranslations } from 'next-intl/server';
 export type MetaPage =
   | 'home'
   | 'our-mission'
+  | 'services'
   | 'use-cases'
   | 'handoff'
   | 'people'
